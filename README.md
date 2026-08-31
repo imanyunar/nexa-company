@@ -113,6 +113,19 @@ Pengembangan game 2D/3D untuk kebutuhan komersial maupun edukasi menggunakan eng
 
 ---
 
+## 💼 Portofolio & Studi Kasus
+
+Berikut beberapa proyek unggulan yang telah live di lingkungan produksi:
+
+1. **[LENTERA — Pemerintah Kabupaten Indramayu](https://lentera.indramayukab.go.id/)**  
+   *Platform digital sentral untuk pelayanan publik, data sektoral ekonomi kerakyatan, dan keterbukaan informasi terpadu berbasis Progressive Web App (PWA).*
+2. **[Visit Gumiwang](https://visitgumiwang.web.id/)**  
+   *Portal web promosi pariwisata, agrikultur, perikanan, dan katalog digital produk UMKM Desa Gumiwang.*
+3. **[CatatKas UMKM](https://catatkas-web.vercel.app/)**  
+   *Aplikasi web pencatatan dan pembukuan keuangan digital praktis bagi pelaku usaha mikro.*
+
+---
+
 ## 👥 Tim
 
 | Nama | Peran |
