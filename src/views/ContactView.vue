@@ -1,6 +1,6 @@
 <template>
   <div class="bg-base text-white py-20 sm:py-24">
-    <div class="max-w-4xl mx-auto px-6 space-y-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-16">
 
       <div class="text-center max-w-2xl mx-auto space-y-4">
         <div class="text-xs font-mono t-cyan uppercase tracking-widest font-semibold">CONTACT & CONSULTATION</div>
@@ -11,7 +11,7 @@
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
         <!-- Sidebar Kontak -->
         <div class="md:col-span-5 space-y-6">
-          <div class="card-unified contact-card p-7 space-y-6">
+          <div class="card-unified contact-card p-5 sm:p-7 space-y-6">
             <h2 class="text-xl font-display font-light text-white">Saluran Resmi</h2>
             
             <!-- WhatsApp -->
@@ -90,7 +90,7 @@
         </div>
 
         <!-- Form Konsultasi -->
-        <div class="md:col-span-7 card-unified contact-card p-8 sm:p-10 space-y-6">
+        <div class="md:col-span-7 card-unified contact-card p-6 sm:p-8 md:p-10 space-y-6">
           <h2 class="text-xl font-display font-light text-white">Formulir Konsultasi Cepat</h2>
           <form @submit.prevent="submitForm" class="space-y-5">
             <div class="space-y-2">

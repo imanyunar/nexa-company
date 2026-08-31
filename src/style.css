@@ -121,3 +121,59 @@
   border-color: rgba(23, 195, 242, 0.4);
   background-color: #1A2056;
 }
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE — MOBILE PHONES (≤480px)
+   ═══════════════════════════════════════════ */
+@media (max-width: 480px) {
+  /* Reduce section vertical spacing */
+  .py-24  { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+  .py-20  { padding-top: 3rem !important;   padding-bottom: 3rem !important; }
+  .space-y-16 > * + * { margin-top: 2.5rem !important; }
+
+  /* Hero headline mobile sizing */
+  h1 { font-size: 1.75rem !important; line-height: 1.2 !important; }
+  h2 { font-size: 1.35rem !important; }
+
+  /* Reduce card padding on mobile */
+  .card-unified { border-radius: 8px; }
+
+  /* Portfolio preview images - shorter on mobile */
+  .project-tile .overflow-hidden[style*="height: 220px"] {
+    height: 160px !important;
+  }
+
+  /* Buttons: ensure full-width on mobile for easy tapping */
+  .btn-pill-primary,
+  .btn-pill-secondary,
+  .btn-pill-action {
+    padding: 12px 20px;
+    font-size: 0.7rem;
+    min-height: 44px; /* Apple HIG minimum tap target */
+  }
+
+  /* Footer contacts stack vertically */
+  footer .flex-wrap {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE — SMALL PHONES (≤360px)
+   ═══════════════════════════════════════════ */
+@media (max-width: 360px) {
+  h1 { font-size: 1.5rem !important; }
+  h2 { font-size: 1.2rem !important; }
+  .px-6 { padding-left: 1rem !important; padding-right: 1rem !important; }
+}
+
+/* ═══════════════════════════════════════════
+   SAFE AREA — NOTCHED PHONES (iPhone X+ etc)
+   ═══════════════════════════════════════════ */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  footer {
+    padding-bottom: calc(3.5rem + env(safe-area-inset-bottom));
+  }
+}

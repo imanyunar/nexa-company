@@ -17,7 +17,7 @@
         </svg>
       </div>
 
-      <div class="max-w-6xl mx-auto px-6 relative z-10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div class="lg:col-span-7 space-y-8">
             <h1 ref="heroHeadline" class="text-4xl sm:text-5xl lg:text-[3.5rem] font-display font-light text-white leading-[1.15] tracking-tight">
@@ -61,7 +61,7 @@
 
     <!-- LAYANAN -->
     <section class="bg-elevated py-24 sm:py-28 border-b b-subtle">
-      <div class="max-w-6xl mx-auto px-6 space-y-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-16">
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <div class="max-w-2xl space-y-3">
             <div class="text-xs font-mono t-cyan uppercase tracking-widest">KEAHLIAN UTAMA</div>
@@ -153,7 +153,7 @@
                 <span class="text-[10px] font-mono t-muted truncate max-w-[140px]">lentera.indramayukab.go.id</span>
                 <span class="text-[9px] font-mono font-bold" style="color:#D4AF37;">PWA</span>
               </div>
-              <div class="relative w-full overflow-hidden" style="height: 220px; background:#0B0E2B;">
+              <div class="relative w-full overflow-hidden h-[160px] sm:h-[220px]" style="background:#0B0E2B;">
                 <img 
                   src="/assets/projects/lentera.png" 
                   alt="Lentera Indramayu Live Website Preview" 
@@ -187,7 +187,7 @@
                 <span class="text-[10px] font-mono t-muted truncate max-w-[140px]">visitgumiwang.web.id</span>
                 <span class="text-[9px] font-mono font-bold" style="color:#34D399;">DESA</span>
               </div>
-              <div class="relative w-full overflow-hidden" style="height: 220px; background:#0B0E2B;">
+              <div class="relative w-full overflow-hidden h-[160px] sm:h-[220px]" style="background:#0B0E2B;">
                 <img 
                   src="/assets/projects/visitgumiwang.png" 
                   alt="Visit Gumiwang Live Website Preview" 
@@ -221,7 +221,7 @@
                 <span class="text-[10px] font-mono t-muted truncate max-w-[140px]">catatkas-web.vercel.app</span>
                 <span class="text-[9px] font-mono font-bold" style="color:#F472B6;">APP</span>
               </div>
-              <div class="relative w-full overflow-hidden" style="height: 220px; background:#0B0E2B;">
+              <div class="relative w-full overflow-hidden h-[160px] sm:h-[220px]" style="background:#0B0E2B;">
                 <img 
                   src="/assets/projects/catatkas.png" 
                   alt="CatatKas UMKM Live App Preview" 
@@ -252,7 +252,7 @@
 
     <!-- CTA BAND -->
     <section class="bg-elevated py-20 sm:py-24 border-b b-subtle relative overflow-hidden">
-      <div class="max-w-4xl mx-auto px-6 text-center space-y-6 relative z-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6 relative z-10">
         <div class="text-xs font-mono t-cyan uppercase tracking-[0.25em] font-semibold">BE SEEN BE CHOSEN</div>
         <h2 class="text-3xl sm:text-4xl font-display font-light text-white leading-tight">Siap Menghadirkan Solusi Digital Terbaik?</h2>
         <p class="t-muted text-base sm:text-lg max-w-xl mx-auto leading-relaxed">Konsultasikan kebutuhan website, pengolahan data, atau game Anda bersama tim kami. Dapatkan arsitektur terbaik agar brand Anda dilihat dan dipilih.</p>

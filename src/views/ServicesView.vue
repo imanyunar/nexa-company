@@ -1,6 +1,6 @@
 <template>
   <div class="bg-base text-white py-20 sm:py-24">
-    <div class="max-w-5xl mx-auto px-6 space-y-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-16">
 
       <div class="text-center max-w-2xl mx-auto space-y-4">
         <div class="text-xs font-mono t-cyan uppercase tracking-widest">CAPABILITIES</div>

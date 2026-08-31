@@ -1,6 +1,6 @@
 <template>
   <div class="bg-base text-white py-20 sm:py-24">
-    <div class="max-w-5xl mx-auto px-6 space-y-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-16">
 
       <div class="text-center max-w-2xl mx-auto space-y-4">
         <div class="text-xs font-mono t-cyan uppercase tracking-widest">SHOWCASE KARYA NYATA</div>
@@ -22,7 +22,7 @@
               <span class="text-xs font-mono t-muted">https://lentera.indramayukab.go.id/</span>
               <span class="text-xs font-mono font-bold" style="color:#D4AF37;">PWA LIVE</span>
             </div>
-            <div class="relative w-full overflow-hidden" style="height: 420px; background:#0B0E2B;">
+            <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px]" style="background:#0B0E2B;">
               <img 
                 src="/assets/projects/lentera.png" 
                 alt="Lentera Indramayu Live Preview" 
@@ -71,7 +71,7 @@
               <span class="text-xs font-mono t-muted">https://visitgumiwang.web.id/</span>
               <span class="text-xs font-mono font-bold" style="color:#34D399;">DESA WISATA</span>
             </div>
-            <div class="relative w-full overflow-hidden" style="height: 420px; background:#0B0E2B;">
+            <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px]" style="background:#0B0E2B;">
               <img 
                 src="/assets/projects/visitgumiwang.png" 
                 alt="Visit Gumiwang Live Preview" 
@@ -120,7 +120,7 @@
               <span class="text-xs font-mono t-muted">https://catatkas-web.vercel.app/</span>
               <span class="text-xs font-mono font-bold" style="color:#F472B6;">WEB APP</span>
             </div>
-            <div class="relative w-full overflow-hidden" style="height: 420px; background:#0B0E2B;">
+            <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px]" style="background:#0B0E2B;">
               <img 
                 src="/assets/projects/catatkas.png" 
                 alt="CatatKas UMKM Live Preview" 
