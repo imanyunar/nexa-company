@@ -1,155 +1,156 @@
 <template>
-  <div class="py-16 sm:py-20 bg-paper">
+  <div class="bg-paper text-ink py-20 sm:py-24">
     <div class="max-w-5xl mx-auto px-6 space-y-16">
       
-      <!-- Header Page -->
-      <div class="text-center max-w-2xl mx-auto space-y-4">
-        <h1 class="text-3xl sm:text-4xl font-display font-bold text-ink">
-          Layanan Kami
+      <!-- Editorial Page Top -->
+      <div ref="pageHeader" class="text-center max-w-2xl mx-auto space-y-4">
+        <div class="text-xs font-mono text-primary uppercase tracking-widest">CAPABILITIES</div>
+        <h1 class="text-4xl sm:text-5xl font-display font-light text-ink">
+          Layanan Spesialis
         </h1>
         <p class="text-muted text-base sm:text-lg leading-relaxed">
-          Kami menyediakan tiga layanan utama yang dirancang untuk menjawab kebutuhan digital bisnis Anda secara nyata dan terukur.
+          Tiga pilar layanan teknis yang kami kembangkan untuk memberikan dampak nyata bagi bisnis, instansi, dan pengguna Anda.
         </p>
       </div>
 
       <!-- Service 1: Web Development -->
-      <div class="bg-surface border border-muted-border rounded-lg p-8 sm:p-10 space-y-6">
+      <div class="card-8px service-block p-8 sm:p-10 space-y-6 hover:border-primary transition-all duration-300">
         <div class="flex items-center gap-4">
-          <div class="w-12 h-12 rounded bg-blue-soft text-blue flex items-center justify-center text-2xl font-bold">
+          <div class="w-12 h-12 rounded-lg bg-paper-soft text-primary flex items-center justify-center text-2xl font-bold">
             🌐
           </div>
           <div>
-            <h2 class="text-2xl font-display font-bold text-ink">1. Web Development</h2>
-            <p class="text-xs text-muted">Website Profesional, Landing Page & Aplikasi Web</p>
+            <h2 class="text-2xl sm:text-3xl font-display font-light text-ink">Web Development</h2>
+            <p class="text-xs text-muted font-mono">Company Profile · Web Application · High Performance</p>
           </div>
         </div>
 
-        <p class="text-muted text-sm sm:text-base leading-relaxed">
-          Kami membuat website yang tidak hanya menarik secara visual, tetapi juga cepat dimuat, aman, dan nyaman diakses di smartphone maupun desktop.
+        <p class="text-muted text-base leading-relaxed">
+          Kami merancang dan membangun platform web yang cepat, responsif di seluruh layar, serta memiliki struktur kode yang bersih untuk kemudahan pemeliharaan jangka panjang.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-          <div class="bg-paper p-4 rounded border border-muted-border/60">
+          <div class="bg-paper p-5 rounded-lg border border-hairline-light">
             <h3 class="font-bold text-sm text-ink mb-1">Company Profile & Landing Page</h3>
-            <p class="text-xs text-muted leading-relaxed">Website perkenalan perusahaan, instansi, atau produk untuk membangun reputasi dan kredibilitas di mata publik.</p>
+            <p class="text-xs text-muted leading-relaxed">Website perkenalan perusahaan atau instansi yang elegan untuk membangun reputasi dan kredibilitas di mata publik.</p>
           </div>
-          <div class="bg-paper p-4 rounded border border-muted-border/60">
+          <div class="bg-paper p-5 rounded-lg border border-hairline-light">
             <h3 class="font-bold text-sm text-ink mb-1">Sistem & Web Application Custom</h3>
-            <p class="text-xs text-muted leading-relaxed">Aplikasi berbasis web untuk otomasi alur kerja internal, dashboard manajemen, hingga portal transaksi bisnis.</p>
+            <p class="text-xs text-muted leading-relaxed">Platform web kustom untuk manajemen data, alur operasional internal, maupun portal interaktif pengguna.</p>
           </div>
         </div>
 
-        <div class="pt-4 border-t border-muted-border flex flex-wrap items-center justify-between gap-4">
-          <div class="text-xs text-muted">
-            Teknologi: <b>Vue.js, Laravel, TailwindCSS, MySQL, PWA</b>
+        <div class="pt-4 border-t border-hairline-light flex flex-wrap items-center justify-between gap-4">
+          <div class="text-xs text-muted font-mono">
+            Stack: <span class="text-ink font-semibold">Vue 3, Laravel, TailwindCSS, PWA</span>
           </div>
-          <router-link to="/kontak" class="text-sm font-semibold text-blue hover:underline">
-            Konsultasikan Web Anda
+          <router-link to="/kontak" class="btn-pill-primary text-xs uppercase font-bold py-2.5 px-6 transition-transform hover:scale-105 active:scale-95">
+            Konsultasi Web
           </router-link>
         </div>
       </div>
 
       <!-- Service 2: Data Analysis -->
-      <div class="bg-surface border border-muted-border rounded-lg p-8 sm:p-10 space-y-6">
+      <div class="card-8px service-block p-8 sm:p-10 space-y-6 hover:border-cyan transition-all duration-300">
         <div class="flex items-center gap-4">
-          <div class="w-12 h-12 rounded bg-cyan/10 text-cyan-dark flex items-center justify-center text-2xl font-bold">
+          <div class="w-12 h-12 rounded-lg bg-cyan/10 text-cyan-pressed flex items-center justify-center text-2xl font-bold">
             📊
           </div>
           <div>
-            <h2 class="text-2xl font-display font-bold text-ink">2. Data Analysis</h2>
-            <p class="text-xs text-muted">Pengolahan Data, Dashboard & Insight Bisnis</p>
+            <h2 class="text-2xl sm:text-3xl font-display font-light text-ink">Data Analysis</h2>
+            <p class="text-xs text-muted font-mono">Data Pipeline · Business Intelligence · Dashboards</p>
           </div>
         </div>
 
-        <p class="text-muted text-sm sm:text-base leading-relaxed">
-          Data bisnis Anda adalah aset berharga. Kami membantu merapikan, mengolah, dan menampilkan data operasional Anda dalam bentuk visual yang mudah dipahami oleh pengambil keputusan.
+        <p class="text-muted text-base leading-relaxed">
+          Mengolah kumpulan data mentah menjadi wawasan bisnis yang tajam. Kami membangun dashboard interaktif dan visualisasi data yang mempermudah evaluasi kinerja harian.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-          <div class="bg-paper p-4 rounded border border-muted-border/60">
+          <div class="bg-paper p-5 rounded-lg border border-hairline-light">
             <h3 class="font-bold text-sm text-ink mb-1">Dashboard Visualisasi Interaktif</h3>
-            <p class="text-xs text-muted leading-relaxed">Tampilan grafik metrik penjualan, tren pasar, dan kinerja bisnis secara real-time yang mudah dibaca kapan saja.</p>
+            <p class="text-xs text-muted leading-relaxed">Penyajian grafik metrik, tren penjualan, dan evaluasi operasional secara visual yang mudah dipahami.</p>
           </div>
-          <div class="bg-paper p-4 rounded border border-muted-border/60">
+          <div class="bg-paper p-5 rounded-lg border border-hairline-light">
             <h3 class="font-bold text-sm text-ink mb-1">Laporan & Insight Strategis</h3>
-            <p class="text-xs text-muted leading-relaxed">Analisis mendalam terhadap perilaku konsumen, efisiensi operasional, dan rekomendasi perbaikan berbasis angka.</p>
+            <p class="text-xs text-muted leading-relaxed">Analisis pola data, retensi konsumen, dan estimasi proyeksi untuk mendukung keputusan berbasis data.</p>
           </div>
         </div>
 
-        <div class="pt-4 border-t border-muted-border flex flex-wrap items-center justify-between gap-4">
-          <div class="text-xs text-muted">
-            Tools: <b>Python, SQL, PowerBI, Tableau, Excel Advance</b>
+        <div class="pt-4 border-t border-hairline-light flex flex-wrap items-center justify-between gap-4">
+          <div class="text-xs text-muted font-mono">
+            Tools: <span class="text-ink font-semibold">Python, SQL, PowerBI, Tableau</span>
           </div>
-          <router-link to="/kontak" class="text-sm font-semibold text-blue hover:underline">
-            Konsultasikan Kebutuhan Data
+          <router-link to="/kontak" class="btn-pill-primary text-xs uppercase font-bold py-2.5 px-6 transition-transform hover:scale-105 active:scale-95">
+            Konsultasi Data
           </router-link>
         </div>
       </div>
 
       <!-- Service 3: Game Development -->
-      <div class="bg-surface border border-muted-border rounded-lg p-8 sm:p-10 space-y-6">
+      <div class="card-8px service-block p-8 sm:p-10 space-y-6 hover:border-magenta transition-all duration-300">
         <div class="flex items-center gap-4">
-          <div class="w-12 h-12 rounded bg-magenta-soft text-magenta flex items-center justify-center text-2xl font-bold">
+          <div class="w-12 h-12 rounded-lg bg-magenta/10 text-magenta flex items-center justify-center text-2xl font-bold">
             🎮
           </div>
           <div>
-            <h2 class="text-2xl font-display font-bold text-ink">3. Game Development</h2>
-            <p class="text-xs text-muted">Game 2D/3D untuk Edukasi, Promosi & Hiburan</p>
+            <h2 class="text-2xl sm:text-3xl font-display font-light text-ink">Game Development</h2>
+            <p class="text-xs text-muted font-mono">Interactive Media · Gamification · 2D/3D</p>
           </div>
         </div>
 
-        <p class="text-muted text-sm sm:text-base leading-relaxed">
-          Menciptakan pengalaman interaktif yang menyenangkan. Cocok untuk meningkatkan *engagement* audiens melalui permainan edukatif atau campaign promosi brand.
+        <p class="text-muted text-base leading-relaxed">
+          Menciptakan pengalaman interaktif yang imersif. Cocok untuk meningkatkan antusiasme pelanggan melalui gamifikasi campaign promosi brand maupun simulasi edukatif.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-          <div class="bg-paper p-4 rounded border border-muted-border/60">
+          <div class="bg-paper p-5 rounded-lg border border-hairline-light">
             <h3 class="font-bold text-sm text-ink mb-1">Gamifikasi Promosi Brand</h3>
-            <p class="text-xs text-muted leading-relaxed">Mini-game interaktif berbasis web (browser) yang seru untuk menarik perhatian pelanggan dan meningkatkan loyalitas.</p>
+            <p class="text-xs text-muted leading-relaxed">Game mini berbasis web yang interaktif untuk menarik interaksi pelanggan dan memperkuat brand awareness.</p>
           </div>
-          <div class="bg-paper p-4 rounded border border-muted-border/60">
+          <div class="bg-paper p-5 rounded-lg border border-hairline-light">
             <h3 class="font-bold text-sm text-ink mb-1">Game Edukasi & Simulasi</h3>
-            <p class="text-xs text-muted leading-relaxed">Media pembelajaran interaktif untuk sekolah, pelatihan institusi, maupun kebutuhan hiburan mandiri.</p>
+            <p class="text-xs text-muted leading-relaxed">Media pembelajaran interaktif berbasis grafis untuk institusi pendidikan maupun pelatihan organisasi.</p>
           </div>
         </div>
 
-        <div class="pt-4 border-t border-muted-border flex flex-wrap items-center justify-between gap-4">
-          <div class="text-xs text-muted">
-            Engine: <b>Unity (2D/3D), C#, WebGL/WebGPU</b>
+        <div class="pt-4 border-t border-hairline-light flex flex-wrap items-center justify-between gap-4">
+          <div class="text-xs text-muted font-mono">
+            Engine: <span class="text-ink font-semibold">Unity (2D/3D), C#, WebGL/WebGPU</span>
           </div>
-          <router-link to="/kontak" class="text-sm font-semibold text-blue hover:underline">
-            Konsultasikan Game Anda
+          <router-link to="/kontak" class="btn-pill-primary text-xs uppercase font-bold py-2.5 px-6 transition-transform hover:scale-105 active:scale-95">
+            Konsultasi Game
           </router-link>
         </div>
       </div>
 
-      <!-- Alur Kerja Kami yang Simpel -->
-      <div class="bg-paper border border-muted-border rounded-lg p-8 space-y-8">
-        <div class="text-center max-w-xl mx-auto">
-          <h2 class="text-2xl font-display font-bold text-ink">Bagaimana Kami Bekerja</h2>
-          <p class="text-xs sm:text-sm text-muted mt-1">Alur kerja sederhana dan transparan dari awal hingga selesai.</p>
+      <!-- Workflow Section in 8px Card -->
+      <div class="card-8px p-8 sm:p-10 space-y-8 bg-surface">
+        <div class="text-center max-w-xl mx-auto space-y-2">
+          <h2 class="text-2xl sm:text-3xl font-display font-light text-ink">Alur Pengerjaan</h2>
+          <p class="text-xs sm:text-sm text-muted">Proses kolaborasi transparan dan terukur dari awal hingga serah terima.</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-4 gap-6">
           <div class="space-y-2">
-            <div class="text-blue font-mono font-bold text-xl">01</div>
-            <h3 class="font-bold text-sm text-ink">Diskusi Kebutuhan</h3>
-            <p class="text-xs text-muted leading-relaxed">Kami mendengarkan target proyek, fitur yang dibutuhkan, dan anggaran Anda.</p>
+            <div class="text-primary font-mono font-bold text-xl">01</div>
+            <h3 class="font-bold text-sm text-ink">Konsultasi</h3>
+            <p class="text-xs text-muted leading-relaxed">Mendengarkan tujuan proyek, spesifikasi fitur, dan target waktu.</p>
           </div>
           <div class="space-y-2">
-            <div class="text-blue font-mono font-bold text-xl">02</div>
+            <div class="text-primary font-mono font-bold text-xl">02</div>
             <h3 class="font-bold text-sm text-ink">Perancangan</h3>
-            <p class="text-xs text-muted leading-relaxed">Menyusun struktur layout, alur sistem, dan prototype visual awal.</p>
+            <p class="text-xs text-muted leading-relaxed">Menyusun arsitektur sistem, wireframe, dan prototype visual.</p>
           </div>
           <div class="space-y-2">
-            <div class="text-blue font-mono font-bold text-xl">03</div>
+            <div class="text-primary font-mono font-bold text-xl">03</div>
             <h3 class="font-bold text-sm text-ink">Pengembangan</h3>
-            <p class="text-xs text-muted leading-relaxed">Pengerjaan kode yang bersih, cepat, dan pengujian fungsi secara teliti.</p>
+            <p class="text-xs text-muted leading-relaxed">Penulisan kode yang rapi, pengujian performa, dan integrasi data.</p>
           </div>
           <div class="space-y-2">
-            <div class="text-blue font-mono font-bold text-xl">04</div>
-            <h3 class="font-bold text-sm text-ink">Peluncuran & Support</h3>
-            <p class="text-xs text-muted leading-relaxed">Deploy ke server live dan pendampingan teknis saat digunakan.</p>
+            <div class="text-primary font-mono font-bold text-xl">04</div>
+            <h3 class="font-bold text-sm text-ink">Peluncuran</h3>
+            <p class="text-xs text-muted leading-relaxed">Deployment ke server produksi dan pendampingan teknis.</p>
           </div>
         </div>
       </div>
@@ -157,3 +158,12 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { onMounted } from 'vue'
+import { animateStaggerFadeIn } from '../utils/animations'
+
+onMounted(() => {
+  animateStaggerFadeIn('.service-block', { delay: 150, stagger: 150 })
+})
+</script>

@@ -1,6 +1,6 @@
 <template>
-  <header class="sticky top-0 z-50 bg-paper/95 backdrop-blur-md border-b border-muted-border">
-    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+  <header class="sticky top-0 z-50 bg-ink/95 backdrop-blur-md border-b border-hairline-dark text-white">
+    <div class="max-w-6xl mx-auto px-6 h-16 sm:h-20 flex items-center justify-between">
       
       <!-- Brand Logo & Name -->
       <router-link to="/" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Nexa Beranda">
@@ -10,64 +10,64 @@
           class="w-9 h-9 object-contain transition-transform group-hover:scale-105"
         />
         <div class="flex flex-col">
-          <span class="font-display font-bold text-xl tracking-tight text-ink leading-none">NEXA</span>
-          <span class="text-[11px] tracking-wider text-muted font-medium mt-0.5">Digital Agency</span>
+          <span class="font-display font-light text-xl tracking-tight text-white leading-none">NEXA</span>
+          <span class="text-[10px] tracking-widest text-muted-dark uppercase font-medium mt-0.5">Technology Agency</span>
         </div>
       </router-link>
 
-      <!-- Desktop Navigation (Multi-page links) -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+      <!-- Desktop Navigation (Airy, light, quiet chrome) -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
         <router-link 
           to="/" 
           class="transition-colors pb-1 border-b-2"
-          :class="$route.path === '/' ? 'text-blue border-blue font-semibold' : 'text-muted hover:text-ink border-transparent'"
+          :class="$route.path === '/' ? 'text-white border-primary font-semibold' : 'text-muted-dark hover:text-white border-transparent'"
         >
           Beranda
         </router-link>
         <router-link 
           to="/layanan" 
           class="transition-colors pb-1 border-b-2"
-          :class="$route.path === '/layanan' ? 'text-blue border-blue font-semibold' : 'text-muted hover:text-ink border-transparent'"
+          :class="$route.path === '/layanan' ? 'text-white border-primary font-semibold' : 'text-muted-dark hover:text-white border-transparent'"
         >
           Layanan
         </router-link>
         <router-link 
           to="/portofolio" 
           class="transition-colors pb-1 border-b-2"
-          :class="$route.path === '/portofolio' ? 'text-blue border-blue font-semibold' : 'text-muted hover:text-ink border-transparent'"
+          :class="$route.path === '/portofolio' ? 'text-white border-primary font-semibold' : 'text-muted-dark hover:text-white border-transparent'"
         >
           Portofolio
         </router-link>
         <router-link 
           to="/tentang" 
           class="transition-colors pb-1 border-b-2"
-          :class="$route.path === '/tentang' ? 'text-blue border-blue font-semibold' : 'text-muted hover:text-ink border-transparent'"
+          :class="$route.path === '/tentang' ? 'text-white border-primary font-semibold' : 'text-muted-dark hover:text-white border-transparent'"
         >
           Tentang Kami
         </router-link>
         <router-link 
           to="/kontak" 
           class="transition-colors pb-1 border-b-2"
-          :class="$route.path === '/kontak' ? 'text-blue border-blue font-semibold' : 'text-muted hover:text-ink border-transparent'"
+          :class="$route.path === '/kontak' ? 'text-white border-primary font-semibold' : 'text-muted-dark hover:text-white border-transparent'"
         >
           Kontak
         </router-link>
       </nav>
 
-      <!-- Action Button -->
+      <!-- Action Button: Fully Rounded Pill -->
       <div class="hidden md:flex items-center">
         <router-link 
           to="/kontak" 
-          class="bg-blue hover:bg-blue-hover text-white text-sm font-semibold px-5 py-2.5 rounded-[4px] transition-all hover:translate-y-[-1px]"
+          class="btn-pill-primary text-xs font-bold uppercase tracking-wider py-2.5 px-6"
         >
-          Konsultasi Gratis
+          Konsultasi
         </router-link>
       </div>
 
       <!-- Mobile Menu Button -->
       <button 
         @click="isOpen = !isOpen"
-        class="md:hidden p-2 text-ink rounded focus:ring-2 focus:ring-blue"
+        class="md:hidden p-2 text-white rounded focus:ring-2 focus:ring-primary"
         :aria-expanded="isOpen"
         aria-label="Toggle Menu"
       >
@@ -81,12 +81,12 @@
     </div>
 
     <!-- Mobile Nav Menu Dropdown -->
-    <div v-if="isOpen" class="md:hidden bg-surface border-b border-muted-border px-6 py-5 space-y-3">
+    <div v-if="isOpen" class="md:hidden bg-ink-elevated border-b border-hairline-dark px-6 py-5 space-y-3">
       <router-link 
         @click="isOpen = false" 
         to="/" 
         class="block text-base font-medium py-1.5"
-        :class="$route.path === '/' ? 'text-blue font-semibold' : 'text-ink'"
+        :class="$route.path === '/' ? 'text-cyan font-semibold' : 'text-white'"
       >
         Beranda
       </router-link>
@@ -94,7 +94,7 @@
         @click="isOpen = false" 
         to="/layanan" 
         class="block text-base font-medium py-1.5"
-        :class="$route.path === '/layanan' ? 'text-blue font-semibold' : 'text-ink'"
+        :class="$route.path === '/layanan' ? 'text-cyan font-semibold' : 'text-white'"
       >
         Layanan
       </router-link>
@@ -102,7 +102,7 @@
         @click="isOpen = false" 
         to="/portofolio" 
         class="block text-base font-medium py-1.5"
-        :class="$route.path === '/portofolio' ? 'text-blue font-semibold' : 'text-ink'"
+        :class="$route.path === '/portofolio' ? 'text-cyan font-semibold' : 'text-white'"
       >
         Portofolio
       </router-link>
@@ -110,7 +110,7 @@
         @click="isOpen = false" 
         to="/tentang" 
         class="block text-base font-medium py-1.5"
-        :class="$route.path === '/tentang' ? 'text-blue font-semibold' : 'text-ink'"
+        :class="$route.path === '/tentang' ? 'text-cyan font-semibold' : 'text-white'"
       >
         Tentang Kami
       </router-link>
@@ -118,7 +118,7 @@
         @click="isOpen = false" 
         to="/kontak" 
         class="block text-base font-medium py-1.5"
-        :class="$route.path === '/kontak' ? 'text-blue font-semibold' : 'text-ink'"
+        :class="$route.path === '/kontak' ? 'text-cyan font-semibold' : 'text-white'"
       >
         Kontak
       </router-link>
@@ -126,9 +126,9 @@
         <router-link 
           @click="isOpen = false"
           to="/kontak" 
-          class="block text-center bg-blue text-white text-sm font-semibold py-3 rounded-[4px]"
+          class="btn-pill-primary w-full text-center text-xs font-bold uppercase tracking-wider py-3"
         >
-          Konsultasi Gratis
+          Konsultasi
         </router-link>
       </div>
     </div>

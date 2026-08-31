@@ -7,35 +7,45 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: {
-          DEFAULT: '#0B0E2B',
-          light: '#131842',
-          dark: '#07091D',
+        primary: {
+          DEFAULT: '#3A4CE0',
+          pressed: '#2F3EB8',
+          active: '#253299',
         },
-        paper: '#F6F7FB',
-        surface: '#FFFFFF',
         cyan: {
           DEFAULT: '#17C3F2',
-          light: '#42D1F7',
-          dark: '#0EA2CC',
+          pressed: '#0EA2CC',
         },
-        blue: {
-          DEFAULT: '#3A4CE0',
-          hover: '#2F3EB8',
-          soft: '#EEF0FD',
+        magenta: {
+          DEFAULT: '#E620C5',
+          pressed: '#C410A5',
         },
         violet: {
           DEFAULT: '#8A2BE2',
         },
-        magenta: {
-          DEFAULT: '#E620C5',
-          soft: '#FDEBF9',
+        ink: {
+          DEFAULT: '#0B0E2B',
+          deep: '#07091D',
+          elevated: '#131842',
+          card: '#181B34',
+        },
+        paper: {
+          DEFAULT: '#F6F7FB',
+          soft: '#EEF0FD',
+        },
+        surface: {
+          DEFAULT: '#FFFFFF',
+          card: '#FFFFFF',
+          dark: '#131842',
         },
         muted: {
           DEFAULT: '#5B6072',
-          light: '#888E9E',
-          border: 'rgba(11, 14, 43, 0.08)',
-          borderDark: 'rgba(255, 255, 255, 0.1)',
+          light: '#8F95A8',
+          dark: 'rgba(246, 247, 251, 0.65)',
+        },
+        hairline: {
+          light: 'rgba(11, 14, 43, 0.08)',
+          dark: 'rgba(255, 255, 255, 0.12)',
         }
       },
       fontFamily: {
@@ -43,9 +53,12 @@ export default {
         sans: ['"Satoshi"', '"Inter"', 'sans-serif'],
         mono: ['"IBM Plex Mono"', 'monospace'],
       },
-      backgroundImage: {
-        'nexa-gradient': 'linear-gradient(135deg, #17C3F2 0%, #3A4CE0 35%, #8A2BE2 70%, #E620C5 100%)',
-        'nexa-gradient-h': 'linear-gradient(90deg, #17C3F2 0%, #3A4CE0 35%, #8A2BE2 70%, #E620C5 100%)',
+      borderRadius: {
+        'card': '8px',
+        'pill': '9999px',
+      },
+      spacing: {
+        'section': '96px',
       }
     },
   },

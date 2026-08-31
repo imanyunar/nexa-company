@@ -4,59 +4,129 @@
 
 @layer base {
   :root {
+    --primary: #3A4CE0;
+    --primary-pressed: #2F3EB8;
+    --cyan: #17C3F2;
+    --magenta: #E620C5;
     --ink: #0B0E2B;
+    --ink-deep: #07091D;
+    --ink-elevated: #131842;
     --paper: #F6F7FB;
     --surface: #FFFFFF;
-    --cyan: #17C3F2;
-    --blue: #3A4CE0;
-    --violet: #8A2BE2;
-    --magenta: #E620C5;
     --muted: #5B6072;
+    --hairline-light: rgba(11, 14, 43, 0.08);
+    --hairline-dark: rgba(255, 255, 255, 0.12);
   }
 
   body {
     background-color: var(--paper);
     color: var(--ink);
-    font-family: 'Satoshi', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    line-height: 1.5;
     overflow-x: hidden;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  /* PlayStation signature light 300 weight for airy display copy */
+  h1, h2, h3 {
     font-family: 'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif;
-    color: var(--ink);
-    letter-spacing: -0.02em;
+    font-weight: 300;
+    letter-spacing: -0.01em;
   }
 
-  /* Accessibility focus ring */
+  /* Accessibility keyboard focus ring */
   *:focus-visible {
-    outline: 2px solid var(--blue) !important;
+    outline: 2px solid var(--primary) !important;
     outline-offset: 2px !important;
   }
 }
 
-/* Custom crisp technical borders instead of generic shadows */
-.border-subtle {
-  border: 1px solid rgba(11, 14, 43, 0.08);
+/* Custom PlayStation-style pill button */
+.btn-pill-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 12px 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
 }
 
-.border-subtle-dark {
-  border: 1px solid rgba(255, 255, 255, 0.12);
+.btn-pill-primary:hover {
+  background-color: var(--primary-pressed);
+  transform: translateY(-1px);
 }
 
-/* Interactive tilt for browser frame */
-.tilt-card {
-  transform: perspective(1000px) rotateY(-4deg) rotateX(2deg);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+.btn-pill-action {
+  background-color: var(--magenta);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 12px 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
 }
 
-.tilt-card:hover {
-  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+.btn-pill-action:hover {
+  background-color: #C410A5;
+  transform: translateY(-1px);
 }
 
-/* Number display utility */
-.font-metric {
-  font-family: 'IBM Plex Mono', monospace;
-  font-feature-settings: "tnum";
-  font-variant-numeric: tabular-nums;
+.btn-pill-secondary-light {
+  background-color: transparent;
+  color: var(--ink);
+  border: 1px solid var(--hairline-light);
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 12px 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.btn-pill-secondary-light:hover {
+  background-color: rgba(11, 14, 43, 0.04);
+  transform: translateY(-1px);
+}
+
+.btn-pill-secondary-dark {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid var(--hairline-dark);
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 12px 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.btn-pill-secondary-dark:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+/* 8px Card style */
+.card-8px {
+  border-radius: 8px;
+  border: 1px solid var(--hairline-light);
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card-8px-dark {
+  border-radius: 8px;
+  border: 1px solid var(--hairline-dark);
+  background-color: var(--ink-card);
+  color: #ffffff;
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }

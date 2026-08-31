@@ -1,150 +1,230 @@
-# Design System — Nexa
+---
+version: 1.0
+name: Nexa-Design-System
+description: |
+  A three-surface marketing and digital agency system organized around alternating Dark Canvas, Light Canvas, and Nexa Blue chapters. Each section has a single editorial purpose — hero vision, web engineering showcase, data intelligence pipeline, interactive game media, and client case study rails. The chrome is exceptionally calm and confident: signature Nexa Blue (`#3A4CE0`) carries primary CTAs as fully-rounded pills, display copy renders at a light weight (300) for an airy, premium editorial feel, and a crisp 8px-radius secondary card system carries project info on either canvas mode. The system never decorates arbitrarily — imagery and real production case studies do the storytelling.
 
-Panduan desain untuk website company profile Nexa. Tujuannya satu: terlihat seperti agency teknis yang serius (web, data, game), bukan template landing page generik ber-AI. Setiap keputusan di bawah diambil dari elemen yang sudah ada di logo Nexa — panah yang menembus huruf "N" — bukan dari default estetika "AI startup" (cream + serif, atau dark + neon-green).
+colors:
+  primary: "#3A4CE0"
+  primary-pressed: "#2F3EB8"
+  primary-active: "#253299"
+  on-primary: "#ffffff"
+  cyan: "#17C3F2"
+  cyan-pressed: "#0EA2CC"
+  magenta: "#E620C5"
+  magenta-pressed: "#C410A5"
+  violet: "#8A2BE2"
+  link-light: "#3A4CE0"
+  link-dark: "#42D1F7"
+  
+  ink: "#0B0E2B"
+  ink-deep: "#07091D"
+  ink-elevated: "#131842"
+  charcoal: "#181B34"
+  body-light: "rgba(11,14,43,0.7)"
+  mute-light: "#5B6072"
+  ash-light: "rgba(11,14,43,0.12)"
+  
+  body-dark: "rgba(255,255,255,0.75)"
+  mute-dark: "rgba(246,247,251,0.6)"
+  ash-dark: "rgba(255,255,255,0.15)"
+  
+  canvas-light: "#F6F7FB"
+  surface-light: "#FFFFFF"
+  surface-card: "#FFFFFF"
+  surface-filter: "rgba(11,14,43,0.05)"
+  
+  canvas-dark: "#0B0E2B"
+  surface-dark-elevated: "#131842"
+  surface-dark-card: "#181B34"
+  
+  hairline-light: "rgba(11,14,43,0.08)"
+  hairline-dark: "rgba(255,255,255,0.12)"
+  on-dark: "#ffffff"
+  on-dark-mute: "#9CA3AF"
 
+typography:
+  display-xl:
+    fontFamily: Cabinet Grotesk, Plus Jakarta Sans, sans-serif
+    fontSize: 54px
+    fontWeight: 300
+    lineHeight: 1.2
+    letterSpacing: -0.5px
+  display-lg:
+    fontFamily: Cabinet Grotesk, Plus Jakarta Sans, sans-serif
+    fontSize: 44px
+    fontWeight: 300
+    lineHeight: 1.25
+    letterSpacing: -0.2px
+  display-md:
+    fontFamily: Cabinet Grotesk, Plus Jakarta Sans, sans-serif
+    fontSize: 35px
+    fontWeight: 300
+    lineHeight: 1.25
+    letterSpacing: 0
+  heading-xl:
+    fontFamily: Cabinet Grotesk, Plus Jakarta Sans, sans-serif
+    fontSize: 28px
+    fontWeight: 300
+    lineHeight: 1.3
+    letterSpacing: 0
+  heading-lg:
+    fontFamily: Cabinet Grotesk, Plus Jakarta Sans, sans-serif
+    fontSize: 22px
+    fontWeight: 400
+    lineHeight: 1.3
+    letterSpacing: 0
+  heading-md:
+    fontFamily: Cabinet Grotesk, Plus Jakarta Sans, sans-serif
+    fontSize: 18px
+    fontWeight: 600
+    lineHeight: 1.2
+    letterSpacing: 0
+  body-md:
+    fontFamily: Satoshi, Inter, sans-serif
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 1.5
+    letterSpacing: 0.1px
+  body-strong:
+    fontFamily: Satoshi, Inter, sans-serif
+    fontSize: 18px
+    fontWeight: 500
+    lineHeight: 1.4
+    letterSpacing: 0.2px
+  body-sm:
+    fontFamily: Satoshi, Inter, sans-serif
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+    letterSpacing: 0
+  caption-md:
+    fontFamily: Satoshi, Inter, sans-serif
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+    letterSpacing: 0
+  mono-metric:
+    fontFamily: IBM Plex Mono, monospace
+    fontSize: 16px
+    fontWeight: 500
+    lineHeight: 1.4
+    letterSpacing: 0
+  button-lg:
+    fontFamily: Satoshi, Inter, sans-serif
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 1.2
+    letterSpacing: 0.3px
+  button-md:
+    fontFamily: Satoshi, Inter, sans-serif
+    fontSize: 14px
+    fontWeight: 700
+    lineHeight: 1.2
+    letterSpacing: 0.2px
+
+rounded:
+  none: 0px
+  sm: 4px
+  md: 8px
+  lg: 16px
+  full: 9999px
+
+spacing:
+  xxs: 4px
+  xs: 8px
+  sm: 12px
+  md: 16px
+  lg: 24px
+  xl: 32px
+  xxl: 48px
+  section: 96px
+
+components:
+  button-primary:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.button-lg}"
+    rounded: "{rounded.full}"
+    padding: 14px 32px
+    height: 48px
+  button-primary-pressed:
+    backgroundColor: "{colors.primary-pressed}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.button-lg}"
+    rounded: "{rounded.full}"
+  button-action:
+    backgroundColor: "{colors.magenta}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.button-lg}"
+    rounded: "{rounded.full}"
+    padding: 14px 32px
+    height: 48px
+  button-secondary-light:
+    backgroundColor: "transparent"
+    textColor: "{colors.ink}"
+    typography: "{typography.button-lg}"
+    rounded: "{rounded.full}"
+    border: "1px solid {colors.ash-light}"
+    padding: 14px 32px
+    height: 48px
+  button-secondary-dark:
+    backgroundColor: "transparent"
+    textColor: "{colors.on-dark}"
+    typography: "{typography.button-lg}"
+    rounded: "{rounded.full}"
+    border: "1px solid {colors.hairline-dark}"
+    padding: 14px 32px
+    height: 48px
+  product-card:
+    backgroundColor: "{colors.surface-card}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.md}"
+    border: "1px solid {colors.hairline-light}"
+    padding: 32px
+  product-card-dark:
+    backgroundColor: "{colors.surface-dark-card}"
+    textColor: "{colors.on-dark}"
+    rounded: "{rounded.md}"
+    border: "1px solid {colors.hairline-dark}"
+    padding: 32px
+  hero-band-dark:
+    backgroundColor: "{colors.canvas-dark}"
+    textColor: "{colors.on-dark}"
+    rounded: "{rounded.none}"
+    padding: 96px 32px
+  hero-band-light:
+    backgroundColor: "{colors.canvas-light}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.none}"
+    padding: 96px 32px
+  hero-band-blue:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    rounded: "{rounded.none}"
+    padding: 96px 32px
+  footer-section:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    rounded: "{rounded.none}"
+    padding: 48px 32px
 ---
 
-## 1. Fondasi Brand
+# Design System — Nexa (PlayStation Architecture Adaptation)
 
-Logo Nexa punya satu ide visual yang kuat: **garis diagonal (panah) yang memotong bentuk melingkar (loop "N")**. Itu representasi literal dari "progres/pertumbuhan yang menembus proses." Ide ini yang jadi acuan seluruh layout — bukan cuma dipakai di logo lalu dilupakan.
+Panduan desain Nexa mengadopsi arsitektur **Three-Surface Chapter System** dengan ritme full-bleed band yang bersih, tenang, dan sinematik:
 
-Gradien logo (cyan → biru → ungu → magenta) adalah satu-satunya elemen dekoratif mencolok yang boleh dipakai berulang. Selain itu, halaman harus tenang: banyak white space, sedikit warna solid, tipografi yang tegas.
+1. **Tiga Kanvas Utama (Alternating Chapters):**
+   - **Canvas Dark** (`#0B0E2B`): Kanvas gelap elegan untuk momen hero utama, showcase game interaktif, dan arsitektur data.
+   - **Canvas Light** (`#F6F7FB` / `#FFFFFF`): Kanvas terang yang bersih dan airy untuk daftar layanan, showcase portofolio nyata, dan informasi tim.
+   - **Nexa Blue Band** (`#3A4CE0`): Kanvas penutup berenergi tinggi untuk footer dan CTA tindakan penting ("Mulai Proyek").
 
----
+2. **Tipografi Ringan (Light Weight 300):**
+   - Menggunakan headline display dengan bobot **Light (300)** untuk menciptakan kesan eksklusif, lapang (*airy*), dan berkelas.
+   - Angka data menggunakan **IBM Plex Mono**.
+   - Body copy menggunakan **Satoshi / Inter** pada ukuran 16–18px dengan line-height 1.5.
 
-## 2. Warna
-
-Diambil langsung dari gradien logo, bukan palet generik AI (bukan cream #F4F1EA, bukan dark+acid-green).
-
-| Token | Hex | Peran |
-|---|---|---|
-| `--ink` | `#0B0E2B` | Teks utama, background section gelap (deep indigo-black, bukan #111 generik) |
-| `--paper` | `#F6F7FB` | Background dasar (putih dingin, sedikit tint biru — bukan cream) |
-| `--surface` | `#FFFFFF` | Card/panel di atas paper |
-| `--cyan` | `#17C3F2` | Aksen sekunder, dari ujung panah logo |
-| `--blue` | `#3A4CE0` | Warna primer brand — dipakai paling sering |
-| `--violet` | `#8A2BE2` | Aksen gradien tengah |
-| `--magenta` | `#E620C5` | Aksen tegas, dipakai sangat sedikit (highlight, hover, CTA) |
-| `--muted` | `#5B6072` | Teks sekunder/caption |
-
-**Aturan pakai:**
-- Gradien penuh (cyan→blue→violet→magenta) **hanya untuk satu elemen signature** per halaman (misalnya garis penuntun di hero). Jangan taruh gradien di setiap card/border/button — itu ciri khas template AI.
-- 90% halaman netral (ink/paper/muted). Warna brand muncul sebagai aksen, bukan wallpaper.
-- Tidak ada drop-shadow abu generik (`rgba(0,0,0,.1)` di semua card). Kalau perlu depth, pakai border 1px `--ink` opacity rendah, bukan shadow seragam.
-
----
-
-## 3. Tipografi
-
-Dua keluarga, peran jelas — bukan Inter+serif default.
-
-| Peran | Font | Alasan |
-|---|---|---|
-| Display / heading | **Cabinet Grotesk** (atau General Sans jika tidak tersedia) | Grotesk modern, sudut tegas — cocok dengan bentuk geometris panah di logo |
-| Body / UI | **Satoshi** | Netral, sangat terbaca, tidak bentrok dengan display |
-| Angka / label data | **IBM Plex Mono** | Dipakai *khusus* untuk statistik, angka metrik, dan cuplikan data — relevan karena Nexa juga menyediakan jasa data analysis, bukan sekadar dekorasi monospace |
-
-**Aturan:**
-- Line length body text < 80 karakter.
-- Heading besar: berat (700–800), tracking sedikit rapat, **bukan** semua huruf besar (no ALL-CAPS labels).
-- Jangan menebalkan/mewarnai satu kata saja dalam headline untuk "penekanan" — itu tanda template AI paling umum. Kalau perlu penekanan, pakai ukuran atau posisi, bukan gaya per-kata.
-- Tidak ada label eyebrow ALL-CAPS di atas tiap heading ("OUR SERVICES" dsb). Judul section langsung to the point.
-
-Skala tipe (rem, base 16px):
-```
-Display   : 3.5rem / 1.05 / 800
-H1        : 2.5rem  / 1.1  / 700
-H2        : 1.75rem / 1.2  / 700
-Body      : 1rem    / 1.6  / 400
-Caption   : 0.875rem/ 1.4  / 500
-Mono/data : 0.875rem/ 1.4  / 500 (IBM Plex Mono)
-```
-
----
-
-## 4. Layout
-
-Ide struktural: **diagonal sebagai garis bantu**, bukan grid simetris kotak-kotak identik (yang jadi ciri khas "SaaS card kit" AI). Layout mengalir mengikuti arah panah logo — kiri-bawah ke kanan-atas — bukan tumpukan section rata tengah yang seragam.
-
-### Hero
-```
-┌───────────────────────────────────────────┐
-│  NEXA                              [menu]  │
-│                                             │
-│  Kami bangun web,                          │
-│  baca data,                                │
-│  dan rancang game.        ┆                │
-│                            ╲ (garis diagonal│
-│  [satu kalimat penjelas]    tipis, gradien, │
-│  [CTA: Mulai proyek]         mengarah ke    │
-│                                portofolio)  │
-└───────────────────────────────────────────┘
-```
-- Headline **tiga baris pendek**, satu layanan per baris (web / data / game) — bukan satu kalimat marketing panjang.
-- Garis diagonal tipis (elemen dari logo) jadi satu-satunya elemen dekoratif di hero, mengarah ke section berikutnya secara visual.
-
-### Services — tiga blok, bukan tiga kartu identik
-Karena tiga layanan (web, data, game) punya karakter berbeda, jangan taruh dalam kartu seragam rounded-shadow. Beri tiap layanan **treatment visual sendiri**:
-```
-┌──────────────────────┬───────────────────────┐
-│  WEB DEVELOPMENT      │   ░░ preview browser  │
-│  teks kiri, align kiri│   frame miring 4°     │
-├──────────────────────┼───────────────────────┤
-│   ▁▃▅▇ grafik garis   │   DATA ANALYSIS       │
-│   (data asli/nyata)   │   teks kanan          │
-├──────────────────────┼───────────────────────┤
-│  GAME DEVELOPMENT     │   ▢ sprite/isometric  │
-│  teks kiri            │   mockup game          │
-└──────────────────────┴───────────────────────┘
-```
-- Alignment berselang-seling kiri/kanan mengikuti gerak zig-zag panah logo, bukan semua center-align.
-- Border-radius **tidak seragam sebagai default** — pilih tajam (0–4px) untuk section teknis (web/data), sedikit lebih lunak untuk game (karakter lebih playful). Perbedaan ini disengaja, bukan template satu radius untuk semua.
-
-### Portofolio
-Grid asimetris (1 kolom besar + 2 kecil), bukan grid rata 3 kolom identik. Studi kasus nyata > mockup placeholder generik.
-
-### Footer
-Sederhana: logo, 3 link layanan, kontak. Tidak perlu mega-footer 5 kolom kalau kontennya belum ada.
-
----
-
-## 5. Komponen
-
-- **Tombol**: teks aktif langsung — "Mulai proyek", "Lihat portofolio". Tidak ada tanda panah "→" ditempel di akhir teks tombol/link (ciri khas AI-gen).
-- **Card portofolio**: 1 border tipis + judul + 1 baris hasil terukur (mis. "load time turun 40%"), bukan badge/tag warna-warni berlebihan.
-- **Statistik**: angka besar pakai IBM Plex Mono, label di bawahnya body font kecil — dan hanya pakai kalau angkanya nyata, bukan angka isian ("99% client satisfaction" tanpa sumber).
-- **Form kontak**: field minimal (nama, email, kebutuhan, pesan), validasi inline, tanpa ilustrasi 3D generik.
-
----
-
-## 6. Motion
-
-Library: **[Anime.js](https://animejs.com/)** (`npm i animejs`) — digunakan untuk implementasi stroke-dashoffset drawing animation, micro-interactions, dan transisi UI yang presisi & performant.
-
-Satu momen animasi yang disengaja, bukan fade-slide-up di tiap section:
-- Saat halaman dimuat: garis panah pada logo di hero "digambar" sekali (SVG stroke-dashoffset animation menggunakan Anime.js), lalu berhenti.
-- Hover pada elemen interaktif (tombol, link portofolio) boleh transisi warna/posisi halus (150–200ms).
-- Tidak ada animasi scroll-triggered di setiap section. Reduced-motion (`prefers-reduced-motion`) wajib dihormati — matikan animasi draw-in jika user set itu.
-
----
-
-## 7. Yang Sengaja Dihindari (checklist anti-AI-slop)
-
-- ❌ Background cream `#F4F1EA` + serif display + aksen terracotta.
-- ❌ Background gelap total + satu aksen neon hijau/vermilion.
-- ❌ Semua card rounded sama rata + shadow abu-abu seragam di semuanya.
-- ❌ Label eyebrow ALL-CAPS di atas tiap heading.
-- ❌ Angka urutan "01 / 02 / 03" pada konten yang bukan proses berurutan.
-- ❌ Satu kata di-bold/di-warnai dalam headline sebagai "penekanan".
-- ❌ Tanda panah "→" ditempel di akhir teks tombol/link.
-- ❌ Fade-in + slide-up di setiap section saat scroll.
-- ❌ Meta text dengan titik tengah ("Web · Data · Game").
-
----
-
-## 8. Aksesibilitas (minimum)
-
-- Kontras teks ≥ 4.5:1 di atas `--paper` maupun `--ink`.
-- Fokus keyboard terlihat jelas (outline 2px `--blue`, bukan dihilangkan).
-- Semua gambar/ikon punya alt text deskriptif, bukan "image1.png".
-- Layout tetap utuh & terbaca di lebar 360px (mobile-first).
+3. **Bentuk & Komponen:**
+   - **Pill Buttons (`rounded-full` / 9999px):** Digunakan untuk seluruh tombol utama dan sekunder (Nexa Blue `#3A4CE0`, Aksen Magenta `#E620C5`, atau Outline).
+   - **8px Radius Cards (`rounded-md` / 8px):** Seluruh kartu studi kasus dan fitur menggunakan radius 8px dengan garis hairline 1px halus, tanpa resting drop-shadows berlebihan.
+   - **Ritme Spasi 96px (`spacing.section`):** Pergantian antar chapter mengalir tegas tanpa elemen pemisah dekoratif berlebihan.

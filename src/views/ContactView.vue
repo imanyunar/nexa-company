@@ -1,45 +1,46 @@
 <template>
-  <div class="py-16 sm:py-20 bg-paper">
-    <div class="max-w-4xl mx-auto px-6 space-y-12">
+  <div class="bg-paper text-ink py-20 sm:py-24">
+    <div class="max-w-4xl mx-auto px-6 space-y-16">
       
-      <!-- Header Page -->
+      <!-- Editorial Page Top -->
       <div class="text-center max-w-2xl mx-auto space-y-4">
-        <h1 class="text-3xl sm:text-4xl font-display font-bold text-ink">
-          Hubungi Kami
+        <div class="text-xs font-mono text-primary uppercase tracking-widest">CONTACT & CONSULTATION</div>
+        <h1 class="text-4xl sm:text-5xl font-display font-light text-ink">
+          Mulai Diskusi Proyek
         </h1>
         <p class="text-muted text-base sm:text-lg leading-relaxed">
-          Punya ide proyek atau butuh bantuan teknis? Kirim pesan atau hubungi kami langsung via WhatsApp. Kami siap membantu.
+          Hubungi kami melalui form atau langsung via WhatsApp. Kami siap memberikan masukan arsitektur dan estimasi terbaik.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
         
-        <!-- Kolom Info Kontak Cepat (Direct Channels) -->
+        <!-- Kolom Info Kontak Cepat (8px Card) -->
         <div class="md:col-span-5 space-y-6">
-          <div class="bg-surface border border-muted-border rounded-lg p-6 space-y-6">
-            <h2 class="text-lg font-display font-bold text-ink">Kontak Langsung</h2>
+          <div class="card-8px contact-card p-7 space-y-6 hover:border-primary/40 transition-all duration-300">
+            <h2 class="text-xl font-display font-light text-ink">Kontak Langsung</h2>
 
             <!-- WhatsApp Direct Card -->
             <div class="space-y-2">
-              <span class="text-xs font-semibold text-muted uppercase">WhatsApp Chat</span>
+              <span class="text-xs font-mono text-muted uppercase">WhatsApp Chat</span>
               <a 
                 href="https://wa.me/6281234567890?text=Halo%20Nexa,%20saya%20ingin%20konsultasi%20mengenai%20proyek%20digital." 
                 target="_blank" 
                 rel="noopener noreferrer"
-                class="flex items-center gap-3 p-3 bg-[#25D366]/10 border border-[#25D366]/30 rounded hover:bg-[#25D366]/20 transition-all text-[#128C7E] font-semibold text-sm"
+                class="flex items-center gap-3 p-3.5 bg-[#25D366]/10 border border-[#25D366]/30 rounded-lg hover:bg-[#25D366]/20 transition-all text-[#128C7E] font-semibold text-sm hover:scale-[1.02]"
               >
                 <span>💬</span>
-                <span>Chat via WhatsApp</span>
+                <span>Chat WhatsApp Direct</span>
               </a>
               <p class="text-[11px] text-muted">Respon cepat setiap hari kerja (09.00 - 18.00 WIB)</p>
             </div>
 
             <!-- Email Direct Card -->
-            <div class="space-y-2 pt-3 border-t border-muted-border">
-              <span class="text-xs font-semibold text-muted uppercase">Email Resmi</span>
+            <div class="space-y-2 pt-3 border-t border-hairline-light">
+              <span class="text-xs font-mono text-muted uppercase">Email Resmi</span>
               <a 
                 href="mailto:hello@nexa.agency" 
-                class="flex items-center gap-3 p-3 bg-blue-soft border border-blue/20 rounded hover:bg-blue/15 transition-all text-blue font-semibold text-sm"
+                class="flex items-center gap-3 p-3.5 bg-paper-soft border border-primary/20 rounded-lg hover:bg-primary/10 transition-all text-primary font-semibold text-sm hover:scale-[1.02]"
               >
                 <span>✉️</span>
                 <span>hello@nexa.agency</span>
@@ -47,21 +48,21 @@
             </div>
 
             <!-- Lokasi & Jam Operasional -->
-            <div class="space-y-1 pt-3 border-t border-muted-border text-xs text-muted">
-              <div class="font-bold text-ink">Studio & Operasional</div>
-              <div>Indonesia (Remote & On-Demand Meeting)</div>
+            <div class="space-y-1 pt-3 border-t border-hairline-light text-xs text-muted font-mono">
+              <div class="font-bold text-ink">STUDIO // INDONESIA</div>
+              <div>Remote-First Digital Studio</div>
             </div>
           </div>
         </div>
 
-        <!-- Kolom Form Konsultasi Sederhana -->
-        <div class="md:col-span-7 bg-surface border border-muted-border rounded-lg p-6 sm:p-8 space-y-6">
-          <h2 class="text-lg font-display font-bold text-ink">Formulir Pesan</h2>
+        <!-- Kolom Form Konsultasi Sederhana (8px Card) -->
+        <div class="md:col-span-7 card-8px contact-card p-8 sm:p-10 space-y-6 hover:border-primary/40 transition-all duration-300">
+          <h2 class="text-xl font-display font-light text-ink">Formulir Konsultasi</h2>
           
-          <form @submit.prevent="submitForm" class="space-y-4">
+          <form @submit.prevent="submitForm" class="space-y-5">
             <!-- Nama -->
-            <div class="space-y-1.5">
-              <label for="nama" class="block text-xs font-semibold text-ink">
+            <div class="space-y-2">
+              <label for="nama" class="block text-xs font-mono text-ink uppercase tracking-wider">
                 Nama Lengkap / Instansi *
               </label>
               <input 
@@ -70,13 +71,13 @@
                 type="text" 
                 required 
                 placeholder="Contoh: Budi Santoso"
-                class="w-full bg-paper border border-muted-border rounded px-3.5 py-2.5 text-sm text-ink focus:border-blue focus:bg-white outline-none transition-all"
+                class="w-full bg-paper border border-hairline-light rounded-lg px-4 py-3 text-sm text-ink focus:border-primary focus:bg-white outline-none transition-all"
               />
             </div>
 
             <!-- Kontak (No HP / Email) -->
-            <div class="space-y-1.5">
-              <label for="kontak_info" class="block text-xs font-semibold text-ink">
+            <div class="space-y-2">
+              <label for="kontak_info" class="block text-xs font-mono text-ink uppercase tracking-wider">
                 Nomor WhatsApp atau Email *
               </label>
               <input 
@@ -85,18 +86,18 @@
                 type="text" 
                 required 
                 placeholder="0812xxxxxxx atau email@anda.com"
-                class="w-full bg-paper border border-muted-border rounded px-3.5 py-2.5 text-sm text-ink focus:border-blue focus:bg-white outline-none transition-all"
+                class="w-full bg-paper border border-hairline-light rounded-lg px-4 py-3 text-sm text-ink focus:border-primary focus:bg-white outline-none transition-all"
               />
             </div>
 
             <!-- Pilihan Layanan -->
-            <div class="space-y-1.5">
-              <label class="block text-xs font-semibold text-ink">
+            <div class="space-y-2">
+              <label class="block text-xs font-mono text-ink uppercase tracking-wider">
                 Layanan yang Dibutuhkan *
               </label>
               <select 
                 v-model="form.service"
-                class="w-full bg-paper border border-muted-border rounded px-3.5 py-2.5 text-sm text-ink focus:border-blue focus:bg-white outline-none transition-all"
+                class="w-full bg-paper border border-hairline-light rounded-lg px-4 py-3 text-sm text-ink focus:border-primary focus:bg-white outline-none transition-all"
               >
                 <option value="Web Development">Web Development (Website / Web App)</option>
                 <option value="Data Analysis">Data Analysis & Dashboard</option>
@@ -106,31 +107,31 @@
             </div>
 
             <!-- Pesan / Catatan -->
-            <div class="space-y-1.5">
-              <label for="pesan" class="block text-xs font-semibold text-ink">
-                Ceritakan Singkat Rencana Anda *
+            <div class="space-y-2">
+              <label for="pesan" class="block text-xs font-mono text-ink uppercase tracking-wider">
+                Ringkasan Kebutuhan Proyek *
               </label>
               <textarea 
                 id="pesan"
                 v-model="form.message"
                 rows="4" 
                 required
-                placeholder="Misal: Ingin membuat website company profile desa wisata dengan fitur katalog produk..."
-                class="w-full bg-paper border border-muted-border rounded px-3.5 py-2.5 text-sm text-ink focus:border-blue focus:bg-white outline-none transition-all resize-y"
+                placeholder="Ceritakan gambaran proyek, target waktu, atau kebutuhan yang ingin dicapai..."
+                class="w-full bg-paper border border-hairline-light rounded-lg px-4 py-3 text-sm text-ink focus:border-primary focus:bg-white outline-none transition-all resize-y"
               ></textarea>
             </div>
 
-            <!-- Tombol Kirim -->
-            <div class="pt-2">
+            <!-- Tombol Kirim: Pill Button -->
+            <div class="pt-3">
               <button 
                 type="submit" 
-                class="w-full bg-blue hover:bg-blue-hover text-white text-sm font-semibold py-3 px-6 rounded transition-all hover:translate-y-[-1px]"
+                class="btn-pill-primary w-full text-xs font-bold uppercase tracking-wider py-4 transition-transform hover:scale-[1.02] active:scale-[0.98]"
               >
-                Kirim via WhatsApp Langsung
+                Kirim via WhatsApp Direct
               </button>
             </div>
 
-            <p v-if="sent" class="text-xs text-[#27C93F] text-center pt-1 font-medium">
+            <p v-if="sent" class="text-xs text-[#27C93F] text-center pt-2 font-mono">
               ✔ Menyiapkan pesan ke WhatsApp Nexa...
             </p>
           </form>
@@ -143,7 +144,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { animateStaggerFadeIn } from '../utils/animations'
 
 const form = ref({
   name: '',
@@ -153,6 +155,10 @@ const form = ref({
 })
 
 const sent = ref(false)
+
+onMounted(() => {
+  animateStaggerFadeIn('.contact-card', { delay: 150, stagger: 120 })
+})
 
 function submitForm() {
   sent.value = true
