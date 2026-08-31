@@ -26,11 +26,11 @@
 
 @layer utilities {
   /* ═══════════════════════════════════════════
-     BACKGROUND COLORS
+     BACKGROUND COLORS (Ambient Glassmorphic)
      ═══════════════════════════════════════════ */
-  .bg-base     { background-color: #0B0E2B; }
-  .bg-elevated { background-color: #11153B; }
-  .bg-card     { background-color: #151A48; }
+  .bg-base     { background-color: transparent; }
+  .bg-elevated { background-color: rgba(17, 21, 59, 0.65); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .bg-card     { background-color: rgba(21, 26, 72, 0.75); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
 
   /* ═══════════════════════════════════════════
      TEXT COLORS
@@ -66,7 +66,7 @@
 .btn-pill-primary:hover {
   background-color: #2F3EB8;
   transform: translateY(-1px);
-  box-shadow: 0 4px 18px rgba(58, 76, 224, 0.4);
+  box-shadow: 0 4px 22px rgba(58, 76, 224, 0.5);
 }
 
 .btn-pill-action {
@@ -85,7 +85,7 @@
 .btn-pill-action:hover {
   background-color: #C410A5;
   transform: translateY(-1px);
-  box-shadow: 0 4px 18px rgba(230, 32, 197, 0.4);
+  box-shadow: 0 4px 22px rgba(230, 32, 197, 0.5);
 }
 
 .btn-pill-secondary {
@@ -102,7 +102,7 @@
   text-decoration: none;
 }
 .btn-pill-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.16);
   border-color: rgba(255, 255, 255, 0.45);
   transform: translateY(-1px);
 }
@@ -111,13 +111,16 @@
    CARDS
    ═══════════════════════════════════════════ */
 .card-unified {
-  border-radius: 8px;
+  border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background-color: #151A48;
+  background-color: rgba(21, 26, 72, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   color: #FFFFFF;
-  transition: border-color 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+  transition: border-color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 .card-unified:hover {
   border-color: rgba(23, 195, 242, 0.4);
-  background-color: #1A2056;
+  background-color: rgba(26, 32, 86, 0.85);
+  box-shadow: 0 8px 32px rgba(11, 14, 43, 0.6);
 }

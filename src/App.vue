@@ -1,10 +1,13 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-paper text-ink selection:bg-primary selection:text-white">
+  <div class="min-h-screen flex flex-col bg-base text-white relative selection:bg-cyan selection:text-black">
+    <!-- Continuous Ambient Animated Background (Particles + Aurora Orbs) -->
+    <AmbientBackground />
+
     <!-- Navbar -->
-    <Navbar />
+    <Navbar class="relative z-50" />
 
     <!-- Active Page Content with Route Transition -->
-    <main class="flex-grow">
+    <main class="flex-grow relative z-10">
       <router-view v-slot="{ Component }">
         <transition name="page-fade" mode="out-in">
           <component :is="Component" />
@@ -13,13 +16,14 @@
     </main>
 
     <!-- Footer -->
-    <Footer />
+    <Footer class="relative z-20" />
   </div>
 </template>
 
 <script setup>
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
+import AmbientBackground from './components/AmbientBackground.vue'
 </script>
 
 <style>
