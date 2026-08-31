@@ -6,7 +6,7 @@
         <img src="/assets/logo.png" alt="Nexa Logo" class="w-9 h-9 object-contain transition-transform group-hover:scale-105" />
         <div class="flex flex-col">
           <span class="font-display font-light text-xl tracking-tight text-white leading-none">NEXA</span>
-          <span class="text-[10px] tracking-widest t-faint uppercase font-medium mt-0.5">Digital Agency</span>
+          <span class="text-[9px] tracking-widest t-cyan uppercase font-mono font-semibold mt-0.5">Be Seen · Be Chosen</span>
         </div>
       </router-link>
 

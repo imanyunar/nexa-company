@@ -5,8 +5,11 @@
         <div class="flex items-center gap-3.5">
           <img src="/assets/logo.png" alt="Nexa Logo" class="w-10 h-10 object-contain" />
           <div>
-            <div class="font-display font-light text-2xl text-white tracking-tight">NEXA</div>
-            <div class="text-xs t-muted">Web Development · Data Analysis · Game Development</div>
+            <div class="flex items-center gap-2.5">
+              <span class="font-display font-light text-2xl text-white tracking-tight">NEXA</span>
+              <span class="text-[9px] font-mono px-2 py-0.5 rounded bg-base border b-subtle t-cyan font-semibold">BE SEEN · BE CHOSEN</span>
+            </div>
+            <div class="text-xs t-muted mt-0.5">Web Development · Data Analysis · Game Development</div>
           </div>
         </div>
         <div class="flex flex-wrap items-center gap-7 text-sm t-muted font-medium">
