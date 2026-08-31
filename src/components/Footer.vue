@@ -1,35 +1,35 @@
 <template>
-  <footer class="bg-primary text-white py-14 border-t border-hairline-dark mt-auto">
+  <footer class="bg-theme-elevated text-white py-14 border-t border-theme-border mt-auto">
     <div class="max-w-6xl mx-auto px-6 space-y-10">
       
-      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-8 border-b border-white/15">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-8 border-b border-theme-border">
         <!-- Brand & Tagline -->
         <div class="flex items-center gap-3.5">
           <img 
             src="/assets/logo.png" 
             alt="Nexa Logo" 
-            class="w-10 h-10 object-contain filter brightness-0 invert"
+            class="w-10 h-10 object-contain"
           />
           <div>
             <div class="font-display font-light text-2xl text-white tracking-tight">NEXA</div>
-            <div class="text-xs text-white/70">Web Development · Data Analysis · Game Development</div>
+            <div class="text-xs text-theme-text-muted">Web Development · Data Analysis · Game Development</div>
           </div>
         </div>
 
         <!-- Page Links -->
-        <div class="flex flex-wrap items-center gap-7 text-sm text-white/90 font-medium">
-          <router-link to="/" class="hover:text-white transition-colors">Beranda</router-link>
-          <router-link to="/layanan" class="hover:text-white transition-colors">Layanan</router-link>
-          <router-link to="/portofolio" class="hover:text-white transition-colors">Portofolio</router-link>
-          <router-link to="/tentang" class="hover:text-white transition-colors">Tentang Kami</router-link>
-          <router-link to="/kontak" class="hover:text-white transition-colors">Kontak</router-link>
+        <div class="flex flex-wrap items-center gap-7 text-sm text-theme-text-muted font-medium">
+          <router-link to="/" class="hover:text-cyan transition-colors">Beranda</router-link>
+          <router-link to="/layanan" class="hover:text-cyan transition-colors">Layanan</router-link>
+          <router-link to="/portofolio" class="hover:text-cyan transition-colors">Portofolio</router-link>
+          <router-link to="/tentang" class="hover:text-cyan transition-colors">Tentang Kami</router-link>
+          <router-link to="/kontak" class="hover:text-cyan transition-colors">Kontak</router-link>
         </div>
       </div>
 
       <!-- Bottom Row -->
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/70">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-theme-text-faint font-mono">
         <div>
-          &copy; {{ new Date().getFullYear() }} Nexa Agency. Hak cipta dilindungi.
+          &copy; {{ new Date().getFullYear() }} Nexa Agency. All rights reserved.
         </div>
         <div class="flex items-center gap-4">
           <span>Indonesia</span>

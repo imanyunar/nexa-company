@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-50 bg-ink/95 backdrop-blur-md border-b border-hairline-dark text-white">
+  <header class="sticky top-0 z-50 bg-theme-base/95 backdrop-blur-md border-b border-theme-border text-white">
     <div class="max-w-6xl mx-auto px-6 h-16 sm:h-20 flex items-center justify-between">
       
       <!-- Brand Logo & Name -->
@@ -11,44 +11,44 @@
         />
         <div class="flex flex-col">
           <span class="font-display font-light text-xl tracking-tight text-white leading-none">NEXA</span>
-          <span class="text-[10px] tracking-widest text-muted-dark uppercase font-medium mt-0.5">Technology Agency</span>
+          <span class="text-[10px] tracking-widest text-theme-text-faint uppercase font-medium mt-0.5">Technology Agency</span>
         </div>
       </router-link>
 
-      <!-- Desktop Navigation (Airy, light, quiet chrome) -->
+      <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
         <router-link 
           to="/" 
           class="transition-colors pb-1 border-b-2"
-          :class="$route.path === '/' ? 'text-white border-primary font-semibold' : 'text-muted-dark hover:text-white border-transparent'"
+          :class="$route.path === '/' ? 'text-cyan border-cyan font-semibold' : 'text-theme-text-muted hover:text-white border-transparent'"
         >
           Beranda
         </router-link>
         <router-link 
           to="/layanan" 
           class="transition-colors pb-1 border-b-2"
-          :class="$route.path === '/layanan' ? 'text-white border-primary font-semibold' : 'text-muted-dark hover:text-white border-transparent'"
+          :class="$route.path === '/layanan' ? 'text-cyan border-cyan font-semibold' : 'text-theme-text-muted hover:text-white border-transparent'"
         >
           Layanan
         </router-link>
         <router-link 
           to="/portofolio" 
           class="transition-colors pb-1 border-b-2"
-          :class="$route.path === '/portofolio' ? 'text-white border-primary font-semibold' : 'text-muted-dark hover:text-white border-transparent'"
+          :class="$route.path === '/portofolio' ? 'text-cyan border-cyan font-semibold' : 'text-theme-text-muted hover:text-white border-transparent'"
         >
           Portofolio
         </router-link>
         <router-link 
           to="/tentang" 
           class="transition-colors pb-1 border-b-2"
-          :class="$route.path === '/tentang' ? 'text-white border-primary font-semibold' : 'text-muted-dark hover:text-white border-transparent'"
+          :class="$route.path === '/tentang' ? 'text-cyan border-cyan font-semibold' : 'text-theme-text-muted hover:text-white border-transparent'"
         >
           Tentang Kami
         </router-link>
         <router-link 
           to="/kontak" 
           class="transition-colors pb-1 border-b-2"
-          :class="$route.path === '/kontak' ? 'text-white border-primary font-semibold' : 'text-muted-dark hover:text-white border-transparent'"
+          :class="$route.path === '/kontak' ? 'text-cyan border-cyan font-semibold' : 'text-theme-text-muted hover:text-white border-transparent'"
         >
           Kontak
         </router-link>
@@ -81,7 +81,7 @@
     </div>
 
     <!-- Mobile Nav Menu Dropdown -->
-    <div v-if="isOpen" class="md:hidden bg-ink-elevated border-b border-hairline-dark px-6 py-5 space-y-3">
+    <div v-if="isOpen" class="md:hidden bg-theme-elevated border-b border-theme-border px-6 py-5 space-y-3">
       <router-link 
         @click="isOpen = false" 
         to="/" 
