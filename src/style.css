@@ -8,20 +8,22 @@
     --primary-pressed: #2F3EB8;
     --cyan: #17C3F2;
     --magenta: #E620C5;
+    --violet: #8A2BE2;
     --ink: #0B0E2B;
     --ink-deep: #07091D;
     --ink-elevated: #131842;
+    --ink-card: #181B34;
     --paper: #F6F7FB;
     --surface: #FFFFFF;
     --muted: #5B6072;
-    --hairline-light: rgba(11, 14, 43, 0.08);
-    --hairline-dark: rgba(255, 255, 255, 0.12);
+    --hairline-light: rgba(11, 14, 43, 0.1);
+    --hairline-dark: rgba(255, 255, 255, 0.15);
   }
 
   body {
     background-color: var(--paper);
     color: var(--ink);
-    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-family: 'Satoshi', 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
   }
@@ -40,10 +42,39 @@
   }
 }
 
+/* Explicit background utility fallbacks */
+.bg-ink {
+  background-color: #0B0E2B !important;
+}
+
+.bg-ink-deep {
+  background-color: #07091D !important;
+}
+
+.bg-ink-elevated {
+  background-color: #131842 !important;
+}
+
+.bg-ink-card {
+  background-color: #181B34 !important;
+}
+
+.bg-primary {
+  background-color: #3A4CE0 !important;
+}
+
+.bg-paper {
+  background-color: #F6F7FB !important;
+}
+
+.bg-surface {
+  background-color: #FFFFFF !important;
+}
+
 /* Custom PlayStation-style pill button */
 .btn-pill-primary {
-  background-color: var(--primary);
-  color: #ffffff;
+  background-color: #3A4CE0 !important;
+  color: #ffffff !important;
   font-weight: 700;
   border-radius: 9999px;
   padding: 12px 28px;
@@ -55,13 +86,13 @@
 }
 
 .btn-pill-primary:hover {
-  background-color: var(--primary-pressed);
+  background-color: #2F3EB8 !important;
   transform: translateY(-1px);
 }
 
 .btn-pill-action {
-  background-color: var(--magenta);
-  color: #ffffff;
+  background-color: #E620C5 !important;
+  color: #ffffff !important;
   font-weight: 700;
   border-radius: 9999px;
   padding: 12px 28px;
@@ -73,14 +104,14 @@
 }
 
 .btn-pill-action:hover {
-  background-color: #C410A5;
+  background-color: #C410A5 !important;
   transform: translateY(-1px);
 }
 
 .btn-pill-secondary-light {
   background-color: transparent;
-  color: var(--ink);
-  border: 1px solid var(--hairline-light);
+  color: #0B0E2B !important;
+  border: 1px solid rgba(11, 14, 43, 0.15) !important;
   font-weight: 600;
   border-radius: 9999px;
   padding: 12px 28px;
@@ -92,14 +123,14 @@
 }
 
 .btn-pill-secondary-light:hover {
-  background-color: rgba(11, 14, 43, 0.04);
+  background-color: rgba(11, 14, 43, 0.05);
   transform: translateY(-1px);
 }
 
 .btn-pill-secondary-dark {
   background-color: transparent;
-  color: #ffffff;
-  border: 1px solid var(--hairline-dark);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
   font-weight: 600;
   border-radius: 9999px;
   padding: 12px 28px;
@@ -111,22 +142,23 @@
 }
 
 .btn-pill-secondary-dark:hover {
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-1px);
 }
 
 /* 8px Card style */
 .card-8px {
   border-radius: 8px;
-  border: 1px solid var(--hairline-light);
+  border: 1px solid rgba(11, 14, 43, 0.1);
   background-color: #ffffff;
+  color: #0B0E2B;
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .card-8px-dark {
   border-radius: 8px;
-  border: 1px solid var(--hairline-dark);
-  background-color: var(--ink-card);
-  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: #181B34 !important;
+  color: #ffffff !important;
   transition: border-color 0.2s ease, transform 0.2s ease;
 }

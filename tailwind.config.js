@@ -7,58 +7,35 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#3A4CE0',
-          pressed: '#2F3EB8',
-          active: '#253299',
-        },
-        cyan: {
-          DEFAULT: '#17C3F2',
-          pressed: '#0EA2CC',
-        },
-        magenta: {
-          DEFAULT: '#E620C5',
-          pressed: '#C410A5',
-        },
-        violet: {
-          DEFAULT: '#8A2BE2',
-        },
-        ink: {
-          DEFAULT: '#0B0E2B',
-          deep: '#07091D',
-          elevated: '#131842',
-          card: '#181B34',
-        },
-        paper: {
-          DEFAULT: '#F6F7FB',
-          soft: '#EEF0FD',
-        },
-        surface: {
-          DEFAULT: '#FFFFFF',
-          card: '#FFFFFF',
-          dark: '#131842',
-        },
-        muted: {
-          DEFAULT: '#5B6072',
-          light: '#8F95A8',
-          dark: 'rgba(246, 247, 251, 0.65)',
-        },
-        hairline: {
-          light: 'rgba(11, 14, 43, 0.08)',
-          dark: 'rgba(255, 255, 255, 0.12)',
-        }
+        'primary': '#3A4CE0',
+        'primary-pressed': '#2F3EB8',
+        'primary-active': '#253299',
+        'cyan': '#17C3F2',
+        'cyan-pressed': '#0EA2CC',
+        'magenta': '#E620C5',
+        'magenta-pressed': '#C410A5',
+        'violet': '#8A2BE2',
+        'ink': '#0B0E2B',
+        'ink-deep': '#07091D',
+        'ink-elevated': '#131842',
+        'ink-card': '#181B34',
+        'paper': '#F6F7FB',
+        'paper-soft': '#EEF0FD',
+        'surface': '#FFFFFF',
+        'muted': '#5B6072',
+        'muted-light': '#8F95A8',
+        'muted-dark': 'rgba(246, 247, 251, 0.7)',
+        'hairline-light': 'rgba(11, 14, 43, 0.1)',
+        'hairline-dark': 'rgba(255, 255, 255, 0.15)',
       },
       fontFamily: {
         display: ['"Cabinet Grotesk"', '"Plus Jakarta Sans"', 'sans-serif'],
-        sans: ['"Satoshi"', '"Inter"', 'sans-serif'],
+        sans: ['"Satoshi"', '"Inter"', 'system-ui', 'sans-serif'],
         mono: ['"IBM Plex Mono"', 'monospace'],
       },
       borderRadius: {
         'card': '8px',
         'pill': '9999px',
-      },
-      spacing: {
-        'section': '96px',
       }
     },
   },
