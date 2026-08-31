@@ -14,7 +14,7 @@
             <h2 class="text-xl font-display font-light text-white">Kontak Langsung</h2>
             <div class="space-y-2">
               <span class="text-xs font-mono t-cyan uppercase">WhatsApp Chat</span>
-              <a href="https://wa.me/6281234567890?text=Halo%20Nexa,%20saya%20ingin%20konsultasi%20mengenai%20proyek%20digital." target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3.5 rounded-lg font-semibold text-sm hover:scale-[1.02] transition-all" style="background:rgba(37,211,102,0.15); border:1px solid rgba(37,211,102,0.3); color:#25D366;">
+              <a href="https://wa.me/6281234567890?text=Halo%20Nexa%20Digital%20Agency,%20saya%20ingin%20konsultasi%20mengenai%20proyek%20digital." target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3.5 rounded-lg font-semibold text-sm hover:scale-[1.02] transition-all" style="background:rgba(37,211,102,0.15); border:1px solid rgba(37,211,102,0.3); color:#25D366;">
                 <span>💬</span><span>Chat WhatsApp Direct</span>
               </a>
               <p class="text-[11px] t-faint">Respon cepat setiap hari kerja (09.00 - 18.00 WIB)</p>
@@ -26,8 +26,8 @@
               </a>
             </div>
             <div class="space-y-1 pt-3 border-t b-subtle text-xs t-faint font-mono">
-              <div class="font-bold text-white">STUDIO // INDONESIA</div>
-              <div>Remote-First Digital Studio</div>
+              <div class="font-bold text-white">NEXA DIGITAL AGENCY</div>
+              <div>Remote-First Digital Studio · Indonesia</div>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@
               <textarea id="pesan" v-model="form.message" rows="4" required placeholder="Ceritakan gambaran proyek, target waktu, atau kebutuhan..." class="w-full bg-base border b-subtle rounded-lg px-4 py-3 text-sm text-white outline-none transition-all resize-y placeholder:t-faint" style="border-color:rgba(255,255,255,0.12);"></textarea>
             </div>
             <div class="pt-3"><button type="submit" class="btn-pill-primary w-full text-xs font-bold uppercase tracking-wider py-4">Kirim via WhatsApp Direct</button></div>
-            <p v-if="sent" class="text-xs text-center pt-2 font-mono" style="color:#27C93F;">✔ Menyiapkan pesan ke WhatsApp Nexa...</p>
+            <p v-if="sent" class="text-xs text-center pt-2 font-mono" style="color:#27C93F;">✔ Menyiapkan pesan ke WhatsApp Nexa Digital Agency...</p>
           </form>
         </div>
       </div>
@@ -76,7 +76,7 @@ onMounted(() => { animateStaggerFadeIn('.contact-card', { delay: 150, stagger: 1
 
 function submitForm() {
   sent.value = true
-  const text = `Halo Nexa Agency,\n\nNama: ${form.value.name}\nKontak: ${form.value.contact}\nLayanan: ${form.value.service}\n\nPesan/Kebutuhan:\n${form.value.message}`
+  const text = `Halo Nexa Digital Agency,\n\nNama: ${form.value.name}\nKontak: ${form.value.contact}\nLayanan: ${form.value.service}\n\nPesan/Kebutuhan:\n${form.value.message}`
   window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, '_blank')
 }
 </script>

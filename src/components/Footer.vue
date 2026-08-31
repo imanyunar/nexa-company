@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs t-faint font-mono">
-        <div>&copy; {{ new Date().getFullYear() }} Nexa Agency. Hak cipta dilindungi.</div>
+        <div>&copy; {{ new Date().getFullYear() }} Nexa Digital Agency. Hak cipta dilindungi.</div>
         <div class="flex items-center gap-4">
           <span>Indonesia</span><span>·</span><span>MIT License</span>
         </div>

@@ -20,17 +20,12 @@
       <div class="max-w-6xl mx-auto px-6 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div class="lg:col-span-7 space-y-8">
-            <div ref="heroBadge" class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-elevated border b-subtle rounded-full text-xs font-mono t-cyan">
-              <span class="w-2 h-2 rounded-full bg-cyan animate-pulse"></span>
-              NEXA DIGITAL STUDIO
-            </div>
-
             <h1 ref="heroHeadline" class="text-4xl sm:text-5xl lg:text-[3.5rem] font-display font-light text-white leading-[1.15] tracking-tight">
               Membangun Solusi Web, Analisis Data, dan Media Interaktif.
             </h1>
 
             <p ref="heroSubtitle" class="t-muted text-base sm:text-lg leading-relaxed max-w-xl font-normal">
-              Nexa adalah studio teknologi independen yang membantu bisnis, instansi, dan UMKM menghadirkan pengalaman digital tangguh dengan eksekusi bersih.
+              Nexa Digital Agency adalah agensi teknologi independen yang membantu bisnis, instansi, dan UMKM menghadirkan pengalaman digital tangguh dengan eksekusi bersih.
             </p>
 
             <div ref="heroCtas" class="flex flex-wrap items-center gap-4 pt-2">
@@ -45,7 +40,7 @@
                 <img src="/assets/logo.png" alt="Nexa Identity" class="w-36 h-36 object-contain filter drop-shadow transition-transform hover:scale-110 duration-300" />
               </div>
               <div class="space-y-1 border-t b-subtle pt-6">
-                <div class="font-display font-light text-xl text-white">Nexa Agency</div>
+                <div class="font-display font-light text-xl text-white">Nexa Digital Agency</div>
                 <div class="text-xs t-faint font-mono">Web · Data · Game</div>
               </div>
               <div class="grid grid-cols-2 gap-4 pt-2 text-left font-mono text-xs t-muted border-t b-subtle">
@@ -120,33 +115,27 @@
           <div class="max-w-2xl space-y-3">
             <div class="text-xs font-mono t-cyan uppercase tracking-widest">SHOWCASE KARYA NYATA</div>
             <h2 class="text-3xl sm:text-4xl font-display font-light text-white">Preview Website & Aplikasi</h2>
-            <p class="t-muted text-base sm:text-lg leading-relaxed">Tampilan langsung dari beberapa proyek yang telah kami bangun dan beroperasi secara live.</p>
+            <p class="t-muted text-base sm:text-lg leading-relaxed">Tampilan live nyata dari proyek yang telah kami bangun dan beroperasi secara live production.</p>
           </div>
           <router-link to="/portofolio" class="btn-pill-secondary text-xs font-semibold py-2.5 px-6 self-start sm:self-auto">Semua Studi Kasus</router-link>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Lentera -->
-          <div class="card-unified project-tile p-6 flex flex-col justify-between space-y-5">
-            <div class="rounded-lg overflow-hidden border b-subtle flex flex-col" style="background:#0A2647;">
-              <div class="px-3 py-2 flex items-center justify-between border-b b-subtle" style="background:#071D36;">
+          <div class="card-unified project-tile p-5 flex flex-col justify-between space-y-4 group">
+            <div class="rounded-lg overflow-hidden border b-subtle flex flex-col" style="background:#0B0E2B;">
+              <div class="px-3 py-2 flex items-center justify-between border-b b-subtle" style="background:#070920;">
                 <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full" style="background:#FF5F56;"></span><span class="w-2 h-2 rounded-full" style="background:#FFBD2E;"></span><span class="w-2 h-2 rounded-full" style="background:#27C93F;"></span></div>
                 <span class="text-[10px] font-mono t-muted truncate max-w-[140px]">lentera.indramayukab.go.id</span>
                 <span class="text-[9px] font-mono font-bold" style="color:#D4AF37;">PWA</span>
               </div>
-              <div class="p-4 space-y-3" style="background: linear-gradient(to bottom, #0A2647, #0D325E);">
-                <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded font-bold text-[10px] flex items-center justify-center" style="background:#D4AF37; color:#000;">L</div>
-                  <div>
-                    <div class="text-xs font-bold tracking-wider leading-none" style="color:#D4AF37;">LENTERA INDRAMAYU</div>
-                    <div class="text-[9px] t-muted">Pelayanan & Ekonomi Kerakyatan</div>
-                  </div>
-                </div>
-                <div class="grid grid-cols-3 gap-1.5 pt-1">
-                  <div class="rounded p-1.5 text-center" style="background:rgba(255,255,255,0.1);"><div class="text-[8px] t-faint">Layanan</div><div class="text-[10px] font-bold text-white">Publik</div></div>
-                  <div class="rounded p-1.5 text-center" style="background:rgba(255,255,255,0.1);"><div class="text-[8px] t-faint">Katalog</div><div class="text-[10px] font-bold" style="color:#D4AF37;">UMKM</div></div>
-                  <div class="rounded p-1.5 text-center" style="background:rgba(255,255,255,0.1);"><div class="text-[8px] t-faint">Portal</div><div class="text-[10px] font-bold" style="color:#27C93F;">Data</div></div>
-                </div>
+              <div class="relative w-full overflow-hidden" style="height: 220px; background:#0B0E2B;">
+                <img 
+                  src="/assets/projects/lentera.png" 
+                  alt="Lentera Indramayu Live Website Preview" 
+                  class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
               </div>
             </div>
             <div class="space-y-2">
@@ -155,35 +144,29 @@
                 <span class="font-bold flex items-center gap-1" style="color:#27C93F;"><span class="w-1.5 h-1.5 rounded-full animate-ping" style="background:#27C93F;"></span>LIVE</span>
               </div>
               <h3 class="text-xl font-display font-light text-white">LENTERA Indramayu</h3>
-              <p class="t-muted text-xs leading-relaxed">Platform digital resmi pelayanan publik dan ekonomi kerakyatan berbasis Progressive Web App (PWA).</p>
+              <p class="t-muted text-xs leading-relaxed">Platform digital resmi pelayanan publik dan ekonomi kerakyatan berbasis PWA.</p>
             </div>
             <div class="pt-3 border-t b-subtle flex items-center justify-between">
               <span class="text-[11px] font-mono t-faint">Laravel · PWA</span>
-              <a href="https://lentera.indramayukab.go.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-cyan hover:underline">Kunjungi Website</a>
+              <a href="https://lentera.indramayukab.go.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-cyan hover:underline">Kunjungi →</a>
             </div>
           </div>
 
           <!-- Visit Gumiwang -->
-          <div class="card-unified project-tile p-6 flex flex-col justify-between space-y-5">
-            <div class="rounded-lg overflow-hidden border b-subtle flex flex-col" style="background:#064E3B;">
-              <div class="px-3 py-2 flex items-center justify-between border-b b-subtle" style="background:#043C2E;">
+          <div class="card-unified project-tile p-5 flex flex-col justify-between space-y-4 group">
+            <div class="rounded-lg overflow-hidden border b-subtle flex flex-col" style="background:#0B0E2B;">
+              <div class="px-3 py-2 flex items-center justify-between border-b b-subtle" style="background:#070920;">
                 <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full" style="background:#FF5F56;"></span><span class="w-2 h-2 rounded-full" style="background:#FFBD2E;"></span><span class="w-2 h-2 rounded-full" style="background:#27C93F;"></span></div>
                 <span class="text-[10px] font-mono t-muted truncate max-w-[140px]">visitgumiwang.web.id</span>
                 <span class="text-[9px] font-mono font-bold" style="color:#34D399;">DESA</span>
               </div>
-              <div class="p-4 space-y-3" style="background: linear-gradient(to bottom, #064E3B, #0A3D30);">
-                <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded font-bold text-[10px] flex items-center justify-center" style="background:#34D399; color:#000;">🌿</div>
-                  <div>
-                    <div class="text-xs font-bold tracking-wider leading-none" style="color:#34D399;">VISIT GUMIWANG</div>
-                    <div class="text-[9px] t-muted">Pertanian, Perikanan & UMKM</div>
-                  </div>
-                </div>
-                <div class="grid grid-cols-3 gap-1.5 pt-1">
-                  <div class="rounded p-1.5 text-center" style="background:rgba(255,255,255,0.1);"><div class="text-[8px] t-faint">Potensi</div><div class="text-[10px] font-bold text-white">🌾 Tani</div></div>
-                  <div class="rounded p-1.5 text-center" style="background:rgba(255,255,255,0.1);"><div class="text-[8px] t-faint">Budidaya</div><div class="text-[10px] font-bold" style="color:#38BDF8;">🐟 Ikan</div></div>
-                  <div class="rounded p-1.5 text-center" style="background:rgba(255,255,255,0.1);"><div class="text-[8px] t-faint">Produk</div><div class="text-[10px] font-bold" style="color:#FBBF24;">🛍️ UMKM</div></div>
-                </div>
+              <div class="relative w-full overflow-hidden" style="height: 220px; background:#0B0E2B;">
+                <img 
+                  src="/assets/projects/visitgumiwang.png" 
+                  alt="Visit Gumiwang Live Website Preview" 
+                  class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
               </div>
             </div>
             <div class="space-y-2">
@@ -196,30 +179,25 @@
             </div>
             <div class="pt-3 border-t b-subtle flex items-center justify-between">
               <span class="text-[11px] font-mono t-faint">Vite · Tailwind</span>
-              <a href="https://visitgumiwang.web.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-cyan hover:underline">Kunjungi Website</a>
+              <a href="https://visitgumiwang.web.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-cyan hover:underline">Kunjungi →</a>
             </div>
           </div>
 
           <!-- CatatKas -->
-          <div class="card-unified project-tile p-6 flex flex-col justify-between space-y-5">
-            <div class="rounded-lg overflow-hidden border b-subtle flex flex-col" style="background:#312E81;">
-              <div class="px-3 py-2 flex items-center justify-between border-b b-subtle" style="background:#242168;">
+          <div class="card-unified project-tile p-5 flex flex-col justify-between space-y-4 group">
+            <div class="rounded-lg overflow-hidden border b-subtle flex flex-col" style="background:#0B0E2B;">
+              <div class="px-3 py-2 flex items-center justify-between border-b b-subtle" style="background:#070920;">
                 <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full" style="background:#FF5F56;"></span><span class="w-2 h-2 rounded-full" style="background:#FFBD2E;"></span><span class="w-2 h-2 rounded-full" style="background:#27C93F;"></span></div>
                 <span class="text-[10px] font-mono t-muted truncate max-w-[140px]">catatkas-web.vercel.app</span>
                 <span class="text-[9px] font-mono font-bold" style="color:#F472B6;">APP</span>
               </div>
-              <div class="p-4 space-y-3" style="background: linear-gradient(to bottom, #312E81, #1E1B4B);">
-                <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded font-bold text-[10px] flex items-center justify-center" style="background:#E620C5; color:#fff;">💰</div>
-                  <div>
-                    <div class="text-xs font-bold text-white tracking-wider leading-none">CATATKAS UMKM</div>
-                    <div class="text-[9px] t-muted">Pembukuan Keuangan Digital</div>
-                  </div>
-                </div>
-                <div class="rounded p-2 flex items-center justify-between font-mono text-[10px]" style="background:rgba(0,0,0,0.3);">
-                  <div><div class="text-[8px] t-faint">Total Saldo Kas</div><div class="font-bold" style="color:#34D399;">Rp 14.850.000</div></div>
-                  <div class="text-right"><div class="text-[8px] t-faint">Status</div><div class="t-cyan font-bold">Surplus</div></div>
-                </div>
+              <div class="relative w-full overflow-hidden" style="height: 220px; background:#0B0E2B;">
+                <img 
+                  src="/assets/projects/catatkas.png" 
+                  alt="CatatKas UMKM Live App Preview" 
+                  class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
               </div>
             </div>
             <div class="space-y-2">
@@ -228,11 +206,11 @@
                 <span class="font-bold flex items-center gap-1" style="color:#27C93F;"><span class="w-1.5 h-1.5 rounded-full animate-ping" style="background:#27C93F;"></span>LIVE</span>
               </div>
               <h3 class="text-xl font-display font-light text-white">CatatKas UMKM</h3>
-              <p class="t-muted text-xs leading-relaxed">Aplikasi pencatatan keuangan digital instan untuk mencatat transaksi dan laporan laba rugi usaha mikro.</p>
+              <p class="t-muted text-xs leading-relaxed">Aplikasi pencatatan keuangan digital instan untuk pencatatan transaksi dan laporan laba rugi.</p>
             </div>
             <div class="pt-3 border-t b-subtle flex items-center justify-between">
               <span class="text-[11px] font-mono t-faint">Single Page App</span>
-              <a href="https://catatkas-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-mag hover:underline">Kunjungi Web App</a>
+              <a href="https://catatkas-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-mag hover:underline">Kunjungi →</a>
             </div>
           </div>
         </div>
@@ -257,7 +235,6 @@ import { ref, onMounted } from 'vue'
 import { animateStrokeDraw, animateHeroEntrance, animateStaggerFadeIn } from '../utils/animations'
 
 const heroLine = ref(null)
-const heroBadge = ref(null)
 const heroHeadline = ref(null)
 const heroSubtitle = ref(null)
 const heroCtas = ref(null)
@@ -265,7 +242,7 @@ const heroVisual = ref(null)
 
 onMounted(() => {
   if (heroLine.value) { animateStrokeDraw(heroLine.value, 1500) }
-  animateHeroEntrance({ headline: [heroBadge.value, heroHeadline.value], subtitle: heroSubtitle.value, cta: heroCtas.value, visual: heroVisual.value })
+  animateHeroEntrance({ headline: [heroHeadline.value], subtitle: heroSubtitle.value, cta: heroCtas.value, visual: heroVisual.value })
   animateStaggerFadeIn('.service-card', { delay: 400, stagger: 120 })
   animateStaggerFadeIn('.project-tile', { delay: 600, stagger: 120 })
 })

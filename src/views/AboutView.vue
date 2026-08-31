@@ -4,13 +4,13 @@
 
       <div class="text-center max-w-2xl mx-auto space-y-4">
         <div class="text-xs font-mono t-cyan uppercase tracking-widest">ABOUT US</div>
-        <h1 class="text-4xl sm:text-5xl font-display font-light text-white">Tentang Nexa</h1>
-        <p class="t-muted text-base sm:text-lg leading-relaxed">Agency teknologi independen yang fokus pada kualitas pengerjaan, kejujuran komunikasi, dan solusi nyata.</p>
+        <h1 class="text-4xl sm:text-5xl font-display font-light text-white">Tentang Nexa Digital Agency</h1>
+        <p class="t-muted text-base sm:text-lg leading-relaxed">Agensi teknologi independen yang fokus pada kualitas pengerjaan, kejujuran komunikasi, dan solusi nyata.</p>
       </div>
 
       <div class="card-unified about-block p-8 sm:p-10 space-y-6">
         <h2 class="text-2xl sm:text-3xl font-display font-light text-white">Filosofi & Misi Kami</h2>
-        <p class="t-muted text-base leading-relaxed">Nexa didirikan dengan satu keyakinan: kehadiran digital yang hebat tidak harus rumit atau membingungkan. Kami hadir untuk membantu bisnis, instansi pemerintahan, dan penggerak komunitas lokal mendapatkan platform digital yang handal.</p>
+        <p class="t-muted text-base leading-relaxed">Nexa Digital Agency didirikan dengan satu keyakinan: kehadiran digital yang hebat tidak harus rumit atau membingungkan. Kami hadir untuk membantu bisnis, instansi pemerintahan, dan penggerak komunitas lokal mendapatkan platform digital yang handal.</p>
         <p class="t-muted text-base leading-relaxed">Pendekatan kami mengutamakan <strong class="text-white">performa tinggi</strong>, <strong class="text-white">antarmuka bersih yang mudah dipahami</strong>, dan <strong class="text-white">arsitektur kode yang rapi</strong> agar dapat terus berkembang seiring berjalannya waktu.</p>
       </div>
 
@@ -37,7 +37,7 @@
 
       <div class="bg-elevated text-white rounded-lg p-8 sm:p-10 text-center space-y-6 card-unified about-block">
         <h2 class="text-2xl sm:text-3xl font-display font-light text-white">Mari Berkolaborasi Bersama Kami</h2>
-        <p class="t-muted text-sm max-w-lg mx-auto leading-relaxed">Diskusikan ide proyek Anda bersama tim teknis Nexa dan dapatkan rekomendasi terbaik.</p>
+        <p class="t-muted text-sm max-w-lg mx-auto leading-relaxed">Diskusikan ide proyek Anda bersama tim teknis Nexa Digital Agency dan dapatkan rekomendasi terbaik.</p>
         <div class="pt-2"><router-link to="/kontak" class="btn-pill-primary text-xs uppercase font-bold py-3.5 px-8">Hubungi Kami</router-link></div>
       </div>
     </div>

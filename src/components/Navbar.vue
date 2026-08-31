@@ -2,11 +2,11 @@
   <header class="sticky top-0 z-50 backdrop-blur-md border-b b-subtle text-white" style="background-color: rgba(11, 14, 27, 0.95);">
     <div class="max-w-6xl mx-auto px-6 h-16 sm:h-20 flex items-center justify-between">
       
-      <router-link to="/" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Nexa Beranda">
+      <router-link to="/" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Nexa Digital Agency Beranda">
         <img src="/assets/logo.png" alt="Nexa Logo" class="w-9 h-9 object-contain transition-transform group-hover:scale-105" />
         <div class="flex flex-col">
           <span class="font-display font-light text-xl tracking-tight text-white leading-none">NEXA</span>
-          <span class="text-[10px] tracking-widest t-faint uppercase font-medium mt-0.5">Technology Agency</span>
+          <span class="text-[10px] tracking-widest t-faint uppercase font-medium mt-0.5">Digital Agency</span>
         </div>
       </router-link>
 
