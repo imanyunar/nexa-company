@@ -35,11 +35,25 @@
             <div class="lg:col-span-8 space-y-4">
               <h2 class="text-2xl sm:text-3xl font-display font-light text-white">LENTERA — Pemerintah Kabupaten Indramayu</h2>
               <p class="t-muted text-base leading-relaxed">Platform digital sentral Pemkab Indramayu yang memadukan layanan publik terpadu, keterbukaan informasi, dan sektor ekonomi kerakyatan ke dalam satu arsitektur Progressive Web App (PWA).</p>
-              <div class="space-y-2 pt-2 text-sm text-white font-medium"><div class="flex items-center gap-2"><span class="t-cyan font-bold">✔</span><span>Aksesibilitas layanan publik terpusat 24/7.</span></div><div class="flex items-center gap-2"><span class="t-cyan font-bold">✔</span><span>Instalasi praktis sebagai aplikasi PWA di berbagai smartphone.</span></div></div>
+              <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
+                <div class="flex items-center gap-2.5">
+                  <CheckCircle2 class="w-4 h-4 text-cyan shrink-0" />
+                  <span>Aksesibilitas layanan publik terpusat 24/7.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <CheckCircle2 class="w-4 h-4 text-cyan shrink-0" />
+                  <span>Instalasi praktis sebagai aplikasi PWA di berbagai smartphone.</span>
+                </div>
+              </div>
             </div>
-            <div class="lg:col-span-4 bg-base p-6 rounded-lg border b-subtle space-y-4">
+            <div class="lg:col-span-4 bg-elevated p-6 rounded-lg border b-subtle space-y-4">
               <div class="space-y-2 text-xs font-mono"><div class="t-faint">KLIEN:</div><div class="font-bold text-white text-sm">Pemkab Indramayu</div><div class="t-faint pt-2">TEKNOLOGI:</div><div class="font-medium text-white">Laravel, PWA, REST API</div></div>
-              <div class="pt-2"><a href="https://lentera.indramayukab.go.id/" target="_blank" rel="noopener noreferrer" class="btn-pill-primary w-full text-center text-xs uppercase font-bold py-3">Buka Website ↗</a></div>
+              <div class="pt-2">
+                <a href="https://lentera.indramayukab.go.id/" target="_blank" rel="noopener noreferrer" class="btn-pill-primary w-full text-center text-xs uppercase font-bold py-3 flex items-center justify-center gap-1.5">
+                  <span>Buka Website</span>
+                  <ArrowUpRight class="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -70,11 +84,25 @@
             <div class="lg:col-span-8 space-y-4">
               <h2 class="text-2xl sm:text-3xl font-display font-light text-white">Visit Gumiwang — Pertanian, Perikanan & UMKM</h2>
               <p class="t-muted text-base leading-relaxed">Website promosi potensi lokal Desa Gumiwang. Menampilkan kekayaan agrikultur, perikanan, keindahan alam, serta etalase digital produk UMKM lokal.</p>
-              <div class="space-y-2 pt-2 text-sm text-white font-medium"><div class="flex items-center gap-2"><span class="t-cyan font-bold">✔</span><span>Katalog UMKM terstruktur dengan kontak pemesanan langsung.</span></div><div class="flex items-center gap-2"><span class="t-cyan font-bold">✔</span><span>Tampilan visual responsif & ringan diakses di koneksi internet desa.</span></div></div>
+              <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
+                <div class="flex items-center gap-2.5">
+                  <CheckCircle2 class="w-4 h-4 text-cyan shrink-0" />
+                  <span>Katalog UMKM terstruktur dengan kontak pemesanan langsung.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <CheckCircle2 class="w-4 h-4 text-cyan shrink-0" />
+                  <span>Tampilan visual responsif & ringan diakses di koneksi internet desa.</span>
+                </div>
+              </div>
             </div>
-            <div class="lg:col-span-4 bg-base p-6 rounded-lg border b-subtle space-y-4">
+            <div class="lg:col-span-4 bg-elevated p-6 rounded-lg border b-subtle space-y-4">
               <div class="space-y-2 text-xs font-mono"><div class="t-faint">KLIEN:</div><div class="font-bold text-white text-sm">Desa Gumiwang</div><div class="t-faint pt-2">TEKNOLOGI:</div><div class="font-medium text-white">Vite, TailwindCSS, Responsive</div></div>
-              <div class="pt-2"><a href="https://visitgumiwang.web.id/" target="_blank" rel="noopener noreferrer" class="btn-pill-primary w-full text-center text-xs uppercase font-bold py-3">Buka Website ↗</a></div>
+              <div class="pt-2">
+                <a href="https://visitgumiwang.web.id/" target="_blank" rel="noopener noreferrer" class="btn-pill-primary w-full text-center text-xs uppercase font-bold py-3 flex items-center justify-center gap-1.5">
+                  <span>Buka Website</span>
+                  <ArrowUpRight class="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -105,11 +133,25 @@
             <div class="lg:col-span-8 space-y-4">
               <h2 class="text-2xl sm:text-3xl font-display font-light text-white">CatatKas — Pembukuan Keuangan Digital UMKM</h2>
               <p class="t-muted text-base leading-relaxed">Aplikasi web pembukuan kas harian bagi pelaku usaha mikro. Membantu pencatatan kas masuk/keluar secara instan, kalkulasi saldo otomatis, dan pembuatan laporan keuangan.</p>
-              <div class="space-y-2 pt-2 text-sm text-white font-medium"><div class="flex items-center gap-2"><span class="t-mag font-bold">✔</span><span>Perhitungan mutasi kas dan laba rugi 100% otomatis.</span></div><div class="flex items-center gap-2"><span class="t-mag font-bold">✔</span><span>Antarmuka bersih yang ramah pengguna pemula.</span></div></div>
+              <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
+                <div class="flex items-center gap-2.5">
+                  <CheckCircle2 class="w-4 h-4 text-pink-400 shrink-0" />
+                  <span>Perhitungan mutasi kas dan laba rugi 100% otomatis.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <CheckCircle2 class="w-4 h-4 text-pink-400 shrink-0" />
+                  <span>Antarmuka bersih yang ramah pengguna pemula.</span>
+                </div>
+              </div>
             </div>
-            <div class="lg:col-span-4 bg-base p-6 rounded-lg border b-subtle space-y-4">
+            <div class="lg:col-span-4 bg-elevated p-6 rounded-lg border b-subtle space-y-4">
               <div class="space-y-2 text-xs font-mono"><div class="t-faint">KATEGORI:</div><div class="font-bold text-white text-sm">Productivity Web App</div><div class="t-faint pt-2">TEKNOLOGI:</div><div class="font-medium text-white">Single Page App, TailwindCSS</div></div>
-              <div class="pt-2"><a href="https://catatkas-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-pill-action w-full text-center text-xs uppercase font-bold py-3">Buka Web App ↗</a></div>
+              <div class="pt-2">
+                <a href="https://catatkas-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-pill-action w-full text-center text-xs uppercase font-bold py-3 flex items-center justify-center gap-1.5">
+                  <span>Buka Web App</span>
+                  <ArrowUpRight class="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -126,6 +168,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { CheckCircle2, ArrowUpRight } from 'lucide-vue-next'
 import { animateStaggerFadeIn } from '../utils/animations'
 onMounted(() => { animateStaggerFadeIn('.portfolio-item', { delay: 150, stagger: 150 }) })
 </script>

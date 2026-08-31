@@ -18,17 +18,23 @@
         <h2 class="text-2xl sm:text-3xl font-display font-light text-white text-center">Prinsip Kerja Kami</h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div class="card-unified about-block p-6 space-y-3">
-            <div class="w-10 h-10 rounded-lg flex items-center justify-center font-bold text-lg" style="background:rgba(58,76,224,0.2); border:1px solid rgba(58,76,224,0.3);">⚡</div>
+            <div class="w-11 h-11 rounded-lg flex items-center justify-center" style="background:rgba(58,76,224,0.18); border:1px solid rgba(58,76,224,0.35);">
+              <Zap class="w-5 h-5 text-cyan" />
+            </div>
             <h3 class="font-bold text-base text-white">Kecepatan & Performa</h3>
             <p class="text-xs t-muted leading-relaxed">Website dan sistem dioptimasi agar ringan, cepat dibuka di seluruh perangkat dan koneksi internet.</p>
           </div>
           <div class="card-unified about-block p-6 space-y-3">
-            <div class="w-10 h-10 rounded-lg flex items-center justify-center font-bold text-lg" style="background:rgba(23,195,242,0.2); border:1px solid rgba(23,195,242,0.3);">🎯</div>
+            <div class="w-11 h-11 rounded-lg flex items-center justify-center" style="background:rgba(23,195,242,0.18); border:1px solid rgba(23,195,242,0.35);">
+              <Target class="w-5 h-5 text-cyan" />
+            </div>
             <h3 class="font-bold text-base text-white">Tepat Guna</h3>
             <p class="text-xs t-muted leading-relaxed">Membangun fitur yang benar-benar dibutuhkan tanpa kompleksitas yang membebani pengguna.</p>
           </div>
           <div class="card-unified about-block p-6 space-y-3">
-            <div class="w-10 h-10 rounded-lg flex items-center justify-center font-bold text-lg" style="background:rgba(230,32,197,0.2); border:1px solid rgba(230,32,197,0.3);">🤝</div>
+            <div class="w-11 h-11 rounded-lg flex items-center justify-center" style="background:rgba(230,32,197,0.18); border:1px solid rgba(230,32,197,0.35);">
+              <ShieldCheck class="w-5 h-5 text-pink-400" />
+            </div>
             <h3 class="font-bold text-base text-white">Transparan & Terbuka</h3>
             <p class="text-xs t-muted leading-relaxed">Komunikasi jujur, laporan progres berkala, dan pendampingan teknis yang ramah.</p>
           </div>
@@ -46,6 +52,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { Zap, Target, ShieldCheck } from 'lucide-vue-next'
 import { animateStaggerFadeIn } from '../utils/animations'
 onMounted(() => { animateStaggerFadeIn('.about-block', { delay: 150, stagger: 120 }) })
 </script>

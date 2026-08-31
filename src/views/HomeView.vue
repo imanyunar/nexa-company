@@ -68,40 +68,61 @@
             <h2 class="text-3xl sm:text-4xl font-display font-light text-white">Tiga Layanan Spesialis</h2>
             <p class="t-muted text-base sm:text-lg leading-relaxed">Fokus keahlian terarah untuk mendukung pertumbuhan digital Anda.</p>
           </div>
-          <router-link to="/layanan" class="btn-pill-secondary text-xs font-semibold py-2.5 px-6 self-start sm:self-auto">Semua Layanan</router-link>
+          <router-link to="/layanan" class="btn-pill-secondary text-xs font-semibold py-2.5 px-6 self-start sm:self-auto flex items-center gap-1.5">
+            <span>Semua Layanan</span>
+            <ArrowUpRight class="w-3.5 h-3.5" />
+          </router-link>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Web Dev -->
           <div class="card-unified service-card p-8 flex flex-col justify-between space-y-6">
             <div class="space-y-4">
-              <div class="w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold" style="background: rgba(58,76,224,0.15); border: 1px solid rgba(58,76,224,0.25);">🌐</div>
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: rgba(58,76,224,0.18); border: 1px solid rgba(58,76,224,0.35);">
+                <Globe class="w-6 h-6 text-cyan" />
+              </div>
               <h3 class="text-2xl font-display font-light text-white">Web Development</h3>
               <p class="t-muted text-sm leading-relaxed">Pembuatan website company profile, landing page berkonversi tinggi, dashboard interaktif, dan web app kustom yang cepat serta responsif.</p>
             </div>
             <div class="pt-4 border-t b-subtle">
-              <router-link to="/layanan" class="text-xs font-bold t-cyan hover:underline uppercase tracking-wider">Pelajari Detail</router-link>
+              <router-link to="/layanan" class="text-xs font-bold t-cyan hover:underline uppercase tracking-wider flex items-center gap-1">
+                <span>Pelajari Detail</span>
+                <ArrowUpRight class="w-3.5 h-3.5" />
+              </router-link>
             </div>
           </div>
 
+          <!-- Data Analysis -->
           <div class="card-unified service-card p-8 flex flex-col justify-between space-y-6">
             <div class="space-y-4">
-              <div class="w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold" style="background: rgba(23,195,242,0.15); border: 1px solid rgba(23,195,242,0.25);">📊</div>
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: rgba(23,195,242,0.18); border: 1px solid rgba(23,195,242,0.35);">
+                <BarChart3 class="w-6 h-6 text-cyan" />
+              </div>
               <h3 class="text-2xl font-display font-light text-white">Data Analysis</h3>
               <p class="t-muted text-sm leading-relaxed">Pengolahan dan visualisasi data bisnis ke dalam dashboard interaktif untuk memandu pengambilan keputusan strategis berbasis fakta.</p>
             </div>
             <div class="pt-4 border-t b-subtle">
-              <router-link to="/layanan" class="text-xs font-bold t-cyan hover:underline uppercase tracking-wider">Pelajari Detail</router-link>
+              <router-link to="/layanan" class="text-xs font-bold t-cyan hover:underline uppercase tracking-wider flex items-center gap-1">
+                <span>Pelajari Detail</span>
+                <ArrowUpRight class="w-3.5 h-3.5" />
+              </router-link>
             </div>
           </div>
 
+          <!-- Game Dev -->
           <div class="card-unified service-card p-8 flex flex-col justify-between space-y-6">
             <div class="space-y-4">
-              <div class="w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold" style="background: rgba(230,32,197,0.15); border: 1px solid rgba(230,32,197,0.25);">🎮</div>
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: rgba(230,32,197,0.18); border: 1px solid rgba(230,32,197,0.35);">
+                <Gamepad2 class="w-6 h-6 text-pink-400" />
+              </div>
               <h3 class="text-2xl font-display font-light text-white">Game Development</h3>
               <p class="t-muted text-sm leading-relaxed">Perancangan game 2D/3D untuk kebutuhan promosi brand, simulasi edukatif, maupun pengalaman interaktif berbasis browser.</p>
             </div>
             <div class="pt-4 border-t b-subtle">
-              <router-link to="/layanan" class="text-xs font-bold t-mag hover:underline uppercase tracking-wider">Pelajari Detail</router-link>
+              <router-link to="/layanan" class="text-xs font-bold t-mag hover:underline uppercase tracking-wider flex items-center gap-1">
+                <span>Pelajari Detail</span>
+                <ArrowUpRight class="w-3.5 h-3.5" />
+              </router-link>
             </div>
           </div>
         </div>
@@ -117,7 +138,10 @@
             <h2 class="text-3xl sm:text-4xl font-display font-light text-white">Preview Website & Aplikasi</h2>
             <p class="t-muted text-base sm:text-lg leading-relaxed">Tampilan live nyata dari proyek yang telah kami bangun dan beroperasi secara live production.</p>
           </div>
-          <router-link to="/portofolio" class="btn-pill-secondary text-xs font-semibold py-2.5 px-6 self-start sm:self-auto">Semua Studi Kasus</router-link>
+          <router-link to="/portofolio" class="btn-pill-secondary text-xs font-semibold py-2.5 px-6 self-start sm:self-auto flex items-center gap-1.5">
+            <span>Semua Studi Kasus</span>
+            <ArrowUpRight class="w-3.5 h-3.5" />
+          </router-link>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -148,7 +172,10 @@
             </div>
             <div class="pt-3 border-t b-subtle flex items-center justify-between">
               <span class="text-[11px] font-mono t-faint">Laravel · PWA</span>
-              <a href="https://lentera.indramayukab.go.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-cyan hover:underline">Kunjungi →</a>
+              <a href="https://lentera.indramayukab.go.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-cyan hover:underline flex items-center gap-1">
+                <span>Kunjungi</span>
+                <ArrowUpRight class="w-3.5 h-3.5" />
+              </a>
             </div>
           </div>
 
@@ -179,7 +206,10 @@
             </div>
             <div class="pt-3 border-t b-subtle flex items-center justify-between">
               <span class="text-[11px] font-mono t-faint">Vite · Tailwind</span>
-              <a href="https://visitgumiwang.web.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-cyan hover:underline">Kunjungi →</a>
+              <a href="https://visitgumiwang.web.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-cyan hover:underline flex items-center gap-1">
+                <span>Kunjungi</span>
+                <ArrowUpRight class="w-3.5 h-3.5" />
+              </a>
             </div>
           </div>
 
@@ -210,7 +240,10 @@
             </div>
             <div class="pt-3 border-t b-subtle flex items-center justify-between">
               <span class="text-[11px] font-mono t-faint">Single Page App</span>
-              <a href="https://catatkas-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-mag hover:underline">Kunjungi →</a>
+              <a href="https://catatkas-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-mag hover:underline flex items-center gap-1">
+                <span>Kunjungi</span>
+                <ArrowUpRight class="w-3.5 h-3.5" />
+              </a>
             </div>
           </div>
         </div>
@@ -232,6 +265,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { Globe, BarChart3, Gamepad2, ArrowUpRight } from 'lucide-vue-next'
 import { animateStrokeDraw, animateHeroEntrance, animateStaggerFadeIn } from '../utils/animations'
 
 const heroLine = ref(null)
