@@ -1,6 +1,6 @@
 <template>
-  <footer class="bg-paper border-t border-muted-border py-12">
-    <div class="max-w-7xl mx-auto px-6">
+  <footer class="bg-surface border-t border-muted-border py-12 mt-auto">
+    <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         
         <!-- Brand & Tagline -->
@@ -16,17 +16,18 @@
           </div>
         </div>
 
-        <!-- 3 Service Links -->
+        <!-- Page Links -->
         <div class="flex flex-wrap items-center gap-6 text-sm text-muted font-medium">
-          <a href="#layanan" class="hover:text-ink transition-colors">Web Development</a>
-          <a href="#layanan" class="hover:text-ink transition-colors">Data Analysis</a>
-          <a href="#layanan" class="hover:text-ink transition-colors">Game Development</a>
-          <a href="#kontak" class="hover:text-ink transition-colors">Hubungi Kami</a>
+          <router-link to="/" class="hover:text-blue transition-colors">Beranda</router-link>
+          <router-link to="/layanan" class="hover:text-blue transition-colors">Layanan</router-link>
+          <router-link to="/portofolio" class="hover:text-blue transition-colors">Portofolio</router-link>
+          <router-link to="/tentang" class="hover:text-blue transition-colors">Tentang Kami</router-link>
+          <router-link to="/kontak" class="hover:text-blue transition-colors">Kontak</router-link>
         </div>
 
-        <!-- Copyright & License -->
-        <div class="text-xs font-mono text-muted">
-          &copy; {{ new Date().getFullYear() }} Nexa Studio. MIT License.
+        <!-- Copyright -->
+        <div class="text-xs text-muted">
+          &copy; {{ new Date().getFullYear() }} Nexa Agency. Hak cipta dilindungi.
         </div>
 
       </div>
