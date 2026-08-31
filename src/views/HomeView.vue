@@ -7,13 +7,13 @@
         <svg class="w-full h-full" viewBox="0 0 1440 900" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="nexaHeroGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#17C3F2" stop-opacity="0.8" />
-              <stop offset="35%" stop-color="#3A4CE0" stop-opacity="0.7" />
-              <stop offset="70%" stop-color="#8A2BE2" stop-opacity="0.7" />
-              <stop offset="100%" stop-color="#E620C5" stop-opacity="0.8" />
+              <stop offset="0%" stop-color="#17C3F2" stop-opacity="0.5" />
+              <stop offset="35%" stop-color="#3A4CE0" stop-opacity="0.4" />
+              <stop offset="70%" stop-color="#8A2BE2" stop-opacity="0.4" />
+              <stop offset="100%" stop-color="#E620C5" stop-opacity="0.5" />
             </linearGradient>
           </defs>
-          <path ref="heroLine" d="M -80 820 L 480 460 L 1080 160 L 1520 -40" stroke="url(#nexaHeroGrad)" stroke-width="2.5" stroke-linecap="round" class="opacity-75" />
+          <path ref="heroLine" d="M -80 820 L 480 460 L 1080 160 L 1520 -40" stroke="url(#nexaHeroGrad)" stroke-width="1.5" stroke-linecap="round" class="opacity-25" />
         </svg>
       </div>
 
