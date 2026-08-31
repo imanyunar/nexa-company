@@ -29,13 +29,16 @@ Repositori ini berisi source code untuk website company profile Nexa — media p
 
 ## ✨ Fitur Website
 
-- [ ] Landing page (Hero, About, Services, Portfolio, Testimonial, Contact)
-- [ ] Halaman detail tiap layanan (Web Dev / Data Analyst / Game Dev)
-- [ ] Portofolio / studi kasus proyek
-- [ ] Form kontak / request konsultasi
-- [ ] Integrasi WhatsApp / email untuk leads
-- [ ] Responsive (mobile-first) & optimasi SEO dasar
-- [ ] Dark/light mode (opsional)
+- [x] **Hero Section**: 3-line headline dengan SVG diagonal path drawing animation menggunakan [Anime.js](https://animejs.com/).
+- [x] **Tiga Blok Layanan Spesialis**:
+  - Web Development (browser preview miring 4° + reactive state)
+  - Data Analysis (SVG line chart & pipeline metrics)
+  - Game Development (interactive mini-canvas game controls)
+- [x] **Portofolio Asimetris**: 1 studi kasus besar + 2 studi kasus pendukung dengan metrik hasil terukur.
+- [x] **Metrik Kinerja & Akuntabilitas**: Angka performa teknis dalam `IBM Plex Mono`.
+- [x] **Form Konsultasi Terintegrasi**: Direct WhatsApp generator & Email inquiries.
+- [x] **Desain Bebas Ciri Khas Template AI**: Berdasarkan panduan [design.md](design.md) (warna gradien logo, font Cabinet Grotesk & Satoshi, no generic shadows).
+- [x] **Responsive Mobile-First & Aksesibilitas WCAG** (`outline 2px #3A4CE0`).
 
 ---
 
@@ -43,13 +46,11 @@ Repositori ini berisi source code untuk website company profile Nexa — media p
 
 | Layer | Teknologi |
 | --- | --- |
-| **Frontend** | Vue.js / React / HTML, TailwindCSS |
-| **Animation** | [Anime.js](https://animejs.com/) (`animejs`) |
-| **Backend** | Laravel |
-| **Database** | MySQL |
-| **Deployment** | - |
-
-> *Sesuaikan tabel di atas dengan stack yang benar-benar dipakai.*
+| **Framework & Bundler** | [Vue 3](https://vuejs.org/) + [Vite](https://vitejs.dev/) |
+| **Styling** | [TailwindCSS](https://tailwindcss.com/) (Custom Nexa Tokens) |
+| **Animation Engine** | [Anime.js](https://animejs.com/) |
+| **Typography** | Cabinet Grotesk, Satoshi, IBM Plex Mono |
+| **Icons & Media** | Lucide Icons, Clean SVG Components |
 
 ---
 
@@ -57,19 +58,30 @@ Repositori ini berisi source code untuk website company profile Nexa — media p
 
 ```text
 nexa-company/
-├── assets/          # Logo, gambar, ikon
-├── public/          # File statis
-├── resources/ | src/# Kode sumber utama (view, komponen, style)
-├── routes/          # Routing (jika Laravel)
-├── database/        # Migration & seeder (jika ada)
-├── .env.example
-├── README.md
-└── ...
+├── assets/                  # Logo dan visual assets
+├── src/
+│   ├── components/
+│   │   ├── Navbar.vue       # Header & navigasi responsif
+│   │   ├── HeroSection.vue  # Hero dengan Anime.js SVG path drawing
+│   │   ├── ServicesSection.vue # 3 blok layanan dengan visual unik
+│   │   ├── PortfolioSection.vue# Asymmetrical portfolio grid
+│   │   ├── MetricsSection.vue  # Metrik performa IBM Plex Mono
+│   │   ├── ContactSection.vue  # Form konsultasi & WhatsApp direct
+│   │   └── Footer.vue       # Minimal 3-service footer
+│   ├── App.vue              # Main Vue application
+│   ├── main.js              # Vue entrypoint
+│   └── style.css            # Design tokens & base styles
+├── design.md                # Dokumentasi Design System Nexa
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
 ```
 
 ---
 
-## 🚀 Instalasi & Menjalankan Proyek
+## 🚀 Menjalankan Proyek
 
 ```bash
 # 1. Clone repository
@@ -77,19 +89,13 @@ git clone https://github.com/imanyunar/nexa-company.git
 cd nexa-company
 
 # 2. Install dependencies
-composer install    # jika backend Laravel
-npm install         # untuk frontend
+npm install
 
-# 3. Setup environment
-cp .env.example .env
-php artisan key:generate
-
-# 4. Jalankan migrasi (jika menggunakan database)
-php artisan migrate
-
-# 5. Jalankan server
-php artisan serve
+# 3. Jalankan development server
 npm run dev
+
+# 4. Build untuk produksi
+npm run build
 ```
 
 ---
