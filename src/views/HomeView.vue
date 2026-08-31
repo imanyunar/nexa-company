@@ -178,18 +178,18 @@
       </div>
     </section>
 
-    <!-- CHAPTER 3: DARK CASE STUDY RAIL (Full-bleed #07091D, 8px Dark Tiles) -->
+    <!-- CHAPTER 3: DARK CASE STUDY RAIL (Full-bleed #07091D with Real Browser Visual Previews) -->
     <section class="bg-ink-deep text-white py-24 sm:py-28 border-b border-hairline-dark">
       <div class="max-w-6xl mx-auto px-6 space-y-16">
         
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <div class="max-w-2xl space-y-3">
-            <div class="text-xs font-mono text-cyan uppercase tracking-widest">CASE STUDIES</div>
+            <div class="text-xs font-mono text-cyan uppercase tracking-widest">SHOWCASE KARYA NYATA</div>
             <h2 class="text-3xl sm:text-4xl font-display font-light text-white">
-              Studi Kasus Produksi
+              Preview Website & Aplikasi
             </h2>
             <p class="text-white/70 text-base sm:text-lg leading-relaxed">
-              Solusi digital yang telah kami bangun dan beroperasi secara langsung.
+              Tampilan langsung dari beberapa proyek yang telah kami bangun dan gunakan secara aktif.
             </p>
           </div>
           <router-link to="/portofolio" class="btn-pill-secondary-dark text-xs font-semibold py-2.5 px-6 self-start sm:self-auto hover:bg-white/10">
@@ -197,12 +197,56 @@
           </router-link>
         </div>
 
-        <!-- 3-up Project Rail with Stagger Animation -->
+        <!-- 3-up Project Cards with Website Visual Previews -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           
-          <!-- Tile 1: Lentera -->
-          <div class="card-8px-dark project-tile p-7 flex flex-col justify-between space-y-6 hover:border-cyan/50 hover:-translate-y-1 transition-all duration-300">
-            <div class="space-y-4">
+          <!-- Card 1: Lentera Indramayu -->
+          <div class="card-8px-dark project-tile p-6 flex flex-col justify-between space-y-5 hover:border-cyan/50 hover:-translate-y-1.5 transition-all duration-300">
+            <!-- Browser Mockup Window -->
+            <div class="rounded-lg overflow-hidden border border-white/10 bg-[#0A2647] flex flex-col shadow-md">
+              <!-- Window Top Bar -->
+              <div class="bg-[#071D36] px-3 py-2 flex items-center justify-between border-b border-white/10">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-[#FF5F56]"></span>
+                  <span class="w-2 h-2 rounded-full bg-[#FFBD2E]"></span>
+                  <span class="w-2 h-2 rounded-full bg-[#27C93F]"></span>
+                </div>
+                <span class="text-[10px] font-mono text-white/60 truncate max-w-[140px]">lentera.indramayukab.go.id</span>
+                <span class="text-[9px] font-mono text-[#D4AF37] font-bold">PWA</span>
+              </div>
+              
+              <!-- Website Preview Body -->
+              <div class="p-4 space-y-3 bg-gradient-to-b from-[#0A2647] to-[#0D325E]">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 rounded bg-[#D4AF37] text-black font-bold text-[10px] flex items-center justify-center">
+                    L
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-[#D4AF37] tracking-wider leading-none">LENTERA INDRAMAYU</div>
+                    <div class="text-[9px] text-white/70">Pelayanan & Ekonomi Kerakyatan</div>
+                  </div>
+                </div>
+
+                <!-- Mini Content Elements -->
+                <div class="grid grid-cols-3 gap-1.5 pt-1">
+                  <div class="bg-white/10 rounded p-1.5 text-center">
+                    <div class="text-[8px] text-white/60">Layanan</div>
+                    <div class="text-[10px] font-bold text-white">Publik</div>
+                  </div>
+                  <div class="bg-white/10 rounded p-1.5 text-center">
+                    <div class="text-[8px] text-white/60">Katalog</div>
+                    <div class="text-[10px] font-bold text-[#D4AF37]">UMKM</div>
+                  </div>
+                  <div class="bg-white/10 rounded p-1.5 text-center">
+                    <div class="text-[8px] text-white/60">Portal</div>
+                    <div class="text-[10px] font-bold text-[#27C93F]">Data</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Info -->
+            <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-mono text-cyan">
                 <span>PEMKAB INDRAMAYU</span>
                 <span class="text-[#27C93F] font-bold flex items-center gap-1">
@@ -213,26 +257,72 @@
               <h3 class="text-xl font-display font-light text-white">
                 LENTERA Indramayu
               </h3>
-              <p class="text-white/60 text-sm leading-relaxed">
-                Platform digital resmi pelayanan publik dan ekonomi kerakyatan berbasis PWA terpadu.
+              <p class="text-white/60 text-xs leading-relaxed">
+                Platform digital resmi pelayanan publik dan ekonomi kerakyatan berbasis Progressive Web App (PWA).
               </p>
             </div>
-            <div class="pt-4 border-t border-hairline-dark flex items-center justify-between">
-              <span class="text-xs font-mono text-white/50">Laravel · PWA</span>
+
+            <!-- Link -->
+            <div class="pt-3 border-t border-hairline-dark flex items-center justify-between">
+              <span class="text-[11px] font-mono text-white/50">Laravel · PWA</span>
               <a 
                 href="https://lentera.indramayukab.go.id/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                class="text-xs font-bold text-cyan hover:underline"
+                class="text-xs font-bold text-cyan hover:underline flex items-center gap-1"
               >
-                Buka Website
+                Kunjungi Website
               </a>
             </div>
           </div>
 
-          <!-- Tile 2: Visit Gumiwang -->
-          <div class="card-8px-dark project-tile p-7 flex flex-col justify-between space-y-6 hover:border-cyan/50 hover:-translate-y-1 transition-all duration-300">
-            <div class="space-y-4">
+          <!-- Card 2: Visit Gumiwang -->
+          <div class="card-8px-dark project-tile p-6 flex flex-col justify-between space-y-5 hover:border-cyan/50 hover:-translate-y-1.5 transition-all duration-300">
+            <!-- Browser Mockup Window -->
+            <div class="rounded-lg overflow-hidden border border-white/10 bg-[#064E3B] flex flex-col shadow-md">
+              <!-- Window Top Bar -->
+              <div class="bg-[#043C2E] px-3 py-2 flex items-center justify-between border-b border-white/10">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-[#FF5F56]"></span>
+                  <span class="w-2 h-2 rounded-full bg-[#FFBD2E]"></span>
+                  <span class="w-2 h-2 rounded-full bg-[#27C93F]"></span>
+                </div>
+                <span class="text-[10px] font-mono text-white/60 truncate max-w-[140px]">visitgumiwang.web.id</span>
+                <span class="text-[9px] font-mono text-[#34D399] font-bold">DESA</span>
+              </div>
+              
+              <!-- Website Preview Body -->
+              <div class="p-4 space-y-3 bg-gradient-to-b from-[#064E3B] to-[#0A3D30]">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 rounded bg-[#34D399] text-black font-bold text-[10px] flex items-center justify-center">
+                    🌿
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-[#34D399] tracking-wider leading-none">VISIT GUMIWANG</div>
+                    <div class="text-[9px] text-white/70">Pertanian, Perikanan & UMKM</div>
+                  </div>
+                </div>
+
+                <!-- Mini Content Elements -->
+                <div class="grid grid-cols-3 gap-1.5 pt-1">
+                  <div class="bg-white/10 rounded p-1.5 text-center">
+                    <div class="text-[8px] text-white/60">Potensi</div>
+                    <div class="text-[10px] font-bold text-white">🌾 Tani</div>
+                  </div>
+                  <div class="bg-white/10 rounded p-1.5 text-center">
+                    <div class="text-[8px] text-white/60">Budidaya</div>
+                    <div class="text-[10px] font-bold text-[#38BDF8]">🐟 Ikan</div>
+                  </div>
+                  <div class="bg-white/10 rounded p-1.5 text-center">
+                    <div class="text-[8px] text-white/60">Produk</div>
+                    <div class="text-[10px] font-bold text-[#FBBF24]">🛍️ UMKM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Info -->
+            <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-mono text-cyan">
                 <span>DESA WISATA & UMKM</span>
                 <span class="text-[#27C93F] font-bold flex items-center gap-1">
@@ -243,26 +333,70 @@
               <h3 class="text-xl font-display font-light text-white">
                 Visit Gumiwang
               </h3>
-              <p class="text-white/60 text-sm leading-relaxed">
+              <p class="text-white/60 text-xs leading-relaxed">
                 Portal promosi potensi wisata alam, agrikultur, dan katalog produk UMKM Desa Gumiwang.
               </p>
             </div>
-            <div class="pt-4 border-t border-hairline-dark flex items-center justify-between">
-              <span class="text-xs font-mono text-white/50">Vite · Tailwind</span>
+
+            <!-- Link -->
+            <div class="pt-3 border-t border-hairline-dark flex items-center justify-between">
+              <span class="text-[11px] font-mono text-white/50">Vite · Tailwind</span>
               <a 
                 href="https://visitgumiwang.web.id/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                class="text-xs font-bold text-cyan hover:underline"
+                class="text-xs font-bold text-cyan hover:underline flex items-center gap-1"
               >
-                Buka Website
+                Kunjungi Website
               </a>
             </div>
           </div>
 
-          <!-- Tile 3: CatatKas -->
-          <div class="card-8px-dark project-tile p-7 flex flex-col justify-between space-y-6 hover:border-magenta/50 hover:-translate-y-1 transition-all duration-300">
-            <div class="space-y-4">
+          <!-- Card 3: CatatKas -->
+          <div class="card-8px-dark project-tile p-6 flex flex-col justify-between space-y-5 hover:border-magenta/50 hover:-translate-y-1.5 transition-all duration-300">
+            <!-- Browser Mockup Window -->
+            <div class="rounded-lg overflow-hidden border border-white/10 bg-[#312E81] flex flex-col shadow-md">
+              <!-- Window Top Bar -->
+              <div class="bg-[#242168] px-3 py-2 flex items-center justify-between border-b border-white/10">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-[#FF5F56]"></span>
+                  <span class="w-2 h-2 rounded-full bg-[#FFBD2E]"></span>
+                  <span class="w-2 h-2 rounded-full bg-[#27C93F]"></span>
+                </div>
+                <span class="text-[10px] font-mono text-white/60 truncate max-w-[140px]">catatkas-web.vercel.app</span>
+                <span class="text-[9px] font-mono text-[#F472B6] font-bold">APP</span>
+              </div>
+              
+              <!-- Website Preview Body -->
+              <div class="p-4 space-y-3 bg-gradient-to-b from-[#312E81] to-[#1E1B4B]">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <div class="w-6 h-6 rounded bg-magenta text-white font-bold text-[10px] flex items-center justify-center">
+                      💰
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold text-white tracking-wider leading-none">CATATKAS UMKM</div>
+                      <div class="text-[9px] text-white/70">Pembukuan Keuangan Digital</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mini Content Elements -->
+                <div class="bg-black/30 rounded p-2 flex items-center justify-between font-mono text-[10px]">
+                  <div>
+                    <div class="text-[8px] text-white/50">Total Saldo Kas</div>
+                    <div class="font-bold text-[#34D399]">Rp 14.850.000</div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-[8px] text-white/50">Status</div>
+                    <div class="text-cyan font-bold">Surplus</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Info -->
+            <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-mono text-magenta">
                 <span>FINANCIAL WEB APP</span>
                 <span class="text-[#27C93F] font-bold flex items-center gap-1">
@@ -273,19 +407,21 @@
               <h3 class="text-xl font-display font-light text-white">
                 CatatKas UMKM
               </h3>
-              <p class="text-white/60 text-sm leading-relaxed">
+              <p class="text-white/60 text-xs leading-relaxed">
                 Aplikasi pencatatan keuangan digital instan untuk mencatat transaksi dan laporan laba rugi usaha mikro.
               </p>
             </div>
-            <div class="pt-4 border-t border-hairline-dark flex items-center justify-between">
-              <span class="text-xs font-mono text-white/50">Single Page App</span>
+
+            <!-- Link -->
+            <div class="pt-3 border-t border-hairline-dark flex items-center justify-between">
+              <span class="text-[11px] font-mono text-white/50">Single Page App</span>
               <a 
                 href="https://catatkas-web.vercel.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                class="text-xs font-bold text-magenta hover:underline"
+                class="text-xs font-bold text-magenta hover:underline flex items-center gap-1"
               >
-                Buka Web App
+                Kunjungi Web App
               </a>
             </div>
           </div>

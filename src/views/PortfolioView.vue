@@ -4,7 +4,7 @@
       
       <!-- Editorial Page Top -->
       <div class="text-center max-w-2xl mx-auto space-y-4">
-        <div class="text-xs font-mono text-primary uppercase tracking-widest">SHOWCASE</div>
+        <div class="text-xs font-mono text-primary uppercase tracking-widest">SHOWCASE KARYA NYATA</div>
         <h1 class="text-4xl sm:text-5xl font-display font-light text-ink">
           Portofolio Produksi
         </h1>
@@ -13,11 +13,11 @@
         </p>
       </div>
 
-      <!-- Projects List in 8px Cards with Staggered Entrance Animation -->
-      <div class="space-y-10">
+      <!-- Projects List in 8px Cards with Rich Visual Mockups -->
+      <div class="space-y-12">
         
         <!-- Project 1: Lentera Indramayu -->
-        <div class="card-8px portfolio-item p-8 sm:p-10 space-y-6 hover:border-primary hover:-translate-y-1 transition-all duration-300">
+        <div class="card-8px portfolio-item p-8 sm:p-10 space-y-8 hover:border-primary hover:-translate-y-1 transition-all duration-300">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-hairline-light pb-4">
             <div class="flex items-center gap-2.5">
               <span class="w-2.5 h-2.5 rounded-full bg-[#27C93F] animate-pulse"></span>
@@ -26,6 +26,48 @@
               </span>
             </div>
             <span class="text-xs font-mono text-muted">LIVE PRODUCTION</span>
+          </div>
+
+          <!-- Visual Browser Window Mockup -->
+          <div class="rounded-lg overflow-hidden border border-hairline-light shadow-sm bg-[#0A2647] text-white">
+            <!-- Browser Top Bar -->
+            <div class="bg-[#071D36] px-4 py-2.5 flex items-center justify-between border-b border-white/10">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#FF5F56]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#27C93F]"></span>
+              </div>
+              <span class="text-xs font-mono text-white/70">https://lentera.indramayukab.go.id/</span>
+              <span class="text-xs font-mono text-[#D4AF37] font-bold">PWA LIVE</span>
+            </div>
+            
+            <!-- Website Preview Hero -->
+            <div class="p-6 sm:p-8 space-y-4 bg-gradient-to-r from-[#0A2647] to-[#0E3563]">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded bg-[#D4AF37] text-black font-bold text-xs flex items-center justify-center">
+                  L
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-[#D4AF37] tracking-wider">LENTERA INDRAMAYU</div>
+                  <div class="text-xs text-white/80">Mewujudkan Indramayu Religius & Ekonomi Kerakyatan</div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                <div class="bg-white/10 rounded-lg p-3">
+                  <div class="text-xs text-white/60">Layanan</div>
+                  <div class="text-sm font-bold text-white">Publik Terpadu</div>
+                </div>
+                <div class="bg-white/10 rounded-lg p-3">
+                  <div class="text-xs text-white/60">Ekonomi</div>
+                  <div class="text-sm font-bold text-[#D4AF37]">Katalog UMKM</div>
+                </div>
+                <div class="bg-white/10 rounded-lg p-3">
+                  <div class="text-xs text-white/60">Transparansi</div>
+                  <div class="text-sm font-bold text-[#27C93F]">Portal Data</div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -72,7 +114,7 @@
         </div>
 
         <!-- Project 2: Visit Gumiwang -->
-        <div class="card-8px portfolio-item p-8 sm:p-10 space-y-6 hover:border-cyan hover:-translate-y-1 transition-all duration-300">
+        <div class="card-8px portfolio-item p-8 sm:p-10 space-y-8 hover:border-cyan transition-all duration-300">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-hairline-light pb-4">
             <div class="flex items-center gap-2.5">
               <span class="w-2.5 h-2.5 rounded-full bg-[#27C93F]"></span>
@@ -81,6 +123,48 @@
               </span>
             </div>
             <span class="text-xs font-mono text-muted">LIVE PRODUCTION</span>
+          </div>
+
+          <!-- Visual Browser Window Mockup -->
+          <div class="rounded-lg overflow-hidden border border-hairline-light shadow-sm bg-[#064E3B] text-white">
+            <!-- Browser Top Bar -->
+            <div class="bg-[#043C2E] px-4 py-2.5 flex items-center justify-between border-b border-white/10">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#FF5F56]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#27C93F]"></span>
+              </div>
+              <span class="text-xs font-mono text-white/70">https://visitgumiwang.web.id/</span>
+              <span class="text-xs font-mono text-[#34D399] font-bold">DESA WISATA</span>
+            </div>
+            
+            <!-- Website Preview Hero -->
+            <div class="p-6 sm:p-8 space-y-4 bg-gradient-to-r from-[#064E3B] to-[#0A5C45]">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded bg-[#34D399] text-black font-bold text-xs flex items-center justify-center">
+                  🌿
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-[#34D399] tracking-wider">VISIT GUMIWANG</div>
+                  <div class="text-xs text-white/80">Pertanian, Perikanan & Produk Unggulan UMKM</div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                <div class="bg-white/10 rounded-lg p-3">
+                  <div class="text-xs text-white/60">Pertanian</div>
+                  <div class="text-sm font-bold text-white">Padi & Kebun</div>
+                </div>
+                <div class="bg-white/10 rounded-lg p-3">
+                  <div class="text-xs text-white/60">Perikanan</div>
+                  <div class="text-sm font-bold text-[#38BDF8]">Budidaya Ikan</div>
+                </div>
+                <div class="bg-white/10 rounded-lg p-3">
+                  <div class="text-xs text-white/60">Katalog</div>
+                  <div class="text-sm font-bold text-[#FBBF24]">Produk UMKM</div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -127,7 +211,7 @@
         </div>
 
         <!-- Project 3: CatatKas UMKM -->
-        <div class="card-8px portfolio-item p-8 sm:p-10 space-y-6 hover:border-magenta hover:-translate-y-1 transition-all duration-300">
+        <div class="card-8px portfolio-item p-8 sm:p-10 space-y-8 hover:border-magenta transition-all duration-300">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-hairline-light pb-4">
             <div class="flex items-center gap-2.5">
               <span class="w-2.5 h-2.5 rounded-full bg-[#27C93F]"></span>
@@ -136,6 +220,50 @@
               </span>
             </div>
             <span class="text-xs font-mono text-muted">LIVE PRODUCTION</span>
+          </div>
+
+          <!-- Visual Browser Window Mockup -->
+          <div class="rounded-lg overflow-hidden border border-hairline-light shadow-sm bg-[#312E81] text-white">
+            <!-- Browser Top Bar -->
+            <div class="bg-[#242168] px-4 py-2.5 flex items-center justify-between border-b border-white/10">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#FF5F56]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#27C93F]"></span>
+              </div>
+              <span class="text-xs font-mono text-white/70">https://catatkas-web.vercel.app/</span>
+              <span class="text-xs font-mono text-[#F472B6] font-bold">WEB APP</span>
+            </div>
+            
+            <!-- App Preview Hero -->
+            <div class="p-6 sm:p-8 space-y-4 bg-gradient-to-r from-[#312E81] to-[#4338CA]">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded bg-magenta text-white font-bold text-xs flex items-center justify-center">
+                    💰
+                  </div>
+                  <div>
+                    <div class="text-sm font-bold text-white tracking-wider">CATATKAS UMKM</div>
+                    <div class="text-xs text-white/80">Pembukuan Keuangan Digital Praktis</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 font-mono">
+                <div class="bg-black/30 rounded-lg p-3">
+                  <div class="text-xs text-white/60">Saldo Kas</div>
+                  <div class="text-sm font-bold text-[#34D399]">Rp 14.850.000</div>
+                </div>
+                <div class="bg-black/30 rounded-lg p-3">
+                  <div class="text-xs text-white/60">Pemasukan</div>
+                  <div class="text-sm font-bold text-cyan">+Rp 3.200.000</div>
+                </div>
+                <div class="bg-black/30 rounded-lg p-3">
+                  <div class="text-xs text-white/60">Pengeluaran</div>
+                  <div class="text-sm font-bold text-[#F43F5E]">-Rp 850.000</div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
