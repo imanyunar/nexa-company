@@ -3,7 +3,7 @@
     <div class="max-w-4xl mx-auto px-6 space-y-16">
 
       <div class="text-center max-w-2xl mx-auto space-y-4">
-        <div class="text-xs font-mono t-cyan uppercase tracking-[0.25em] font-semibold">BE SEEN · BE CHOSEN</div>
+        <div class="text-xs font-mono t-cyan uppercase tracking-[0.25em] font-semibold">BE SEEN BE CHOSEN</div>
         <h1 class="text-4xl sm:text-5xl font-display font-light text-white">Tentang Nexa Digital Agency</h1>
         <p class="t-muted text-base sm:text-lg leading-relaxed">Agensi teknologi independen yang fokus pada kualitas pengerjaan, kejujuran komunikasi, dan solusi nyata.</p>
       </div>
@@ -11,9 +11,9 @@
       <div class="card-unified about-block p-8 sm:p-10 space-y-6">
         <div class="flex items-center gap-3">
           <span class="px-3 py-1 rounded bg-elevated border b-subtle text-xs font-mono t-cyan font-semibold">TAGLINE & FILOSOFI</span>
-          <h2 class="text-2xl sm:text-3xl font-display font-light text-white">Be Seen. Be Chosen.</h2>
+          <h2 class="text-2xl sm:text-3xl font-display font-light text-white">Be Seen Be Chosen</h2>
         </div>
-        <p class="t-muted text-base leading-relaxed">Dalam lanskap kompetisi digital yang ketat, memiliki website atau aplikasi saja tidak cukup. Misi Nexa Digital Agency berakar pada prinsip <strong class="text-white">"Be Seen, Be Chosen"</strong> — membangun sistem digital yang tidak sekadar tampil menarik, tetapi secara terukur mampu menarik perhatian target audiens dan membuat mereka memilih produk atau layanan Anda.</p>
+        <p class="t-muted text-base leading-relaxed">Dalam lanskap kompetisi digital yang ketat, memiliki website atau aplikasi saja tidak cukup. Misi Nexa Digital Agency berakar pada prinsip <strong class="text-white">Be Seen Be Chosen</strong>: membangun sistem digital yang tidak sekadar tampil menarik, tetapi secara terukur mampu menarik perhatian target audiens dan membuat mereka memilih produk atau layanan Anda.</p>
         <p class="t-muted text-base leading-relaxed">Pendekatan kami mengutamakan <strong class="text-white">performa tinggi</strong>, <strong class="text-white">antarmuka bersih yang mudah dipahami</strong>, dan <strong class="text-white">arsitektur kode yang rapi</strong> agar brand Anda memiliki daya saing berkelanjutan.</p>
       </div>
 

@@ -41,7 +41,7 @@
               </div>
               <div class="space-y-1 border-t b-subtle pt-6">
                 <div class="font-display font-light text-xl text-white">Nexa Digital Agency</div>
-                <div class="text-xs t-cyan font-mono tracking-wider font-semibold">Be Seen · Be Chosen</div>
+                <div class="text-xs t-cyan font-mono tracking-wider font-semibold">Be Seen Be Chosen</div>
               </div>
               <div class="grid grid-cols-2 gap-4 pt-2 text-left font-mono text-xs t-muted border-t b-subtle">
                 <div>
@@ -253,7 +253,7 @@
     <!-- CTA BAND -->
     <section class="bg-elevated py-20 sm:py-24 border-b b-subtle relative overflow-hidden">
       <div class="max-w-4xl mx-auto px-6 text-center space-y-6 relative z-10">
-        <div class="text-xs font-mono t-cyan uppercase tracking-[0.25em] font-semibold">BE SEEN · BE CHOSEN</div>
+        <div class="text-xs font-mono t-cyan uppercase tracking-[0.25em] font-semibold">BE SEEN BE CHOSEN</div>
         <h2 class="text-3xl sm:text-4xl font-display font-light text-white leading-tight">Siap Menghadirkan Solusi Digital Terbaik?</h2>
         <p class="t-muted text-base sm:text-lg max-w-xl mx-auto leading-relaxed">Konsultasikan kebutuhan website, pengolahan data, atau game Anda bersama tim kami. Dapatkan arsitektur terbaik agar brand Anda dilihat dan dipilih.</p>
         <div class="pt-4">
