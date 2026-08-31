@@ -44,6 +44,7 @@ Repositori ini berisi source code untuk website company profile Nexa — media p
 | Layer | Teknologi |
 | --- | --- |
 | **Frontend** | Vue.js / React / HTML, TailwindCSS |
+| **Animation** | [Anime.js](https://animejs.com/) (`animejs`) |
 | **Backend** | Laravel |
 | **Database** | MySQL |
 | **Deployment** | - |

@@ -119,8 +119,10 @@ Sederhana: logo, 3 link layanan, kontak. Tidak perlu mega-footer 5 kolom kalau k
 
 ## 6. Motion
 
+Library: **[Anime.js](https://animejs.com/)** (`npm i animejs`) — digunakan untuk implementasi stroke-dashoffset drawing animation, micro-interactions, dan transisi UI yang presisi & performant.
+
 Satu momen animasi yang disengaja, bukan fade-slide-up di tiap section:
-- Saat halaman dimuat: garis panah pada logo di hero "digambar" sekali (SVG stroke-dashoffset animation), lalu berhenti.
+- Saat halaman dimuat: garis panah pada logo di hero "digambar" sekali (SVG stroke-dashoffset animation menggunakan Anime.js), lalu berhenti.
 - Hover pada elemen interaktif (tombol, link portofolio) boleh transisi warna/posisi halus (150–200ms).
 - Tidak ada animasi scroll-triggered di setiap section. Reduced-motion (`prefers-reduced-motion`) wajib dihormati — matikan animasi draw-in jika user set itu.
 
