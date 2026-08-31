@@ -3,37 +3,14 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --primary: #3A4CE0;
-    --primary-pressed: #2F3EB8;
-    --cyan: #17C3F2;
-    --cyan-pressed: #0EA2CC;
-    --magenta: #E620C5;
-    --violet: #8A2BE2;
-    
-    /* Unified Consistent Dark Indigo Theme */
-    --bg-base: #0B0E2B;
-    --bg-elevated: #11153B;
-    --bg-card: #151A48;
-    --bg-card-hover: #1B215C;
-    
-    --text-primary: #FFFFFF;
-    --text-secondary: rgba(255, 255, 255, 0.75);
-    --text-muted: rgba(255, 255, 255, 0.50);
-    
-    --border-subtle: rgba(255, 255, 255, 0.10);
-    --border-hover: rgba(23, 195, 242, 0.35);
-  }
-
   body {
-    background-color: var(--bg-base);
-    color: var(--text-primary);
+    background-color: #0B0E2B;
+    color: #FFFFFF;
     font-family: 'Satoshi', 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
   }
 
-  /* Consistent airy light 300 weight typography */
   h1, h2, h3 {
     font-family: 'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif;
     font-weight: 300;
@@ -41,123 +18,106 @@
     color: #FFFFFF;
   }
 
-  /* Accessibility keyboard focus ring */
   *:focus-visible {
-    outline: 2px solid var(--cyan) !important;
+    outline: 2px solid #17C3F2 !important;
     outline-offset: 2px !important;
   }
 }
 
-/* Base background classes */
-.bg-base {
-  background-color: #0B0E2B !important;
+@layer utilities {
+  /* ═══════════════════════════════════════════
+     BACKGROUND COLORS
+     ═══════════════════════════════════════════ */
+  .bg-base     { background-color: #0B0E2B; }
+  .bg-elevated { background-color: #11153B; }
+  .bg-card     { background-color: #151A48; }
+
+  /* ═══════════════════════════════════════════
+     TEXT COLORS
+     ═══════════════════════════════════════════ */
+  .t-white { color: #FFFFFF; }
+  .t-muted { color: #B0B5D0; }
+  .t-faint { color: #737899; }
+  .t-cyan  { color: #17C3F2; }
+  .t-mag   { color: #E620C5; }
+
+  /* ═══════════════════════════════════════════
+     BORDER COLORS
+     ═══════════════════════════════════════════ */
+  .b-subtle { border-color: rgba(255, 255, 255, 0.12); }
 }
 
-.bg-elevated {
-  background-color: #11153B !important;
-}
-
-.bg-card {
-  background-color: #151A48 !important;
-}
-
-/* 1. Primary Blue Pill Button with 100% Guaranteed White Text */
+/* ═══════════════════════════════════════════
+   BUTTONS
+   ═══════════════════════════════════════════ */
 .btn-pill-primary {
-  background-color: #3A4CE0 !important;
-  color: #FFFFFF !important;
-  font-weight: 700 !important;
-  border-radius: 9999px !important;
-  padding: 12px 28px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  text-decoration: none !important;
-  border: 1px solid transparent !important;
+  background-color: #3A4CE0;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 12px 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  border: none;
 }
-
 .btn-pill-primary:hover {
-  background-color: #2F3EB8 !important;
-  color: #FFFFFF !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 18px rgba(58, 76, 224, 0.45) !important;
+  background-color: #2F3EB8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 18px rgba(58, 76, 224, 0.4);
 }
 
-/* 2. Magenta Action Pill Button */
 .btn-pill-action {
-  background-color: #E620C5 !important;
-  color: #FFFFFF !important;
-  font-weight: 700 !important;
-  border-radius: 9999px !important;
-  padding: 12px 28px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  text-decoration: none !important;
+  background-color: #E620C5;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 12px 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  border: none;
 }
-
 .btn-pill-action:hover {
-  background-color: #C410A5 !important;
-  color: #FFFFFF !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 18px rgba(230, 32, 197, 0.45) !important;
+  background-color: #C410A5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 18px rgba(230, 32, 197, 0.4);
 }
 
-/* 3. Dark Secondary Outline Button with Crisp White Text */
 .btn-pill-secondary {
-  background-color: rgba(255, 255, 255, 0.07) !important;
-  color: #FFFFFF !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
-  font-weight: 600 !important;
-  border-radius: 9999px !important;
-  padding: 12px 28px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  text-decoration: none !important;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 12px 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
 }
-
 .btn-pill-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-  color: #FFFFFF !important;
-  border-color: rgba(255, 255, 255, 0.50) !important;
-  transform: translateY(-1px) !important;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-1px);
 }
 
-/* 4. White Solid Pill Button with 100% Guaranteed Dark Navy Text */
-.btn-pill-white {
-  background-color: #FFFFFF !important;
-  color: #0B0E2B !important;
-  font-weight: 700 !important;
-  border-radius: 9999px !important;
-  padding: 14px 36px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  text-decoration: none !important;
-  border: 1px solid transparent !important;
-}
-
-.btn-pill-white:hover {
-  background-color: #F0F4FF !important;
-  color: #3A4CE0 !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35) !important;
-}
-
-/* Unified 8px Card style */
+/* ═══════════════════════════════════════════
+   CARDS
+   ═══════════════════════════════════════════ */
 .card-unified {
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   background-color: #151A48;
   color: #FFFFFF;
   transition: border-color 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
 }
-
 .card-unified:hover {
-  border-color: rgba(23, 195, 242, 0.45);
+  border-color: rgba(23, 195, 242, 0.4);
   background-color: #1A2056;
 }
