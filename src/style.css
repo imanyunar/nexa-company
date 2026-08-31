@@ -18,7 +18,7 @@
     --bg-card-hover: #1B215C;
     
     --text-primary: #FFFFFF;
-    --text-secondary: rgba(255, 255, 255, 0.72);
+    --text-secondary: rgba(255, 255, 255, 0.75);
     --text-muted: rgba(255, 255, 255, 0.50);
     
     --border-subtle: rgba(255, 255, 255, 0.10);
@@ -61,64 +61,91 @@
   background-color: #151A48 !important;
 }
 
-/* Unified Pill Button styles */
+/* 1. Primary Blue Pill Button with 100% Guaranteed White Text */
 .btn-pill-primary {
   background-color: #3A4CE0 !important;
   color: #FFFFFF !important;
-  font-weight: 700;
-  border-radius: 9999px;
-  padding: 12px 28px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  text-decoration: none;
-  border: 1px solid transparent;
+  font-weight: 700 !important;
+  border-radius: 9999px !important;
+  padding: 12px 28px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  text-decoration: none !important;
+  border: 1px solid transparent !important;
 }
 
 .btn-pill-primary:hover {
   background-color: #2F3EB8 !important;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(58, 76, 224, 0.35);
+  color: #FFFFFF !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 18px rgba(58, 76, 224, 0.45) !important;
 }
 
+/* 2. Magenta Action Pill Button */
 .btn-pill-action {
   background-color: #E620C5 !important;
   color: #FFFFFF !important;
-  font-weight: 700;
-  border-radius: 9999px;
-  padding: 12px 28px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  text-decoration: none;
+  font-weight: 700 !important;
+  border-radius: 9999px !important;
+  padding: 12px 28px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  text-decoration: none !important;
 }
 
 .btn-pill-action:hover {
   background-color: #C410A5 !important;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(230, 32, 197, 0.35);
+  color: #FFFFFF !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 18px rgba(230, 32, 197, 0.45) !important;
 }
 
+/* 3. Dark Secondary Outline Button with Crisp White Text */
 .btn-pill-secondary {
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.07) !important;
   color: #FFFFFF !important;
-  border: 1px solid rgba(255, 255, 255, 0.20) !important;
-  font-weight: 600;
-  border-radius: 9999px;
-  padding: 12px 28px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  font-weight: 600 !important;
+  border-radius: 9999px !important;
+  padding: 12px 28px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  text-decoration: none !important;
 }
 
 .btn-pill-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.12) !important;
-  border-color: rgba(255, 255, 255, 0.40) !important;
-  transform: translateY(-1px);
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.50) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* 4. White Solid Pill Button with 100% Guaranteed Dark Navy Text */
+.btn-pill-white {
+  background-color: #FFFFFF !important;
+  color: #0B0E2B !important;
+  font-weight: 700 !important;
+  border-radius: 9999px !important;
+  padding: 14px 36px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  text-decoration: none !important;
+  border: 1px solid transparent !important;
+}
+
+.btn-pill-white:hover {
+  background-color: #F0F4FF !important;
+  color: #3A4CE0 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35) !important;
 }
 
 /* Unified 8px Card style */
