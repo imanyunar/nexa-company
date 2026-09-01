@@ -165,7 +165,7 @@
             <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-mono t-cyan">
                 <span>PEMKAB INDRAMAYU</span>
-                <span class="font-bold flex items-center gap-1" style="color:#27C93F;"><span class="w-1.5 h-1.5 rounded-full animate-ping" style="background:#27C93F;"></span>LIVE</span>
+                <span class="font-bold" style="color:#27C93F;">LIVE</span>
               </div>
               <h3 class="text-xl font-display font-light text-white">LENTERA Indramayu</h3>
               <p class="t-muted text-xs leading-relaxed">Platform digital resmi pelayanan publik dan ekonomi kerakyatan berbasis PWA.</p>
@@ -199,7 +199,7 @@
             <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-mono t-cyan">
                 <span>PEMERINTAH DESA</span>
-                <span class="font-bold flex items-center gap-1" style="color:#27C93F;"><span class="w-1.5 h-1.5 rounded-full animate-ping" style="background:#27C93F;"></span>LIVE</span>
+                <span class="font-bold" style="color:#27C93F;">LIVE</span>
               </div>
               <h3 class="text-xl font-display font-light text-white">Portal Desa Tempursari</h3>
               <p class="t-muted text-xs leading-relaxed">Portal informasi digital terintegrasi yang menyajikan profil wilayah, infografis statistik kependudukan, kesenian daerah, dan peta interaktif.</p>
@@ -233,7 +233,7 @@
             <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-mono t-cyan">
                 <span>DESA WISATA &amp; UMKM</span>
-                <span class="font-bold flex items-center gap-1" style="color:#27C93F;"><span class="w-1.5 h-1.5 rounded-full animate-ping" style="background:#27C93F;"></span>LIVE</span>
+                <span class="font-bold" style="color:#27C93F;">LIVE</span>
               </div>
               <h3 class="text-xl font-display font-light text-white">Visit Gumiwang</h3>
               <p class="t-muted text-xs leading-relaxed">Portal promosi potensi wisata alam, agrikultur, dan katalog produk UMKM Desa Gumiwang.</p>
@@ -267,7 +267,7 @@
             <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-mono t-mag">
                 <span>FULL FLUTTER APP</span>
-                <span class="font-bold flex items-center gap-1" style="color:#27C93F;"><span class="w-1.5 h-1.5 rounded-full animate-ping" style="background:#27C93F;"></span>LIVE</span>
+                <span class="font-bold" style="color:#27C93F;">LIVE</span>
               </div>
               <h3 class="text-xl font-display font-light text-white">CatatKas UMKM</h3>
               <p class="t-muted text-xs leading-relaxed">Aplikasi pencatatan keuangan digital instan berbasis Full Flutter untuk pencatatan mutasi transaksi dan laporan laba rugi.</p>
