@@ -284,8 +284,44 @@
       </div>
     </section>
 
+    <!-- SECTION NEWS & INSIGHTS -->
+    <section class="bg-elevated py-24 sm:py-28 border-b b-subtle relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <div class="text-xs font-mono t-cyan uppercase tracking-widest font-semibold">INSIGHTS &amp; NEWS</div>
+          <h2 class="text-3xl sm:text-4xl font-display font-light text-white">Wawasan &amp; Catatan Teknologi</h2>
+          <p class="t-muted text-base sm:text-lg leading-relaxed">Artikel teknis, tren arsitektur software, dan inovasi digital terkini dari tim pengembang Nexa.</p>
+        </div>
+
+        <!-- Coming Soon Card -->
+        <div class="card-unified p-10 sm:p-14 text-center space-y-6 relative overflow-hidden">
+          <!-- Decorative pulse ring -->
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-10">
+            <div class="w-64 h-64 rounded-full border-2 border-cyan animate-ping" style="animation-duration: 3s;"></div>
+          </div>
+
+          <div class="relative z-10 space-y-5">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono font-bold uppercase tracking-wider" style="background: rgba(23,195,242,0.1); border: 1px solid rgba(23,195,242,0.25); color: #17C3F2;">
+              <span class="w-2 h-2 rounded-full animate-pulse" style="background: #17C3F2;"></span>
+              COMING SOON
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-display font-light text-white">Segera Hadir</h3>
+            <p class="t-muted text-sm sm:text-base max-w-md mx-auto leading-relaxed">
+              Kami sedang menyiapkan artikel dan insight menarik seputar teknologi web, digitalisasi, dan pengembangan aplikasi modern. Nantikan update pertama kami!
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+              <span class="px-3 py-1.5 rounded text-[10px] font-mono font-bold bg-blue-500/10 text-blue-300 border border-blue-500/20">PWA & WEB</span>
+              <span class="px-3 py-1.5 rounded text-[10px] font-mono font-bold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">PORTAL PUBLIK</span>
+              <span class="px-3 py-1.5 rounded text-[10px] font-mono font-bold bg-pink-500/10 text-pink-300 border border-pink-500/20">FLUTTER</span>
+              <span class="px-3 py-1.5 rounded text-[10px] font-mono font-bold bg-amber-500/10 text-amber-300 border border-amber-500/20">DATA ANALYSIS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA BAND -->
-    <section class="bg-elevated py-20 sm:py-24 border-b b-subtle relative overflow-hidden">
+    <section class="bg-base py-20 sm:py-24 border-b b-subtle relative overflow-hidden">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6 relative z-10">
         <div class="text-xs font-mono t-cyan uppercase tracking-[0.25em] font-semibold">BE SEEN BE CHOSEN</div>
         <h2 class="text-3xl sm:text-4xl font-display font-light text-white leading-tight">Siap Menghadirkan Solusi Digital Terbaik?</h2>
@@ -316,3 +352,4 @@ onMounted(() => {
   animateStaggerFadeIn('.project-tile', { delay: 600, stagger: 120 })
 })
 </script>
+
