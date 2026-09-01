@@ -144,7 +144,7 @@
           </router-link>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Lentera -->
           <div class="card-unified project-tile p-5 flex flex-col justify-between space-y-4 group">
             <div class="rounded-lg overflow-hidden border b-subtle flex flex-col" style="background:#0B0E2B;">
@@ -173,6 +173,40 @@
             <div class="pt-3 border-t b-subtle flex items-center justify-between">
               <span class="text-[11px] font-mono t-faint">Laravel · PWA</span>
               <a href="https://lentera.indramayukab.go.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-cyan hover:underline flex items-center gap-1">
+                <span>Kunjungi</span>
+                <ArrowUpRight class="w-3.5 h-3.5" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Portal Desa Tempursari -->
+          <div class="card-unified project-tile p-5 flex flex-col justify-between space-y-4 group">
+            <div class="rounded-lg overflow-hidden border b-subtle flex flex-col" style="background:#0B0E2B;">
+              <div class="px-3 py-2 flex items-center justify-between border-b b-subtle" style="background:#070920;">
+                <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full" style="background:#FF5F56;"></span><span class="w-2 h-2 rounded-full" style="background:#FFBD2E;"></span><span class="w-2 h-2 rounded-full" style="background:#27C93F;"></span></div>
+                <span class="text-[10px] font-mono t-muted truncate max-w-[140px]">portal-desa-tempursari-six.vercel.app</span>
+                <span class="text-[9px] font-mono font-bold" style="color:#10B981;">PORTAL</span>
+              </div>
+              <div class="relative w-full overflow-hidden h-[160px] sm:h-[220px]" style="background:#0B0E2B;">
+                <img 
+                  src="/assets/projects/tempursari.png" 
+                  alt="Portal Desa Tempursari Live Website Preview" 
+                  class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center justify-between text-xs font-mono t-cyan">
+                <span>PEMERINTAH DESA</span>
+                <span class="font-bold flex items-center gap-1" style="color:#27C93F;"><span class="w-1.5 h-1.5 rounded-full animate-ping" style="background:#27C93F;"></span>LIVE</span>
+              </div>
+              <h3 class="text-xl font-display font-light text-white">Portal Desa Tempursari</h3>
+              <p class="t-muted text-xs leading-relaxed">Portal informasi digital terintegrasi yang menyajikan profil wilayah, infografis statistik kependudukan, kesenian daerah, dan peta interaktif.</p>
+            </div>
+            <div class="pt-3 border-t b-subtle flex items-center justify-between">
+              <span class="text-[11px] font-mono t-faint">Web Portal · Peta Interaktif</span>
+              <a href="https://portal-desa-tempursari-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-cyan hover:underline flex items-center gap-1">
                 <span>Kunjungi</span>
                 <ArrowUpRight class="w-3.5 h-3.5" />
               </a>

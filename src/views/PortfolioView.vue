@@ -58,6 +58,55 @@
           </div>
         </div>
 
+        <!-- Portal Desa Tempursari -->
+        <div class="card-unified portfolio-item p-8 sm:p-10 space-y-8">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b b-subtle pb-4">
+            <div class="flex items-center gap-2.5"><span class="w-2.5 h-2.5 rounded-full" style="background:#27C93F;"></span><span class="text-xs font-mono font-bold uppercase tracking-wider t-cyan">PORTAL DESA & INFOGRAFIS INTERAKTIF</span></div>
+            <span class="text-xs font-mono t-faint">LIVE PRODUCTION</span>
+          </div>
+          <!-- Live Preview Window -->
+          <div class="rounded-lg overflow-hidden border b-subtle" style="background:#0B0E2B;">
+            <div class="px-4 py-2.5 flex items-center justify-between border-b b-subtle" style="background:#070920;">
+              <div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full" style="background:#FF5F56;"></span><span class="w-2.5 h-2.5 rounded-full" style="background:#FFBD2E;"></span><span class="w-2.5 h-2.5 rounded-full" style="background:#27C93F;"></span></div>
+              <span class="text-xs font-mono t-muted">https://portal-desa-tempursari-six.vercel.app/</span>
+              <span class="text-xs font-mono font-bold" style="color:#10B981;">PORTAL DESA</span>
+            </div>
+            <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px]" style="background:#0B0E2B;">
+              <img 
+                src="/assets/projects/tempursari.png" 
+                alt="Portal Desa Tempursari Live Preview" 
+                class="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-8 space-y-4">
+              <h2 class="text-2xl sm:text-3xl font-display font-light text-white">Portal Desa Tempursari — Tata Kelola Digital & Peta Interaktif</h2>
+              <p class="t-muted text-base leading-relaxed">Website resmi Pemerintah Desa Tempursari yang dirancang untuk mewujudkan tata kelola desa yang mandiri, asri, berbudaya, serta terintegrasi secara digital demi transparansi dan kemudahan akses informasi publik.</p>
+              <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
+                <div class="flex items-center gap-2.5">
+                  <CheckCircle2 class="w-4 h-4 text-cyan shrink-0" />
+                  <span>Infografis statistik kependudukan, luas wilayah, dan dusun administratif.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <CheckCircle2 class="w-4 h-4 text-cyan shrink-0" />
+                  <span>Fitur Peta Interaktif desa, etalase UMKM & wisata, serta profil kesenian daerah.</span>
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-4 bg-elevated p-6 rounded-lg border b-subtle space-y-4">
+              <div class="space-y-2 text-xs font-mono"><div class="t-faint">KLIEN:</div><div class="font-bold text-white text-sm">Pemerintah Desa Tempursari</div><div class="t-faint pt-2">TEKNOLOGI:</div><div class="font-medium text-white">Next.js, TailwindCSS, Interactive Map</div></div>
+              <div class="pt-2">
+                <a href="https://portal-desa-tempursari-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-pill-primary w-full text-center text-xs uppercase font-bold py-3 flex items-center justify-center gap-1.5">
+                  <span>Buka Website</span>
+                  <ArrowUpRight class="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Visit Gumiwang -->
         <div class="card-unified portfolio-item p-8 sm:p-10 space-y-8">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b b-subtle pb-4">
