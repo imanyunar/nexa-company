@@ -294,18 +294,12 @@
         </div>
 
         <!-- Coming Soon Card -->
-        <div class="card-unified p-10 sm:p-14 text-center space-y-5">
+        <div class="card-unified p-10 sm:p-14 text-center space-y-4">
           <div class="text-xs font-mono t-cyan uppercase tracking-wider font-semibold">COMING SOON</div>
           <h3 class="text-2xl sm:text-3xl font-display font-light text-white">Segera Hadir</h3>
           <p class="t-muted text-sm sm:text-base max-w-md mx-auto leading-relaxed">
             Kami sedang menyiapkan artikel dan insight seputar teknologi web, digitalisasi, dan pengembangan aplikasi modern.
           </p>
-          <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
-            <span class="px-3 py-1.5 rounded text-[10px] font-mono font-bold bg-blue-500/10 text-blue-300 border border-blue-500/20">PWA &amp; WEB</span>
-            <span class="px-3 py-1.5 rounded text-[10px] font-mono font-bold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">PORTAL PUBLIK</span>
-            <span class="px-3 py-1.5 rounded text-[10px] font-mono font-bold bg-pink-500/10 text-pink-300 border border-pink-500/20">FLUTTER</span>
-            <span class="px-3 py-1.5 rounded text-[10px] font-mono font-bold bg-amber-500/10 text-amber-300 border border-amber-500/20">DATA ANALYSIS</span>
-          </div>
         </div>
       </div>
     </section>
