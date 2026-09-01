@@ -65,7 +65,7 @@
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <div class="max-w-2xl space-y-3">
             <div class="text-xs font-mono t-cyan uppercase tracking-widest">KEAHLIAN UTAMA</div>
-            <h2 class="text-3xl sm:text-4xl font-display font-light text-white">Tiga Layanan Spesialis</h2>
+            <h2 class="text-3xl sm:text-4xl font-display font-light text-white">Empat Layanan Spesialis</h2>
             <p class="t-muted text-base sm:text-lg leading-relaxed">Fokus keahlian terarah untuk mendukung pertumbuhan digital Anda.</p>
           </div>
           <router-link to="/layanan" class="btn-pill-secondary text-xs font-semibold py-2.5 px-6 self-start sm:self-auto flex items-center gap-1.5">
@@ -74,7 +74,7 @@
           </router-link>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <!-- Web Dev -->
           <div class="card-unified service-card p-8 flex flex-col justify-between space-y-6">
             <div class="space-y-4">
@@ -120,6 +120,23 @@
             </div>
             <div class="pt-4 border-t b-subtle">
               <router-link to="/layanan" class="text-xs font-bold t-mag hover:underline uppercase tracking-wider flex items-center gap-1">
+                <span>Pelajari Detail</span>
+                <ArrowUpRight class="w-3.5 h-3.5" />
+              </router-link>
+            </div>
+          </div>
+
+          <!-- Mobile Apps -->
+          <div class="card-unified service-card p-8 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: rgba(34,197,94,0.18); border: 1px solid rgba(34,197,94,0.35);">
+                <Smartphone class="w-6 h-6 text-emerald-400" />
+              </div>
+              <h3 class="text-2xl font-display font-light text-white">Mobile Apps</h3>
+              <p class="t-muted text-sm leading-relaxed">Pengembangan aplikasi mobile lintas platform menggunakan Flutter untuk Android dan iOS dengan performa native dan satu basis kode.</p>
+            </div>
+            <div class="pt-4 border-t b-subtle">
+              <router-link to="/layanan" class="text-xs font-bold t-cyan hover:underline uppercase tracking-wider flex items-center gap-1">
                 <span>Pelajari Detail</span>
                 <ArrowUpRight class="w-3.5 h-3.5" />
               </router-link>
@@ -320,7 +337,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { Globe, BarChart3, Gamepad2, ArrowUpRight } from 'lucide-vue-next'
+import { Globe, BarChart3, Gamepad2, Smartphone, ArrowUpRight } from 'lucide-vue-next'
 import { animateStrokeDraw, animateHeroEntrance, animateStaggerFadeIn } from '../utils/animations'
 
 const heroLine = ref(null)

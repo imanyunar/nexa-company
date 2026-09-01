@@ -5,7 +5,7 @@
       <div class="text-center max-w-2xl mx-auto space-y-4">
         <div class="text-xs font-mono t-cyan uppercase tracking-widest">CAPABILITIES</div>
         <h1 class="text-4xl sm:text-5xl font-display font-light text-white">Layanan Spesialis</h1>
-        <p class="t-muted text-base sm:text-lg leading-relaxed">Tiga pilar layanan teknis yang kami kembangkan untuk memberikan dampak nyata bagi bisnis, instansi, dan pengguna Anda.</p>
+        <p class="t-muted text-base sm:text-lg leading-relaxed">Empat pilar layanan teknis yang kami kembangkan untuk memberikan dampak nyata bagi bisnis, instansi, dan pengguna Anda.</p>
       </div>
 
       <!-- Web Development -->
@@ -110,6 +110,40 @@
         </div>
       </div>
 
+      <!-- Mobile Apps -->
+      <div class="card-unified service-block p-8 sm:p-10 space-y-6">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background:rgba(34,197,94,0.18); border:1px solid rgba(34,197,94,0.35);">
+            <Smartphone class="w-6 h-6 text-emerald-400" />
+          </div>
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-display font-light text-white">Mobile Apps</h2>
+            <p class="text-xs t-faint font-mono">Flutter · Android · iOS · Cross-Platform</p>
+          </div>
+        </div>
+        <p class="t-muted text-base leading-relaxed">Membangun aplikasi mobile lintas platform dengan Flutter, menghasilkan performa native di Android dan iOS dari satu basis kode yang efisien.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div class="bg-elevated p-5 rounded-lg border b-subtle">
+            <div class="flex items-center gap-2 mb-1.5">
+              <Layers class="w-4 h-4 text-emerald-400" />
+              <h3 class="font-bold text-sm text-white">Aplikasi Bisnis & Utilitas</h3>
+            </div>
+            <p class="text-xs t-muted leading-relaxed">Aplikasi pencatatan, manajemen inventaris, POS, dan utilitas operasional harian untuk UMKM dan enterprise.</p>
+          </div>
+          <div class="bg-elevated p-5 rounded-lg border b-subtle">
+            <div class="flex items-center gap-2 mb-1.5">
+              <Smartphone class="w-4 h-4 text-emerald-400" />
+              <h3 class="font-bold text-sm text-white">Aplikasi Layanan Publik</h3>
+            </div>
+            <p class="text-xs t-muted leading-relaxed">Aplikasi mobile untuk instansi pemerintah, desa, dan lembaga pendidikan dengan UI intuitif dan performa ringan.</p>
+          </div>
+        </div>
+        <div class="pt-4 border-t b-subtle flex flex-wrap items-center justify-between gap-4">
+          <div class="text-xs t-muted font-mono">Stack: <span class="text-white font-semibold">Flutter, Dart, Firebase, REST API</span></div>
+          <router-link to="/kontak" class="btn-pill-primary text-xs uppercase font-bold py-2.5 px-6">Konsultasi Mobile</router-link>
+        </div>
+      </div>
+
       <!-- Alur Pengerjaan -->
       <div class="card-unified bg-elevated p-8 sm:p-10 space-y-8">
         <div class="text-center max-w-xl mx-auto space-y-2">
@@ -129,7 +163,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import { Globe, BarChart3, Gamepad2, Code2, Layers, Database, TrendingUp, Sparkles, Activity } from 'lucide-vue-next'
+import { Globe, BarChart3, Gamepad2, Smartphone, Code2, Layers, Database, TrendingUp, Sparkles, Activity } from 'lucide-vue-next'
 import { animateStaggerFadeIn } from '../utils/animations'
 onMounted(() => { animateStaggerFadeIn('.service-block', { delay: 150, stagger: 150 }) })
 </script>
