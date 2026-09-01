@@ -159,7 +159,7 @@
         <!-- CatatKas -->
         <div class="card-unified portfolio-item p-8 sm:p-10 space-y-8">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b b-subtle pb-4">
-            <div class="flex items-center gap-2.5"><span class="w-2.5 h-2.5 rounded-full" style="background:#27C93F;"></span><span class="text-xs font-mono font-bold uppercase tracking-wider t-mag">APLIKASI FINANSIAL DIGITAL</span></div>
+            <div class="flex items-center gap-2.5"><span class="w-2.5 h-2.5 rounded-full" style="background:#27C93F;"></span><span class="text-xs font-mono font-bold uppercase tracking-wider t-mag">APLIKASI FULL FLUTTER DIGITAL</span></div>
             <span class="text-xs font-mono t-faint">LIVE PRODUCTION</span>
           </div>
           <!-- Live Preview Window -->
@@ -167,7 +167,7 @@
             <div class="px-4 py-2.5 flex items-center justify-between border-b b-subtle" style="background:#070920;">
               <div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full" style="background:#FF5F56;"></span><span class="w-2.5 h-2.5 rounded-full" style="background:#FFBD2E;"></span><span class="w-2.5 h-2.5 rounded-full" style="background:#27C93F;"></span></div>
               <span class="text-xs font-mono t-muted">https://catatkas-web.vercel.app/</span>
-              <span class="text-xs font-mono font-bold" style="color:#F472B6;">WEB APP</span>
+              <span class="text-xs font-mono font-bold" style="color:#F472B6;">FLUTTER</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px]" style="background:#0B0E2B;">
               <img 
@@ -181,7 +181,7 @@
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div class="lg:col-span-8 space-y-4">
               <h2 class="text-2xl sm:text-3xl font-display font-light text-white">CatatKas — Pembukuan Keuangan Digital UMKM</h2>
-              <p class="t-muted text-base leading-relaxed">Aplikasi web pembukuan kas harian bagi pelaku usaha mikro. Membantu pencatatan kas masuk/keluar secara instan, kalkulasi saldo otomatis, dan pembuatan laporan keuangan.</p>
+              <p class="t-muted text-base leading-relaxed">Aplikasi pembukuan kas harian bagi pelaku usaha mikro yang dibangun secara menyeluruh menggunakan Flutter. Membantu pencatatan kas masuk/keluar secara instan, kalkulasi saldo otomatis, dan pembuatan laporan keuangan tanpa hambatan performa.</p>
               <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
                 <div class="flex items-center gap-2.5">
                   <CheckCircle2 class="w-4 h-4 text-pink-400 shrink-0" />
@@ -189,15 +189,15 @@
                 </div>
                 <div class="flex items-center gap-2.5">
                   <CheckCircle2 class="w-4 h-4 text-pink-400 shrink-0" />
-                  <span>Antarmuka bersih yang ramah pengguna pemula.</span>
+                  <span>Antarmuka bersih responsif dengan arsitektur Full Flutter &amp; Dart.</span>
                 </div>
               </div>
             </div>
             <div class="lg:col-span-4 bg-elevated p-6 rounded-lg border b-subtle space-y-4">
-              <div class="space-y-2 text-xs font-mono"><div class="t-faint">KATEGORI:</div><div class="font-bold text-white text-sm">Productivity Web App</div><div class="t-faint pt-2">TEKNOLOGI:</div><div class="font-medium text-white">Single Page App, TailwindCSS</div></div>
+              <div class="space-y-2 text-xs font-mono"><div class="t-faint">KATEGORI:</div><div class="font-bold text-white text-sm">Flutter Multiplatform App</div><div class="t-faint pt-2">TEKNOLOGI:</div><div class="font-medium text-white">Full Flutter, Dart, Multiplatform</div></div>
               <div class="pt-2">
                 <a href="https://catatkas-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-pill-action w-full text-center text-xs uppercase font-bold py-3 flex items-center justify-center gap-1.5">
-                  <span>Buka Web App</span>
+                  <span>Buka Aplikasi</span>
                   <ArrowUpRight class="w-4 h-4" />
                 </a>
               </div>

@@ -253,7 +253,7 @@
               <div class="px-3 py-2 flex items-center justify-between border-b b-subtle" style="background:#070920;">
                 <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full" style="background:#FF5F56;"></span><span class="w-2 h-2 rounded-full" style="background:#FFBD2E;"></span><span class="w-2 h-2 rounded-full" style="background:#27C93F;"></span></div>
                 <span class="text-[10px] font-mono t-muted truncate max-w-[140px]">catatkas-web.vercel.app</span>
-                <span class="text-[9px] font-mono font-bold" style="color:#F472B6;">APP</span>
+                <span class="text-[9px] font-mono font-bold" style="color:#F472B6;">FLUTTER</span>
               </div>
               <div class="relative w-full overflow-hidden h-[160px] sm:h-[220px]" style="background:#0B0E2B;">
                 <img 
@@ -266,14 +266,14 @@
             </div>
             <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-mono t-mag">
-                <span>FINANCIAL WEB APP</span>
+                <span>FULL FLUTTER APP</span>
                 <span class="font-bold flex items-center gap-1" style="color:#27C93F;"><span class="w-1.5 h-1.5 rounded-full animate-ping" style="background:#27C93F;"></span>LIVE</span>
               </div>
               <h3 class="text-xl font-display font-light text-white">CatatKas UMKM</h3>
-              <p class="t-muted text-xs leading-relaxed">Aplikasi pencatatan keuangan digital instan untuk pencatatan transaksi dan laporan laba rugi.</p>
+              <p class="t-muted text-xs leading-relaxed">Aplikasi pencatatan keuangan digital instan berbasis Full Flutter untuk pencatatan mutasi transaksi dan laporan laba rugi.</p>
             </div>
             <div class="pt-3 border-t b-subtle flex items-center justify-between">
-              <span class="text-[11px] font-mono t-faint">Single Page App</span>
+              <span class="text-[11px] font-mono t-faint">Full Flutter · Dart</span>
               <a href="https://catatkas-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold t-mag hover:underline flex items-center gap-1">
                 <span>Kunjungi</span>
                 <ArrowUpRight class="w-3.5 h-3.5" />
