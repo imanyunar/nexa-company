@@ -1,6 +1,6 @@
 <template>
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
-    <!-- Dynamic Interactive Particles Canvas with deep dark theme -->
+    <!-- True Black Canvas with Subtle Vivid Accents -->
     <canvas ref="canvasRef" class="absolute inset-0 w-full h-full"></canvas>
   </div>
 </template>
@@ -11,7 +11,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const canvasRef = ref(null)
 let animationFrameId = null
 let particles = []
-let mouse = { x: null, y: null, radius: 100 }
+let mouse = { x: null, y: null, radius: 120 }
 
 class Particle {
   constructor(w, h) {
@@ -19,16 +19,16 @@ class Particle {
     this.h = h
     this.x = Math.random() * w
     this.y = Math.random() * h
-    this.vx = (Math.random() - 0.5) * 0.4
-    this.vy = (Math.random() - 0.5) * 0.4
-    this.radius = Math.random() * 1.8 + 0.8
+    this.vx = (Math.random() - 0.5) * 0.35
+    this.vy = (Math.random() - 0.5) * 0.35
+    this.radius = Math.random() * 1.5 + 0.8
     
-    // Crisp dark-studio accent colors
-    const colors = ['#17C3F2', '#3A4CE0', '#8A2BE2', '#E620C5']
+    // Reinvented with Accenture Palette: Electric Blue, Crimson Red, Electric Violet
+    const colors = ['#0041f0', '#e2062e', '#a600ff', '#ffffff']
     this.color = colors[Math.floor(Math.random() * colors.length)]
-    this.baseAlpha = Math.random() * 0.4 + 0.2
+    this.baseAlpha = Math.random() * 0.35 + 0.15
     this.alpha = this.baseAlpha
-    this.pulseSpeed = Math.random() * 0.02 + 0.01
+    this.pulseSpeed = Math.random() * 0.02 + 0.008
     this.pulseAngle = Math.random() * Math.PI * 2
   }
 
@@ -42,7 +42,7 @@ class Particle {
     if (this.y > h) this.y = 0
 
     this.pulseAngle += this.pulseSpeed
-    this.alpha = this.baseAlpha + Math.sin(this.pulseAngle) * 0.15
+    this.alpha = this.baseAlpha + Math.sin(this.pulseAngle) * 0.12
 
     if (mouse.x !== null && mouse.y !== null) {
       const dx = mouse.x - this.x
@@ -50,17 +50,17 @@ class Particle {
       const dist = Math.sqrt(dx * dx + dy * dy)
       if (dist < mouse.radius) {
         const force = (mouse.radius - dist) / mouse.radius
-        this.x -= (dx / dist) * force * 1.2
-        this.y -= (dy / dist) * force * 1.2
+        this.x -= (dx / dist) * force * 1.4
+        this.y -= (dy / dist) * force * 1.4
       }
     }
   }
 
   draw(ctx) {
     ctx.save()
-    ctx.globalAlpha = Math.max(0.1, this.alpha)
+    ctx.globalAlpha = Math.max(0.08, this.alpha)
     ctx.fillStyle = this.color
-    ctx.shadowBlur = 6
+    ctx.shadowBlur = 8
     ctx.shadowColor = this.color
     ctx.beginPath()
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
@@ -78,7 +78,7 @@ function initCanvas() {
   let w = (canvas.width = window.innerWidth)
   let h = (canvas.height = window.innerHeight)
 
-  const count = Math.min(Math.floor((w * h) / 22000), 55)
+  const count = Math.min(Math.floor((w * h) / 24000), 50)
   particles = Array.from({ length: count }, () => new Particle(w, h))
 
   function handleResize() {
@@ -105,7 +105,7 @@ function initCanvas() {
   function render() {
     ctx.clearRect(0, 0, w, h)
 
-    // Connecting lines with subtle dark-glow opacity
+    // Connecting lines with subtle electric blue glow
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
         const p1 = particles[i]
@@ -114,9 +114,9 @@ function initCanvas() {
         const dy = p1.y - p2.y
         const dist = Math.sqrt(dx * dx + dy * dy)
 
-        if (dist < 100) {
-          const alpha = (1 - dist / 100) * 0.12
-          ctx.strokeStyle = `rgba(23, 195, 242, ${alpha})`
+        if (dist < 110) {
+          const alpha = (1 - dist / 110) * 0.1
+          ctx.strokeStyle = `rgba(0, 65, 240, ${alpha})`
           ctx.lineWidth = 0.6
           ctx.beginPath()
           ctx.moveTo(p1.x, p1.y)

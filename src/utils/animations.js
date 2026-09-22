@@ -6,7 +6,61 @@ export const prefersReducedMotion = () => {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
-// Staggered fade in & slide up for card lists and sections
+// ═══════════════════════════════════════════
+// SCROLL-REVEAL (IntersectionObserver-based)
+// ═══════════════════════════════════════════
+// Observes elements and triggers fade+slide animation when they enter the viewport.
+// Usage: call once in onMounted with a CSS selector.
+
+export const observeScrollReveal = (selector, options = {}) => {
+  if (prefersReducedMotion()) return
+
+  const {
+    threshold = 0.12,
+    rootMargin = '0px 0px -60px 0px',
+    stagger = 100,
+    distance = 40,
+    duration = 700,
+    easing = 'easeOutCubic'
+  } = options
+
+  const elements = document.querySelectorAll(selector)
+  if (!elements.length) return
+
+  // Set initial hidden state
+  elements.forEach((el) => {
+    el.style.opacity = '0'
+    el.style.transform = `translateY(${distance}px)`
+  })
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visibleEntries = entries.filter((e) => e.isIntersecting)
+      if (!visibleEntries.length) return
+
+      visibleEntries.forEach((entry, idx) => {
+        observer.unobserve(entry.target)
+        anime({
+          targets: entry.target,
+          opacity: [0, 1],
+          translateY: [distance, 0],
+          easing,
+          duration,
+          delay: idx * stagger
+        })
+      })
+    },
+    { threshold, rootMargin }
+  )
+
+  elements.forEach((el) => observer.observe(el))
+
+  return observer
+}
+
+// ═══════════════════════════════════════════
+// STAGGERED FADE IN (instant, no scroll observation)
+// ═══════════════════════════════════════════
 export const animateStaggerFadeIn = (targets, options = {}) => {
   if (prefersReducedMotion()) return
   return anime({
@@ -20,7 +74,9 @@ export const animateStaggerFadeIn = (targets, options = {}) => {
   })
 }
 
-// Hero entrance animation
+// ═══════════════════════════════════════════
+// HERO ENTRANCE ANIMATION
+// ═══════════════════════════════════════════
 export const animateHeroEntrance = ({ headline, subtitle, cta, visual }) => {
   if (prefersReducedMotion()) return
   const tl = anime.timeline({
@@ -31,42 +87,55 @@ export const animateHeroEntrance = ({ headline, subtitle, cta, visual }) => {
     tl.add({
       targets: headline,
       opacity: [0, 1],
-      translateY: [30, 0],
-      duration: 800
+      translateY: [40, 0],
+      duration: 900
     })
   }
 
   if (subtitle) {
-    tl.add({
-      targets: subtitle,
-      opacity: [0, 1],
-      translateY: [20, 0],
-      duration: 600
-    }, '-=500')
+    tl.add(
+      {
+        targets: subtitle,
+        opacity: [0, 1],
+        translateY: [25, 0],
+        duration: 700
+      },
+      '-=550'
+    )
   }
 
   if (cta) {
-    tl.add({
-      targets: cta,
-      opacity: [0, 1],
-      translateY: [15, 0],
-      duration: 600
-    }, '-=400')
+    tl.add(
+      {
+        targets: cta,
+        opacity: [0, 1],
+        translateY: [20, 0],
+        duration: 600
+      },
+      '-=450'
+    )
   }
 
   if (visual) {
-    tl.add({
-      targets: visual,
-      opacity: [0, 1],
-      scale: [0.95, 1],
-      duration: 800
-    }, '-=600')
+    tl.add(
+      {
+        targets: visual,
+        opacity: [0, 1],
+        translateX: [60, 0],
+        scale: [0.96, 1],
+        duration: 900,
+        easing: 'easeOutQuart'
+      },
+      '-=700'
+    )
   }
 
   return tl
 }
 
-// SVG Stroke drawing animation
+// ═══════════════════════════════════════════
+// SVG STROKE DRAWING
+// ═══════════════════════════════════════════
 export const animateStrokeDraw = (pathElement, duration = 1600) => {
   if (prefersReducedMotion() || !pathElement) return
   const pathLength = pathElement.getTotalLength ? pathElement.getTotalLength() : 2000
@@ -82,7 +151,44 @@ export const animateStrokeDraw = (pathElement, duration = 1600) => {
   })
 }
 
-// Counter animation for metrics
+// ═══════════════════════════════════════════
+// SECTION HEADER REVEAL  (text wipe-up)
+// ═══════════════════════════════════════════
+export const animateSectionHeader = (selector) => {
+  if (prefersReducedMotion()) return
+
+  const headers = document.querySelectorAll(selector)
+  if (!headers.length) return
+
+  headers.forEach((el) => {
+    el.style.opacity = '0'
+    el.style.transform = 'translateY(30px)'
+  })
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          observer.unobserve(entry.target)
+          anime({
+            targets: entry.target,
+            opacity: [0, 1],
+            translateY: [30, 0],
+            easing: 'easeOutCubic',
+            duration: 800
+          })
+        }
+      })
+    },
+    { threshold: 0.2 }
+  )
+
+  headers.forEach((el) => observer.observe(el))
+}
+
+// ═══════════════════════════════════════════
+// COUNTER ANIMATION
+// ═══════════════════════════════════════════
 export const animateCounter = (targetElement, endValue, duration = 1500) => {
   if (!targetElement) return
   const obj = { val: 0 }

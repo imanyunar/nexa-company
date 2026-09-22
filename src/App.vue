@@ -1,6 +1,6 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-base text-white relative selection:bg-cyan selection:text-black">
-    <!-- Continuous Ambient Animated Background (Particles + Aurora Orbs) -->
+  <div class="min-h-screen flex flex-col bg-black text-white relative selection:bg-primary selection:text-white">
+    <!-- Continuous Ambient Animated Background (Reinvented with Accenture Accents) -->
     <AmbientBackground />
 
     <!-- Navbar -->
@@ -27,19 +27,24 @@ import AmbientBackground from './components/AmbientBackground.vue'
 </script>
 
 <style>
-/* Smooth page transition */
-.page-fade-enter-active,
+/* Premium page transition */
+.page-fade-enter-active {
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 .page-fade-leave-active {
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  transition: opacity 0.2s ease-out,
+              transform 0.2s ease-out;
 }
 
 .page-fade-enter-from {
   opacity: 0;
-  transform: translateY(8px);
+  transform: translateY(20px);
 }
 
 .page-fade-leave-to {
   opacity: 0;
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 </style>

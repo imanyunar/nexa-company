@@ -1,3 +1,15 @@
+---
+name: design-accenture-com
+description: Design system extracted from Reinvented with Accenture (https://www.accenture.com/en). Use when building UI that should match this brand's visual identity.
+triggers:
+  - "Reinvented with Accenture"
+  - "accenture-com"
+  - "design like Reinvented with Accenture"
+  - "Reinvented with Accenture風"
+source: https://www.accenture.com/en
+extractedAt: 2026-09-22T03:53:56.071Z
+tags: ["dark", "rounded", "colorful", "sans-serif"]
+---
 # Design System Inspired by Reinvented with Accenture
 
 > Auto-extracted from `https://www.accenture.com/en` on 2026-09-22

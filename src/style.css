@@ -2,178 +2,257 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Reinvented with Accenture Extracted Palette */
+  --palette-1: #000000;
+  --palette-2: #ffffff;
+  --palette-3: #f1f1ef;
+  --palette-4: #0041f0;
+  --palette-5: #e2062e;
+  --palette-6: #460073;
+  --palette-7: #a600ff;
+  --palette-8: #2b2b2b;
+  --palette-9: #004dff;
+  --palette-10: #3860be;
+
+  /* Theme Roles */
+  --color-primary: #0041f0;
+  --color-secondary: #e2062e;
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-text-secondary: #999999;
+  --color-border: rgba(241, 241, 239, 0.14);
+
+  /* Spacing Tokens */
+  --rad-global-header-height: 72px;
+  --rad-nav-height: 56px;
+  --rad-spacing-sm: 16px;
+  --rad-spacing-md: 32px;
+  --rad-spacing-lg: 48px;
+  --rad-spacing-xl: 96px;
+  --rad-spacing-xxl: 160px;
+}
+
 @layer base {
   body {
-    background-color: #0B0E2B;
-    color: #FFFFFF;
-    font-family: 'Satoshi', 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Graphik', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
   }
 
-  h1, h2, h3 {
-    font-family: 'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif;
-    font-weight: 300;
-    letter-spacing: -0.01em;
-    color: #FFFFFF;
+  h1, h2, h3, h4 {
+    font-family: 'Graphik', 'Inter', system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+  }
+
+  h1 {
+    letter-spacing: -1.90196px;
   }
 
   *:focus-visible {
-    outline: 2px solid #17C3F2 !important;
+    outline: 2px solid #0041f0 !important;
     outline-offset: 2px !important;
+  }
+
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    user-select: none;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   }
 }
 
 @layer utilities {
-  /* ═══════════════════════════════════════════
-     SOLID HIGH-CONTRAST BACKGROUND COLORS
-     ═══════════════════════════════════════════ */
-  .bg-base     { background-color: #0B0E2B; }
-  .bg-elevated { background-color: #11153B; }
-  .bg-card     { background-color: #151A48; }
+  .bg-canvas          { background-color: #000000; }
+  .bg-surface-card    { background-color: #0e0e11; }
+  .bg-surface-elevated{ background-color: #141418; }
+  .bg-accent-blue     { background-color: #0041f0; }
+  .bg-accent-red      { background-color: #e2062e; }
+  .bg-accent-violet   { background-color: #a600ff; }
+  .bg-accent-dark     { background-color: #2b2b2b; }
 
-  /* ═══════════════════════════════════════════
-     TEXT COLORS
-     ═══════════════════════════════════════════ */
-  .t-white { color: #FFFFFF; }
-  .t-muted { color: #B0B5D0; }
-  .t-faint { color: #737899; }
-  .t-cyan  { color: #17C3F2; }
-  .t-mag   { color: #E620C5; }
+  .text-accent-blue   { color: #0041f0; }
+  .text-accent-red    { color: #e2062e; }
+  .text-accent-violet { color: #a600ff; }
+  .text-dimmed        { color: #999999; }
+  .text-faint         { color: #666666; }
 
-  /* ═══════════════════════════════════════════
-     BORDER COLORS
-     ═══════════════════════════════════════════ */
-  .b-subtle { border-color: rgba(255, 255, 255, 0.12); }
+  .border-subtle      { border-color: rgba(241, 241, 239, 0.12); }
+  .border-active      { border-color: #0041f0; }
+  .border-red-active  { border-color: #e2062e; }
+
+  /* Backwards compatibility aliases */
+  .bg-base     { background-color: #000000; }
+  .bg-elevated { background-color: #121216; }
+  .bg-card     { background-color: #0e0e11; }
+  .t-white     { color: #ffffff; }
+  .t-muted     { color: #999999; }
+  .t-faint     { color: #666666; }
+  .t-cyan      { color: #0041f0; }
+  .t-mag       { color: #e2062e; }
+  .b-subtle    { border-color: rgba(241, 241, 239, 0.12); }
 }
 
 /* ═══════════════════════════════════════════
-   BUTTONS
+   BUTTON SYSTEM (Inspired by Reinvented with Accenture)
    ═══════════════════════════════════════════ */
+.btn-primary,
 .btn-pill-primary {
-  background-color: #3A4CE0;
-  color: #FFFFFF;
-  font-weight: 700;
-  border-radius: 9999px;
-  padding: 12px 28px;
+  background-color: #0041f0;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 12px 26px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  gap: 8px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   text-decoration: none;
-  border: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  letter-spacing: -0.01em;
 }
+
+.btn-primary:hover,
 .btn-pill-primary:hover {
-  background-color: #2F3EB8;
+  background-color: #0036ca;
+  box-shadow: 0 0 20px rgba(0, 65, 240, 0.5);
   transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(58, 76, 224, 0.45);
 }
 
-.btn-pill-action {
-  background-color: #E620C5;
-  color: #FFFFFF;
-  font-weight: 700;
-  border-radius: 9999px;
-  padding: 12px 28px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  text-decoration: none;
-  border: none;
-}
-.btn-pill-action:hover {
-  background-color: #C410A5;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(230, 32, 197, 0.45);
-}
-
+.btn-secondary,
 .btn-pill-secondary {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  font-weight: 600;
-  border-radius: 9999px;
-  padding: 12px 28px;
+  background-color: #2b2b2b;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 12px 26px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  gap: 8px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   text-decoration: none;
+  border: 1px solid rgba(241, 241, 239, 0.18);
+  cursor: pointer;
 }
+
+.btn-secondary:hover,
 .btn-pill-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.16);
-  border-color: rgba(255, 255, 255, 0.45);
+  background-color: #383838;
+  border-color: rgba(241, 241, 239, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-accent,
+.btn-pill-action {
+  background-color: #e2062e;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 12px 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn-accent:hover,
+.btn-pill-action:hover {
+  background-color: #c00424;
+  box-shadow: 0 0 20px rgba(226, 6, 46, 0.45);
   transform: translateY(-1px);
 }
 
 /* ═══════════════════════════════════════════
-   CARDS
+   CARDS & SURFACES
    ═══════════════════════════════════════════ */
+.card-dark,
 .card-unified {
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background-color: #151A48;
-  color: #FFFFFF;
-  transition: border-color 0.25s ease, transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+  background-color: #0e0e11;
+  border: 1px solid rgba(241, 241, 239, 0.12);
+  border-radius: 12px;
+  color: #ffffff;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
 }
+
+.card-dark:hover,
 .card-unified:hover {
-  border-color: rgba(23, 195, 242, 0.4);
-  background-color: #1A2056;
+  border-color: rgba(0, 65, 240, 0.5);
+  background-color: #131317;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.7), 0 0 24px -4px rgba(0, 65, 240, 0.25);
+}
+
+.card-feature {
+  background: linear-gradient(180deg, #121217 0%, #0a0a0d 100%);
+  border: 1px solid rgba(241, 241, 239, 0.14);
 }
 
 /* ═══════════════════════════════════════════
-   RESPONSIVE — MOBILE PHONES (≤480px)
+   RESPONSIVE DESIGN (8px Base Grid)
    ═══════════════════════════════════════════ */
-@media (max-width: 480px) {
-  /* Reduce section vertical spacing */
-  .py-24  { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
-  .py-20  { padding-top: 3rem !important;   padding-bottom: 3rem !important; }
-  .space-y-16 > * + * { margin-top: 2.5rem !important; }
-
-  /* Hero headline mobile sizing */
-  h1 { font-size: 1.75rem !important; line-height: 1.2 !important; }
-  h2 { font-size: 1.35rem !important; }
-
-  /* Reduce card padding on mobile */
-  .card-unified { border-radius: 8px; }
-
-  /* Portfolio preview images - shorter on mobile */
-  .project-tile .overflow-hidden[style*="height: 220px"] {
-    height: 160px !important;
-  }
-
-  /* Buttons: ensure full-width on mobile for easy tapping */
-  .btn-pill-primary,
-  .btn-pill-secondary,
-  .btn-pill-action {
+@media (max-width: 640px) {
+  h1 { font-size: 2rem !important; line-height: 1.15 !important; letter-spacing: -0.8px !important; }
+  h2 { font-size: 1.5rem !important; line-height: 1.25 !important; }
+  .btn-primary, .btn-secondary, .btn-accent, .btn-pill-primary, .btn-pill-secondary, .btn-pill-action {
     padding: 12px 20px;
-    font-size: 0.7rem;
-    min-height: 44px; /* Apple HIG minimum tap target */
-  }
-
-  /* Footer contacts stack vertically */
-  footer .flex-wrap {
-    flex-direction: column;
-    align-items: flex-start !important;
-    gap: 0.75rem !important;
+    font-size: 13px;
+    min-height: 44px;
+    width: 100%;
   }
 }
 
 /* ═══════════════════════════════════════════
-   RESPONSIVE — SMALL PHONES (≤360px)
+   SMOOTH SCROLL & ANIMATION PERFORMANCE
    ═══════════════════════════════════════════ */
-@media (max-width: 360px) {
-  h1 { font-size: 1.5rem !important; }
-  h2 { font-size: 1.2rem !important; }
-  .px-6 { padding-left: 1rem !important; padding-right: 1rem !important; }
+html {
+  scroll-behavior: smooth;
 }
 
-/* ═══════════════════════════════════════════
-   SAFE AREA — NOTCHED PHONES (iPhone X+ etc)
-   ═══════════════════════════════════════════ */
-@supports (padding-bottom: env(safe-area-inset-bottom)) {
-  footer {
-    padding-bottom: calc(3.5rem + env(safe-area-inset-bottom));
-  }
+/* GPU hint for animated elements */
+.service-card,
+.project-tile,
+.portfolio-item,
+.service-block,
+.contact-card,
+.contact-form,
+.section-header,
+.reveal-item,
+.contact-header {
+  will-change: transform, opacity;
 }
+
+/* Focus ring for contact cards */
+a.contact-card:focus-visible {
+  outline: 2px solid #0041f0;
+  outline-offset: 2px;
+}
+

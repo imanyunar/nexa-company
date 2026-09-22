@@ -30,7 +30,7 @@
                 GOVERNMENT PLATFORM & PWA
               </span>
               <span class="text-xs font-mono text-[#27C93F] font-semibold flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-[#27C93F] animate-pulse"></span>
+                <span class="w-2 h-2 rounded-full bg-[#27C93F]"></span>
                 LIVE PRODUCTION
               </span>
             </div>

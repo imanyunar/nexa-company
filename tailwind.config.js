@@ -7,34 +7,45 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#3A4CE0',
-        'primary-pressed': '#2F3EB8',
-        'cyan': '#17C3F2',
-        'cyan-pressed': '#0EA2CC',
-        'magenta': '#E620C5',
-        'magenta-pressed': '#C410A5',
-        'violet': '#8A2BE2',
-        
-        // Unified Dark Palette
-        'theme-base': '#0B0E2B',
-        'theme-elevated': '#11153B',
-        'theme-card': '#151A48',
-        'theme-card-hover': '#1B215C',
-        'theme-border': 'rgba(255, 255, 255, 0.10)',
-        'theme-border-hover': 'rgba(23, 195, 242, 0.35)',
-        
-        'theme-text': '#FFFFFF',
-        'theme-text-muted': 'rgba(255, 255, 255, 0.70)',
-        'theme-text-faint': 'rgba(255, 255, 255, 0.45)',
+        // Reinvented with Accenture Color Palette
+        'primary': '#0041f0',           // --palette-4 Primary Accent
+        'primary-hover': '#0033c4',
+        'secondary': '#e2062e',         // --palette-5 Secondary Accent (Accenture Red)
+        'secondary-hover': '#c20527',
+        'plum': '#460073',              // --palette-6
+        'violet': '#a600ff',            // --palette-7
+        'dark-btn': '#2b2b2b',          // --palette-8
+        'blue-accent': '#004dff',       // --palette-9
+        'blue-slate': '#3860be',        // --palette-10
+
+        // Surfaces & Backgrounds
+        'canvas': '#000000',            // Primary Page Canvas
+        'surface-card': '#0e0e11',      // Dark Card Surface
+        'surface-elevated': '#16161a',  // Elevated Section Surface
+        'surface-hover': '#1e1e24',     // Card Hover Surface
+        'border-light': '#f1f1ef',      // Light border token
+        'border-subtle': 'rgba(241, 241, 239, 0.14)',
+        'border-accent': 'rgba(0, 65, 240, 0.4)',
+
+        // High Contrast Typography
+        'text-primary': '#ffffff',
+        'text-secondary': '#999999',
+        'text-faint': '#666666',
       },
       fontFamily: {
-        display: ['"Cabinet Grotesk"', '"Plus Jakarta Sans"', 'sans-serif'],
-        sans: ['"Satoshi"', '"Inter"', 'system-ui', 'sans-serif'],
+        display: ['"Graphik"', '"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['"Graphik"', '"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
         mono: ['"IBM Plex Mono"', 'monospace'],
       },
       borderRadius: {
-        'card': '8px',
+        'subtle': '2px',
+        'card': '20px',
+        'card-sm': '12px',
         'pill': '9999px',
+      },
+      spacing: {
+        '18': '4.5rem',
+        '22': '5.5rem',
       }
     },
   },
