@@ -472,7 +472,7 @@
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[rgba(241,241,239,0.1)] pb-5">
             <div class="flex items-center gap-3 flex-wrap">
               <span class="px-2.5 py-1 rounded-[2px] bg-violet/20 border border-violet/40 text-violet text-xs font-mono font-semibold">PENGUMUMAN RILIS RESMI</span>
-              <span class="text-xs font-mono text-[#666666]">22 MARET 2026</span>
+              <span class="text-xs font-mono text-[#666666]">22 September 2026</span>
             </div>
             <div class="text-xs font-mono text-emerald-400 flex items-center gap-1.5">
               <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
