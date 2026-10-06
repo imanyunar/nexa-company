@@ -1,15 +1,23 @@
 <template>
-  <div class="bg-black text-white py-16 sm:py-24 border-b border-[rgba(241,241,239,0.12)] min-h-[80vh]">
+  <div class="py-16 sm:py-24 border-b border-[rgba(241,241,239,0.12)] min-h-[80vh] transition-colors duration-300">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-14">
 
       <!-- Header -->
       <div class="contact-header text-center max-w-2xl mx-auto space-y-4">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-medium text-white tracking-[-1.9px]">
-          Hubungi Kami
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#141418] border border-[rgba(241,241,239,0.14)] rounded-[2px] text-xs font-mono text-primary font-semibold">
+          <span>KONSULTASI &amp; KOLABORASI</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-medium tracking-[-1.9px]">
+          Hubungi Nexa Agency
         </h1>
         <p class="text-[#999999] text-base sm:text-lg leading-relaxed">
-          Pilih saluran di bawah ini untuk terhubung langsung, atau kirimkan ringkasan kebutuhan proyek Anda.
+          Diskusikan ide website, personal branding, gamifikasi, atau integrasi AI bersama kami. Karena brand Anda layak mendapatkan lebih dari sekadar standar.
         </p>
+        <div class="pt-1">
+          <span class="inline-block text-xs font-mono text-primary font-semibold px-3 py-1 rounded-[2px] bg-primary/10 border border-primary/20">
+            Your brand deserves better than "basic".
+          </span>
+        </div>
       </div>
 
       <!-- Direct Contact Channels -->
@@ -72,7 +80,7 @@
 
           <!-- Email -->
           <a 
-            href="mailto:nexadigitalagency40@gmail.com?subject=Konsultasi%20Proyek%20—%20Nexa%20Digital%20Agency" 
+            href="mailto:nexadigitalagency40@gmail.com?subject=Konsultasi%20Proyek%20-%20Nexa%20Digital%20Agency" 
             class="contact-card card-dark p-5 flex flex-col gap-4 group hover:border-primary/60"
             title="Kirim Email Langsung"
           >
@@ -80,7 +88,7 @@
               <div class="w-11 h-11 rounded-[4px] bg-[rgba(0,65,240,0.15)] border border-[rgba(0,65,240,0.3)] text-primary flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
                 <span class="material-symbols-outlined text-xl">mail</span>
               </div>
-              <span class="text-[9px] font-mono font-semibold px-2 py-0.5 rounded-[2px] bg-[rgba(0,65,240,0.15)] text-primary">RFP &amp; INQUIRY</span>
+              <span class="text-[9px] font-mono font-semibold px-2 py-0.5 rounded-[2px] bg-[rgba(0,65,240,0.15)] text-primary">EMAIL RESMI</span>
             </div>
             <div>
               <div class="text-sm font-semibold text-white group-hover:text-primary transition-colors duration-300">Email Resmi</div>

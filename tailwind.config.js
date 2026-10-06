@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -18,19 +19,20 @@ export default {
         'blue-accent': '#004dff',       // --palette-9
         'blue-slate': '#3860be',        // --palette-10
 
-        // Surfaces & Backgrounds
-        'canvas': '#000000',            // Primary Page Canvas
-        'surface-card': '#0e0e11',      // Dark Card Surface
-        'surface-elevated': '#16161a',  // Elevated Section Surface
-        'surface-hover': '#1e1e24',     // Card Hover Surface
-        'border-light': '#f1f1ef',      // Light border token
-        'border-subtle': 'rgba(241, 241, 239, 0.14)',
+        // Adaptive Surfaces & Backgrounds
+        'canvas': 'var(--color-bg)',
+        'canvas-alt': 'var(--color-bg-alt)',
+        'surface-card': 'var(--color-surface-card)',
+        'surface-elevated': 'var(--color-surface-elevated)',
+        'surface-hover': 'var(--color-surface-hover)',
+        'border-light': '#f1f1ef',
+        'border-subtle': 'var(--color-border)',
         'border-accent': 'rgba(0, 65, 240, 0.4)',
 
-        // High Contrast Typography
-        'text-primary': '#ffffff',
-        'text-secondary': '#999999',
-        'text-faint': '#666666',
+        // Adaptive Typography
+        'text-primary': 'var(--color-text-primary)',
+        'text-secondary': 'var(--color-text-secondary)',
+        'text-faint': 'var(--color-text-faint)',
       },
       fontFamily: {
         display: ['"Graphik"', '"Inter"', 'system-ui', '-apple-system', 'sans-serif'],

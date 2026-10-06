@@ -1,12 +1,13 @@
 <template>
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
-    <!-- True Black Canvas with Subtle Vivid Accents -->
+    <!-- Continuous Ambient Animated Background Canvas -->
     <canvas ref="canvasRef" class="absolute inset-0 w-full h-full"></canvas>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { isDark } from '../utils/theme'
 
 const canvasRef = ref(null)
 let animationFrameId = null
@@ -23,13 +24,18 @@ class Particle {
     this.vy = (Math.random() - 0.5) * 0.35
     this.radius = Math.random() * 1.5 + 0.8
     
-    // Reinvented with Accenture Palette: Electric Blue, Crimson Red, Electric Violet
-    const colors = ['#0041f0', '#e2062e', '#a600ff', '#ffffff']
-    this.color = colors[Math.floor(Math.random() * colors.length)]
-    this.baseAlpha = Math.random() * 0.35 + 0.15
+    this.resetColor()
+    this.baseAlpha = isDark.value ? (Math.random() * 0.35 + 0.15) : (Math.random() * 0.25 + 0.12)
     this.alpha = this.baseAlpha
     this.pulseSpeed = Math.random() * 0.02 + 0.008
     this.pulseAngle = Math.random() * Math.PI * 2
+  }
+
+  resetColor() {
+    const darkColors = ['#0041f0', '#e2062e', '#a600ff', '#ffffff']
+    const lightColors = ['#0041f0', '#e2062e', '#a600ff', '#0284c7']
+    const palette = isDark.value ? darkColors : lightColors
+    this.color = palette[Math.floor(Math.random() * palette.length)]
   }
 
   update(w, h) {
@@ -42,7 +48,7 @@ class Particle {
     if (this.y > h) this.y = 0
 
     this.pulseAngle += this.pulseSpeed
-    this.alpha = this.baseAlpha + Math.sin(this.pulseAngle) * 0.12
+    this.alpha = this.baseAlpha + Math.sin(this.pulseAngle) * 0.1
 
     if (mouse.x !== null && mouse.y !== null) {
       const dx = mouse.x - this.x
@@ -60,8 +66,13 @@ class Particle {
     ctx.save()
     ctx.globalAlpha = Math.max(0.08, this.alpha)
     ctx.fillStyle = this.color
-    ctx.shadowBlur = 8
-    ctx.shadowColor = this.color
+    if (isDark.value) {
+      ctx.shadowBlur = 8
+      ctx.shadowColor = this.color
+    } else {
+      ctx.shadowBlur = 3
+      ctx.shadowColor = 'rgba(0, 65, 240, 0.25)'
+    }
     ctx.beginPath()
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
     ctx.fill()
@@ -105,7 +116,8 @@ function initCanvas() {
   function render() {
     ctx.clearRect(0, 0, w, h)
 
-    // Connecting lines with subtle electric blue glow
+    // Connecting lines with subtle electric blue tint
+    const lineAlphaFactor = isDark.value ? 0.1 : 0.06
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
         const p1 = particles[i]
@@ -115,7 +127,7 @@ function initCanvas() {
         const dist = Math.sqrt(dx * dx + dy * dy)
 
         if (dist < 110) {
-          const alpha = (1 - dist / 110) * 0.1
+          const alpha = (1 - dist / 110) * lineAlphaFactor
           ctx.strokeStyle = `rgba(0, 65, 240, ${alpha})`
           ctx.lineWidth = 0.6
           ctx.beginPath()
@@ -148,6 +160,10 @@ let cleanup = null
 
 onMounted(() => {
   cleanup = initCanvas()
+})
+
+watch(isDark, () => {
+  particles.forEach(p => p.resetColor())
 })
 
 onUnmounted(() => {

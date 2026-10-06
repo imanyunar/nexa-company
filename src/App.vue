@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-black text-white relative selection:bg-primary selection:text-white">
+  <div class="min-h-screen flex flex-col bg-canvas text-text-primary relative selection:bg-primary selection:text-white transition-colors duration-300">
     <!-- Continuous Ambient Animated Background (Reinvented with Accenture Accents) -->
     <AmbientBackground />
 

@@ -2,28 +2,33 @@
   <img src="./assets/logo.png" alt="Nexa Logo" width="220">
 </p>
 
-<h1 align="center">Nexa — Web Profile Agency</h1>
+<h1 align="center">Nexa Agency</h1>
 
 <p align="center">
-  Company profile website untuk agency IT yang bergerak di bidang <b>Web Development</b>, <b>Data Analysis</b>, dan <b>Game Development</b>.
+  <b>Your brand deserves better than "basic".</b><br>
+  Digital agency yang berfokus pada pengembangan website &amp; identitas digital custom untuk UMKM, bisnis, organisasi, maupun personal branding.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-in%20development-yellow" alt="status">
+  <img src="https://img.shields.io/badge/status-live-emerald" alt="status">
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="license">
 </p>
 
 ---
 
-## 📖 Tentang Nexa
+## 📖 Tentang Nexa Agency
 
-**Nexa** adalah agency IT yang membantu bisnis membangun kehadiran digital dan mengambil keputusan berbasis data. Kami fokus pada tiga layanan utama:
+**Nexa Agency** adalah digital agency yang berfokus pada pengembangan website dan identitas digital untuk UMKM, bisnis, organisasi, maupun personal branding. Kami membantu mengubah ide dan kebutuhan klien menjadi solusi digital yang relevan, fungsional, dan memiliki karakter yang kuat.
 
-- 🌐 **Web Development** — pembuatan website company profile, landing page, web app, hingga sistem custom (Laravel, Vue.js, dsb).
-- 📊 **Data Analysis** — pengolahan, visualisasi, dan interpretasi data untuk mendukung pengambilan keputusan bisnis.
-- 🎮 **Game Development** — pengembangan game 2D/3D untuk kebutuhan hiburan maupun edukasi (Unity).
+Layanan Nexa mencakup:
+- 🌐 **Website & Company Profile** — website resmi, company profile, dan landing page custom untuk bisnis & UMKM.
+- 👤 **Personal Website & Branding** — portofolio digital profesional dan identitas digital yang stand out.
+- 🎮 **Gamifikasi & Media Interaktif** — pengalaman digital yang lebih interaktif dan keterlibatan audiens dengan elemen gamifikasi.
+- 🤖 **Integrasi AI (Artificial Intelligence)** — pemanfaatan AI ketika dibutuhkan untuk meningkatkan fungsi dan pengalaman pengguna secara optimal.
 
-Repositori ini berisi source code untuk website company profile Nexa — media promosi digital yang menampilkan layanan, portofolio, tim, dan kontak agency.
+Kami percaya bahwa setiap brand memiliki cerita dan karakter yang berbeda. Karena itu, setiap solusi yang kami kembangkan dirancang secara **custom**, bukan sekadar menggunakan template yang sama untuk semua kebutuhan.
+
+> **"Your brand deserves better than \"basic\"."**
 
 ---
 

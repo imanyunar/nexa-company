@@ -1,18 +1,23 @@
 <template>
-  <div class="bg-black text-white py-16 sm:py-24 border-b border-[rgba(241,241,239,0.12)]">
+  <div class="py-16 sm:py-24 border-b border-[rgba(241,241,239,0.12)] transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-16 sm:space-y-20">
 
       <!-- Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4">
-        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#141418] border border-[rgba(241,241,239,0.14)] rounded-[2px] text-xs font-mono text-primary font-medium">
-          <span>PRODUCTION CASE STUDIES</span>
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#141418] border border-[rgba(241,241,239,0.14)] rounded-[2px] text-xs font-mono text-primary font-semibold">
+          <span>KARYA &amp; REKAM JEJAK</span>
         </div>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-medium text-white tracking-[-1.5px]">
-          Portofolio Produksi
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-medium tracking-[-1.5px]">
+          Koleksi Portofolio Nexa Agency
         </h1>
         <p class="text-[#999999] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-          Studi kasus proyek nyata yang telah beroperasi di lingkungan live production dengan standar performa, keandalan, dan eksekusi visual tinggi.
+          Daftar website, aplikasi, dan media interaktif yang telah kami kembangkan secara custom untuk mewujudkan kehadiran digital yang orisinal dan fungsional.
         </p>
+        <div class="pt-1">
+          <span class="inline-block text-xs font-mono text-primary font-semibold px-3 py-1 rounded-[2px] bg-primary/10 border border-primary/20">
+            Your brand deserves better than "basic".
+          </span>
+        </div>
       </div>
 
       <div class="space-y-12 sm:space-y-16">
@@ -22,21 +27,15 @@
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[rgba(241,241,239,0.1)] pb-4">
             <div class="flex items-center gap-2.5 flex-wrap">
               <span class="w-2.5 h-2.5 rounded-full bg-violet"></span>
-              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-violet">AI IMAGE ENHANCER &amp; WEB TOOLKIT</span>
-              <span class="text-[9px] font-mono font-bold text-white bg-violet px-2 py-0.5 rounded-[2px]">NEW RELEASE</span>
+              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-violet">WEB APP &amp; CLIENT-SIDE GPU</span>
             </div>
-            <span class="text-xs font-mono text-[#999999]">100% CLIENT-SIDE PRIVACY ARCHITECTURE</span>
+            <span class="text-xs font-mono text-[#999999]">WEBGL &amp; IN-BROWSER GPU</span>
           </div>
 
           <!-- Live Preview Window -->
           <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
             <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></span>
-              </div>
-              <span class="text-[11px] sm:text-xs font-mono text-[#999999] truncate max-w-[150px] sm:max-w-sm">https://pixelcraft-psi-blue.vercel.app/</span>
+              <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://pixelcraft-psi-blue.vercel.app/</span>
               <span class="text-[10px] font-mono font-bold text-violet bg-violet/10 px-2 py-0.5 rounded-[2px] shrink-0">WEBGL &amp; AI</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
@@ -51,18 +50,18 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div class="lg:col-span-8 space-y-4">
-              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">PixelCraft Studio: AI Photo Enhancer &amp; Toolkit</h2>
+              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">PixelCraft Studio: Editor Foto &amp; Grafis Berbasis Web</h2>
               <p class="text-[#999999] text-base leading-relaxed">
-                Studio pemrosesan citra digital profesional berbasis web yang berjalan 100% di sisi klien browser pengguna. Menghadirkan algoritma penajaman Laplacian, noise reduction, kompresi multi-format WebP/PNG, spektrum histogram RGB live, serta kuantisasi retro pixel art tanpa mengirim berkas foto ke server pihak ketiga.
+                Aplikasi web photo editor yang memproses gambar langsung di browser pengguna. Menawarkan fitur penajaman gambar, pengurangan noise spasial, kompresi multi-format WebP/PNG, live RGB histogram, dan efek retro pixel art tanpa perlu unggah file ke server eksternal sehingga privasi terjaga 100%.
               </p>
               <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
                 <div class="flex items-center gap-2.5">
                   <span class="material-symbols-outlined text-[18px] text-violet shrink-0">check_circle</span>
-                  <span>Privasi 100% Terjamin: Seluruh komputasi visual diproses lokal di mesin browser pengguna menggunakan akselerasi GPU &amp; WebGL.</span>
+                  <span>Privasi 100% Terjaga: Seluruh komputasi visual diproses lokal di peramban pengguna menggunakan akselerasi GPU &amp; WebGL.</span>
                 </div>
                 <div class="flex items-center gap-2.5">
                   <span class="material-symbols-outlined text-[18px] text-violet shrink-0">check_circle</span>
-                  <span>Fitur Lengkap: Laplacian 3x3 Sharpening, Bilateral Denoise, Kompresi WebP/PNG/JPG, Split View Before-After, &amp; Color Grading Pro.</span>
+                  <span>Fitur Lengkap: Penajaman gambar, filter denoise, kompresi ukuran file, split before-after preview, dan color adjustment.</span>
                 </div>
               </div>
             </div>
@@ -70,8 +69,8 @@
             <div class="lg:col-span-4 bg-[#141418] p-6 rounded-[4px] border border-[rgba(241,241,239,0.1)] space-y-4">
               <div class="space-y-2 text-xs font-mono">
                 <div class="text-[#666666]">TIPE PRODUK:</div>
-                <div class="font-medium text-white text-sm">Client-Side AI Web Studio</div>
-                <div class="text-[#666666] pt-2">ARSITEKTUR &amp; STACK:</div>
+                <div class="font-medium text-white text-sm">Web Application</div>
+                <div class="text-[#666666] pt-2">TEKNOLOGI:</div>
                 <div class="font-medium text-white">WebGL, Canvas API, WASM, Tailwind, Vite</div>
               </div>
               <div class="pt-2">
@@ -91,18 +90,13 @@
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
               <span class="text-xs font-mono font-semibold uppercase tracking-wider text-primary">PLATFORM PEMERINTAHAN &amp; PWA</span>
             </div>
-            <span class="text-xs font-mono text-[#999999]">LIVE PRODUCTION ENVIRONMENT</span>
+            <span class="text-xs font-mono text-[#999999]">PORTAL LAYANAN PUBLIK</span>
           </div>
 
           <!-- Live Preview Window -->
           <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
             <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></span>
-              </div>
-              <span class="text-[11px] sm:text-xs font-mono text-[#999999] truncate max-w-[150px] sm:max-w-sm">https://lentera.indramayukab.go.id/</span>
+              <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://lentera.indramayukab.go.id/</span>
               <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-[2px] shrink-0">PWA LIVE</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
@@ -135,9 +129,9 @@
 
             <div class="lg:col-span-4 bg-[#141418] p-6 rounded-[4px] border border-[rgba(241,241,239,0.1)] space-y-4">
               <div class="space-y-2 text-xs font-mono">
-                <div class="text-[#666666]">KLIEN RESMI:</div>
+                <div class="text-[#666666]">INSTANSI:</div>
                 <div class="font-medium text-white text-sm">Pemerintah Kabupaten Indramayu</div>
-                <div class="text-[#666666] pt-2">ARSITEKTUR &amp; STACK:</div>
+                <div class="text-[#666666] pt-2">TEKNOLOGI:</div>
                 <div class="font-medium text-white">Laravel, PWA, REST API, MySQL</div>
               </div>
               <div class="pt-2">
@@ -163,12 +157,7 @@
           <!-- Live Preview Window -->
           <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
             <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></span>
-              </div>
-              <span class="text-[11px] sm:text-xs font-mono text-[#999999] truncate max-w-[150px] sm:max-w-sm">https://portal-desa-tempursari-six.vercel.app/</span>
+              <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://portal-desa-tempursari-six.vercel.app/</span>
               <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-[2px] shrink-0">PORTAL RESMI</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
@@ -183,9 +172,9 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div class="lg:col-span-8 space-y-4">
-              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">Portal Desa Tempursari — Tata Kelola &amp; Peta Digital</h2>
+              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">Portal Desa Tempursari: Tata Kelola &amp; Peta Digital</h2>
               <p class="text-[#999999] text-base leading-relaxed">
-                Website resmi Pemerintah Desa Tempursari yang dirancang untuk mewujudkan transparansi tata kelola wilayah, infografis statistik kependudukan, serta katalog kebudayaan dan potensi ekonomi desa.
+                Website resmi Pemerintah Desa Tempursari yang dirancang untuk mewujudkan transparansi tata kelola wilayah, infografis data kependudukan, serta katalog kebudayaan dan potensi ekonomi desa.
               </p>
               <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
                 <div class="flex items-center gap-2.5">
@@ -201,9 +190,9 @@
 
             <div class="lg:col-span-4 bg-[#141418] p-6 rounded-[4px] border border-[rgba(241,241,239,0.1)] space-y-4">
               <div class="space-y-2 text-xs font-mono">
-                <div class="text-[#666666]">KLIEN RESMI:</div>
+                <div class="text-[#666666]">INSTANSI:</div>
                 <div class="font-medium text-white text-sm">Pemerintah Desa Tempursari</div>
-                <div class="text-[#666666] pt-2">ARSITEKTUR &amp; STACK:</div>
+                <div class="text-[#666666] pt-2">TEKNOLOGI:</div>
                 <div class="font-medium text-white">Next.js, TailwindCSS, Interactive Maps</div>
               </div>
               <div class="pt-2">
@@ -221,20 +210,15 @@
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[rgba(241,241,239,0.1)] pb-4">
             <div class="flex items-center gap-2.5">
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-primary">PORTAL DESA WISATA &amp; UMKM</span>
+              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-primary">DESA WISATA &amp; UMKM</span>
             </div>
-            <span class="text-xs font-mono text-[#999999]">LIVE PRODUCTION ENVIRONMENT</span>
+            <span class="text-xs font-mono text-[#999999]">PORTAL WISATA &amp; EKONOMI</span>
           </div>
 
           <!-- Live Preview Window -->
           <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
             <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></span>
-              </div>
-              <span class="text-[11px] sm:text-xs font-mono text-[#999999] truncate max-w-[150px] sm:max-w-sm">https://visitgumiwang.web.id/</span>
+              <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://visitgumiwang.web.id/</span>
               <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-[2px] shrink-0">DESA WISATA</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
@@ -249,7 +233,7 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div class="lg:col-span-8 space-y-4">
-              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">Visit Gumiwang — Pertanian, Perikanan &amp; UMKM</h2>
+              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">Visit Gumiwang: Potensi Wisata &amp; Produk UMKM</h2>
               <p class="text-[#999999] text-base leading-relaxed">
                 Website promosi potensi lokal Desa Gumiwang. Menampilkan kekayaan alam, sektor perikanan, agrikultur terpadu, dan etalase digital katalog produk UMKM setempat.
               </p>
@@ -267,9 +251,9 @@
 
             <div class="lg:col-span-4 bg-[#141418] p-6 rounded-[4px] border border-[rgba(241,241,239,0.1)] space-y-4">
               <div class="space-y-2 text-xs font-mono">
-                <div class="text-[#666666]">KLIEN RESMI:</div>
-                <div class="font-medium text-white text-sm">Desa Gumiwang</div>
-                <div class="text-[#666666] pt-2">ARSITEKTUR &amp; STACK:</div>
+                <div class="text-[#666666]">KLIEN:</div>
+                <div class="font-medium text-white text-sm">Pengelola Desa Wisata Gumiwang</div>
+                <div class="text-[#666666] pt-2">TEKNOLOGI:</div>
                 <div class="font-medium text-white">Vite, TailwindCSS, Fast CDN Deployment</div>
               </div>
               <div class="pt-2">
@@ -287,20 +271,15 @@
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[rgba(241,241,239,0.1)] pb-4">
             <div class="flex items-center gap-2.5">
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-secondary">APLIKASI FULL FLUTTER MULTIPLATFORM</span>
+              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-secondary">APLIKASI KEUANGAN FLUTTER</span>
             </div>
-            <span class="text-xs font-mono text-[#999999]">LIVE PRODUCTION ENVIRONMENT</span>
+            <span class="text-xs font-mono text-[#999999]">CROSS-PLATFORM APP</span>
           </div>
 
           <!-- Live Preview Window -->
           <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
             <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></span>
-              </div>
-              <span class="text-[11px] sm:text-xs font-mono text-[#999999] truncate max-w-[150px] sm:max-w-sm">https://catatkas-web.vercel.app/</span>
+              <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://catatkas-web.vercel.app/</span>
               <span class="text-[10px] font-mono font-bold text-secondary bg-secondary/10 px-2 py-0.5 rounded-[2px] shrink-0">FLUTTER WEB</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
@@ -315,7 +294,7 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div class="lg:col-span-8 space-y-4">
-              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">CatatKas — Pembukuan Keuangan Digital UMKM</h2>
+              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">CatatKas: Pembukuan Keuangan Digital UMKM</h2>
               <p class="text-[#999999] text-base leading-relaxed">
                 Aplikasi pencatatan kas harian bagi pelaku usaha mikro yang dibangun secara komprehensif menggunakan Flutter. Membantu pencatatan kas masuk dan keluar secara instan, kalkulasi saldo otomatis, dan pencetakan laporan laba rugi.
               </p>
@@ -333,9 +312,9 @@
 
             <div class="lg:col-span-4 bg-[#141418] p-6 rounded-[4px] border border-[rgba(241,241,239,0.1)] space-y-4">
               <div class="space-y-2 text-xs font-mono">
-                <div class="text-[#666666]">KATEGORI PRODUK:</div>
-                <div class="font-medium text-white text-sm">Flutter Multiplatform App</div>
-                <div class="text-[#666666] pt-2">ARSITEKTUR &amp; STACK:</div>
+                <div class="text-[#666666]">TIPE PRODUK:</div>
+                <div class="font-medium text-white text-sm">Aplikasi Mobile &amp; Web</div>
+                <div class="text-[#666666] pt-2">TEKNOLOGI:</div>
                 <div class="font-medium text-white">Full Flutter, Dart, Local Storage</div>
               </div>
               <div class="pt-2">

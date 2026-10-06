@@ -10,31 +10,31 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
-    meta: { title: 'Nexa Digital Agency — Solusi Web, Data & Interaktif' }
+    meta: { title: 'Nexa Agency — Your brand deserves better than "basic"' }
   },
   {
     path: '/layanan',
     name: 'services',
     component: ServicesView,
-    meta: { title: 'Layanan — Nexa Digital Agency' }
+    meta: { title: 'Layanan — Nexa Agency' }
   },
   {
     path: '/portofolio',
     name: 'portfolio',
     component: PortfolioView,
-    meta: { title: 'Portofolio — Nexa Digital Agency' }
+    meta: { title: 'Portofolio — Nexa Agency' }
   },
   {
     path: '/tentang',
     name: 'about',
     component: AboutView,
-    meta: { title: 'Tentang Kami — Nexa Digital Agency' }
+    meta: { title: 'Tentang Kami — Nexa Agency' }
   },
   {
     path: '/kontak',
     name: 'contact',
     component: ContactView,
-    meta: { title: 'Kontak — Nexa Digital Agency' }
+    meta: { title: 'Kontak — Nexa Agency' }
   }
 ]
 
@@ -47,7 +47,7 @@ const router = createRouter({
 })
 
 router.afterEach((to) => {
-  document.title = to.meta.title || 'Nexa Digital Agency'
+  document.title = to.meta.title || 'Nexa Agency — Your brand deserves better than "basic"'
 })
 
 export default router

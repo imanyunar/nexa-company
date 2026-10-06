@@ -1,66 +1,84 @@
 <template>
-  <div class="bg-black text-white py-16 sm:py-24 border-b border-[rgba(241,241,239,0.12)]">
+  <div class="py-16 sm:py-24 border-b border-[rgba(241,241,239,0.12)] transition-colors duration-300">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-16">
 
       <!-- Header -->
       <div class="text-center max-w-2xl mx-auto space-y-4">
-        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#141418] border border-[rgba(241,241,239,0.14)] rounded-[2px] text-xs font-mono text-primary font-medium">
-          <span>BE SEEN BE CHOSEN</span>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#141418] border border-[rgba(241,241,239,0.14)] rounded-[2px] text-xs font-mono text-primary font-semibold tracking-wider uppercase">
+          <span>ABOUT NEXA AGENCY</span>
         </div>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-medium text-white tracking-[-1.5px]">
-          Tentang Nexa
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-medium tracking-[-1.5px]">
+          Mengenal Nexa Agency
         </h1>
         <p class="text-[#999999] text-base sm:text-lg leading-relaxed">
-          Agensi teknologi independen yang berfokus pada keunggulan arsitektur, transparansi komunikasi, dan solusi nyata berkinerja tinggi.
+          Digital agency yang berfokus pada pengembangan website dan identitas digital untuk UMKM, bisnis, organisasi, maupun personal branding.
         </p>
       </div>
 
-      <!-- Philosophy Manifesto Card -->
+      <!-- Tagline Accent Banner -->
+      <div class="card-dark about-block p-8 sm:p-10 border-l-4 border-l-primary text-center space-y-2 relative overflow-hidden bg-gradient-to-r from-primary/10 via-transparent to-violet/10">
+        <div class="text-xs font-mono uppercase tracking-[0.2em] text-primary font-semibold">OUR PHILOSOPHY</div>
+        <div class="text-2xl sm:text-3xl font-display font-semibold italic tracking-tight">
+          &ldquo;Your brand deserves better than &quot;basic&quot;.&rdquo;
+        </div>
+        <p class="text-xs sm:text-sm text-[#999999] max-w-xl mx-auto pt-1">
+          Setiap brand memiliki cerita unik. Kami hadir untuk memastikan karya digital Anda tampil orisinal, fungsional, dan berkarakter kuat.
+        </p>
+      </div>
+
+      <!-- Core Story Card -->
       <div class="card-dark about-block p-8 sm:p-12 space-y-6">
         <div class="flex items-center gap-3 border-b border-[rgba(241,241,239,0.1)] pb-4">
-          <span class="px-2.5 py-1 rounded-[2px] bg-[#141418] border border-[rgba(241,241,239,0.12)] text-xs font-mono text-primary font-medium">FILOSOFI KAMI</span>
-          <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">Be Seen Be Chosen</h2>
+          <span class="px-2.5 py-1 rounded-[2px] bg-[#141418] border border-[rgba(241,241,239,0.12)] text-xs font-mono text-primary font-semibold">IDENTITAS &amp; MISI</span>
+          <h2 class="text-2xl sm:text-3xl font-display font-medium">Relevan, Fungsional &amp; Berkarakter Kuat</h2>
         </div>
         <p class="text-[#999999] text-base leading-relaxed">
-          Dalam lanskap persaingan digital yang sangat padat, memiliki website atau aplikasi fungsional saja tidak lagi mencukupi. Filosofi fundamental Nexa Digital Agency berakar pada prinsip <strong class="text-white font-medium">Be Seen Be Chosen</strong>: merancang dan membangun ekosistem digital yang tidak hanya memikat secara visual, tetapi secara terukur mampu menarik perhatian target audiens dan meyakinkan mereka untuk memilih brand Anda.
+          <strong class="text-primary font-semibold">Nexa Agency</strong> adalah digital agency yang berfokus pada pengembangan website dan identitas digital untuk UMKM, bisnis, organisasi, maupun personal branding. Kami membantu mengubah ide dan kebutuhan klien menjadi solusi digital yang relevan, fungsional, dan memiliki karakter yang kuat.
         </p>
         <p class="text-[#999999] text-base leading-relaxed">
-          Pendekatan rekayasa kami mengutamakan <strong class="text-white font-medium">kecepatan tinggi</strong>, <strong class="text-white font-medium">antarmuka yang bersih dan intuitif</strong>, serta <strong class="text-white font-medium">arsitektur kode yang solid</strong> agar investasi digital Anda memberikan keunggulan kompetitif jangka panjang.
+          Layanan Nexa mencakup pengembangan website dan company profile, personal website, gamifikasi, hingga pengalaman digital yang lebih interaktif. Kami juga memanfaatkan teknologi modern seperti <strong class="text-primary font-semibold">Artificial Intelligence (AI)</strong> ketika dibutuhkan untuk meningkatkan fungsi dan pengalaman pengguna secara optimal.
         </p>
       </div>
 
-      <!-- 3 Core Principles -->
+      <!-- 3 Core Tenets -->
       <div class="space-y-8">
-        <h2 class="text-2xl sm:text-3xl font-display font-medium text-white text-center">Prinsip Kerja Kami</h2>
+        <div class="text-center space-y-2">
+          <div class="text-xs font-mono text-primary uppercase tracking-widest font-semibold">NILAI UTAMA KAMI</div>
+          <h2 class="text-2xl sm:text-3xl font-display font-medium">Mengapa Memilih Nexa Agency?</h2>
+        </div>
+        
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
           
+          <!-- Tenet 1: Custom Not Template -->
           <div class="card-dark about-block p-6 space-y-4">
             <div class="w-12 h-12 rounded-[4px] flex items-center justify-center bg-[rgba(0,65,240,0.15)] border border-[rgba(0,65,240,0.3)]">
-              <span class="material-symbols-outlined text-3xl text-primary">bolt</span>
+              <span class="material-symbols-outlined text-3xl text-primary">brush</span>
             </div>
-            <h3 class="font-medium text-lg text-white">Kecepatan &amp; Performa</h3>
+            <h3 class="font-medium text-lg">Solusi Custom</h3>
             <p class="text-xs text-[#999999] leading-relaxed">
-              Setiap baris kode dioptimasi agar ringan, cepat dibuka di koneksi apapun, dan memenuhi standar Core Web Vitals tertinggi.
+              Kami percaya setiap brand memiliki karakter berbeda. Solusi kami dirancang custom, bukan sekadar menggunakan template yang sama untuk semua kebutuhan.
             </p>
           </div>
 
+          <!-- Tenet 2: Orisinal & Scalable -->
           <div class="card-dark about-block p-6 space-y-4">
             <div class="w-12 h-12 rounded-[4px] flex items-center justify-center bg-[rgba(226,6,46,0.15)] border border-[rgba(226,6,46,0.3)]">
-              <span class="material-symbols-outlined text-3xl text-secondary">track_changes</span>
+              <span class="material-symbols-outlined text-3xl text-secondary">verified</span>
             </div>
-            <h3 class="font-medium text-lg text-white">Tepat Guna &amp; Terukur</h3>
+            <h3 class="font-medium text-lg">Orisinal &amp; Scalable</h3>
             <p class="text-xs text-[#999999] leading-relaxed">
-              Fokus mengembangkan fitur yang secara nyata menyelesaikan masalah operasional tanpa beban kompleksitas yang tidak perlu.
+              Menciptakan karya digital yang orisinal, mudah dikembangkan di masa depan, dan mampu merepresentasikan identitas brand Anda secara autentik.
             </p>
           </div>
 
+          <!-- Tenet 3: Collaborative & Clear -->
           <div class="card-dark about-block p-6 space-y-4">
             <div class="w-12 h-12 rounded-[4px] flex items-center justify-center bg-[rgba(166,0,255,0.15)] border border-[rgba(166,0,255,0.3)]">
-              <span class="material-symbols-outlined text-3xl text-violet">verified_user</span>
+              <span class="material-symbols-outlined text-3xl text-violet">forum</span>
             </div>
-            <h3 class="font-medium text-lg text-white">Transparansi Terbuka</h3>
+            <h3 class="font-medium text-lg">Kolaboratif &amp; Lugas</h3>
             <p class="text-xs text-[#999999] leading-relaxed">
-              Pelaporan progres rutin, komunikasi lugas dan bersahabat, serta pendampingan teknis penuh pasca peluncuran.
+              Komunikasi yang mudah dipahami dan alur kerja kolaboratif agar visi brand Anda terwujud dengan transparan tanpa kebingungan teknis.
             </p>
           </div>
 
@@ -69,13 +87,13 @@
 
       <!-- Collaboration CTA -->
       <div class="card-dark about-block p-8 sm:p-12 text-center space-y-6">
-        <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">Mari Berkolaborasi Bersama Kami</h2>
+        <h2 class="text-2xl sm:text-3xl font-display font-medium">Bangun Kehadiran Digital yang Lebih Kuat</h2>
         <p class="text-[#999999] text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-          Diskusikan visi proyek dan tantangan teknologi bisnis Anda bersama tim teknis Nexa Digital Agency.
+          Konsultasikan ide website, identitas digital, atau pengalaman interaktif brand Anda bersama tim Nexa Agency.
         </p>
         <div class="pt-2">
           <router-link to="/kontak" class="btn-primary text-xs uppercase font-medium py-3.5 px-8 group inline-flex items-center gap-2">
-            <span>Hubungi Kami</span>
+            <span>Mulai Diskusi Proyek</span>
             <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </router-link>
         </div>

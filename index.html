@@ -4,33 +4,52 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/assets/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexa Digital Agency — Be Seen Be Chosen | Web Development, Data Analysis, Game Development</title>
-    <meta name="description" content="Nexa Digital Agency: Be Seen Be Chosen. Agensi teknologi kelas dunia yang menghadirkan solusi Web Development, Data Analysis, dan Game Development berkinerja tinggi." />
-    <meta name="keywords" content="Nexa Digital Agency, Web Development, Data Analysis, Game Development, Be Seen Be Chosen, Agensi Web Indonesia, Software House" />
+    <title>Nexa Agency — Your brand deserves better than "basic" | Website &amp; Digital Identity</title>
+    <meta name="description" content="Nexa Agency adalah digital agency yang berfokus pada pengembangan website &amp; identitas digital custom untuk UMKM, bisnis, organisasi, dan personal branding. Your brand deserves better than &quot;basic&quot;." />
+    <meta name="keywords" content="Nexa Agency, Custom Website, Identitas Digital, UMKM, Personal Branding, Gamifikasi, AI Integration, Web Development Indonesia" />
     <meta name="theme-color" content="#000000" />
     <link rel="canonical" href="https://nexaagency.my.id/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nexaagency.my.id/" />
-    <meta property="og:title" content="Nexa Digital Agency — Be Seen Be Chosen" />
-    <meta property="og:description" content="Membangun Solusi Web, Analisis Data, dan Media Interaktif. Agensi teknologi independen dengan eksekusi bersih dan performa tinggi." />
+    <meta property="og:title" content="Nexa Agency — Your brand deserves better than &quot;basic&quot;" />
+    <meta property="og:description" content="Pengembangan website dan identitas digital custom untuk UMKM, bisnis, organisasi, dan personal branding dengan sentuhan gamifikasi dan AI." />
     <meta property="og:image" content="https://nexaagency.my.id/assets/logo.png" />
     <meta property="og:locale" content="id_ID" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://nexaagency.my.id/" />
-    <meta name="twitter:title" content="Nexa Digital Agency — Be Seen Be Chosen" />
-    <meta name="twitter:description" content="Membangun Solusi Web, Analisis Data, dan Media Interaktif. Agensi teknologi independen dengan eksekusi bersih dan performa tinggi." />
+    <meta name="twitter:title" content="Nexa Agency — Your brand deserves better than &quot;basic&quot;" />
+    <meta name="twitter:description" content="Pengembangan website dan identitas digital custom untuk UMKM, bisnis, organisasi, dan personal branding dengan sentuhan gamifikasi dan AI." />
     <meta name="twitter:image" content="https://nexaagency.my.id/assets/logo.png" />
     
     <!-- Fonts: Inter, IBM Plex Mono, and Google Material Symbols -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+
+    <!-- Anti-Flash Theme Init Script -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('nexa-theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+            document.documentElement.setAttribute('data-theme', 'light');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
-  <body class="bg-black text-white font-sans antialiased selection:bg-[#0041f0] selection:text-white min-h-screen">
+  <body class="bg-canvas text-text-primary font-sans antialiased selection:bg-[#0041f0] selection:text-white min-h-screen transition-colors duration-300">
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
