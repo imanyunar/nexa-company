@@ -30,10 +30,10 @@
           <!-- Headline & Narrative -->
           <div class="lg:col-span-7 space-y-8">
             
-            <!-- Category Badge -->
-            <div class="inline-flex items-center gap-2.5 px-3 py-1.5 bg-[#141418] border border-[rgba(241,241,239,0.14)] rounded-[2px] text-xs font-mono text-primary font-semibold">
+            <!-- Category Overline -->
+            <div class="flex items-center gap-2.5 text-xs uppercase tracking-widest text-primary font-semibold">
               <span class="w-2 h-2 rounded-full bg-primary"></span>
-              <span class="tracking-wider uppercase">NEXA AGENCY · DIGITAL IDENTITY &amp; WEB STUDIO</span>
+              <span>NEXA AGENCY · DIGITAL IDENTITY &amp; WEB STUDIO</span>
             </div>
 
             <!-- Display Headline with Tagline -->
@@ -286,7 +286,7 @@
               <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black flex flex-col shadow-xl">
                 <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
                   <span class="text-xs font-mono text-[#999999] truncate max-w-[200px]">pixelcraft-psi-blue.vercel.app</span>
-                  <span class="text-[10px] font-mono font-medium text-violet bg-violet/10 px-2 py-0.5 rounded-[2px]">WEBGL &amp; AI</span>
+                  <span class="text-[11px] font-mono font-medium text-violet shrink-0">WebGL &amp; AI</span>
                 </div>
                 <div class="relative w-full overflow-hidden h-[200px] sm:h-[260px] bg-black">
                   <img 
@@ -305,7 +305,7 @@
             <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black flex flex-col">
               <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
                 <span class="text-xs font-mono text-[#999999] truncate max-w-[200px]">lentera.indramayukab.go.id</span>
-                <span class="text-[10px] font-mono font-medium text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-[2px]">PWA LIVE</span>
+                <span class="text-[11px] font-mono font-medium text-emerald-400 shrink-0">PWA Live</span>
               </div>
               <div class="relative w-full overflow-hidden h-[170px] sm:h-[230px] bg-black">
                 <img 
@@ -337,7 +337,7 @@
             <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black flex flex-col">
               <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
                 <span class="text-xs font-mono text-[#999999] truncate max-w-[200px]">portal-desa-tempursari.app</span>
-                <span class="text-[10px] font-mono font-medium text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-[2px]">PORTAL RESMI</span>
+                <span class="text-[11px] font-mono font-medium text-emerald-400 shrink-0">Portal Resmi</span>
               </div>
               <div class="relative w-full overflow-hidden h-[170px] sm:h-[230px] bg-black">
                 <img 
@@ -369,7 +369,7 @@
             <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black flex flex-col">
               <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
                 <span class="text-xs font-mono text-[#999999] truncate max-w-[200px]">visitgumiwang.web.id</span>
-                <span class="text-[10px] font-mono font-medium text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-[2px]">DESA WISATA</span>
+                <span class="text-[11px] font-mono font-medium text-emerald-400 shrink-0">Desa Wisata</span>
               </div>
               <div class="relative w-full overflow-hidden h-[170px] sm:h-[230px] bg-black">
                 <img 
@@ -401,7 +401,7 @@
             <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black flex flex-col">
               <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
                 <span class="text-xs font-mono text-[#999999] truncate max-w-[200px]">catatkas-web.vercel.app</span>
-                <span class="text-[10px] font-mono font-medium text-secondary bg-secondary/10 px-2 py-0.5 rounded-[2px]">FLUTTER APP</span>
+                <span class="text-[11px] font-mono font-medium text-secondary shrink-0">Flutter App</span>
               </div>
               <div class="relative w-full overflow-hidden h-[170px] sm:h-[230px] bg-black">
                 <img 
@@ -509,7 +509,7 @@
         <div class="reveal-item card-dark p-6 sm:p-10 border-[rgba(166,0,255,0.3)] hover:border-violet/60 transition-colors space-y-6">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[rgba(241,241,239,0.1)] pb-5">
             <div class="flex items-center gap-3">
-              <span class="px-2.5 py-1 rounded-[2px] bg-violet/20 border border-violet/40 text-violet text-xs font-mono font-semibold">NEXA LABS · SHOWCASE RISET</span>
+              <span class="text-xs uppercase tracking-wider text-violet font-semibold">Nexa Labs · Showcase Riset</span>
               <span class="text-xs font-mono text-emerald-400 flex items-center gap-1.5">
                 <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
                 <span>ONLINE &amp; GRATIS</span>
@@ -526,11 +526,11 @@
               <p class="text-[#999999] text-sm sm:text-base leading-relaxed">
                 Kami mengembangkan PixelCraft Studio sebagai inisiatif internal untuk membuktikan bahwa pengolahan citra digital profesional (seperti penajaman gambar, filter denoise, kompresi WebP/PNG, dan live histogram) dapat berjalan langsung di browser pengguna dengan akselerasi GPU tanpa perlu mengunggah foto ke server pihak ketiga.
               </p>
-              <div class="flex flex-wrap gap-2 pt-1 text-xs font-mono text-[#cccccc]">
-                <span class="px-2.5 py-1 bg-[#141418] border border-[rgba(241,241,239,0.08)] rounded-[2px]">Akselerasi GPU/WebGL</span>
-                <span class="px-2.5 py-1 bg-[#141418] border border-[rgba(241,241,239,0.08)] rounded-[2px]">100% Client-Side Privacy</span>
-                <span class="px-2.5 py-1 bg-[#141418] border border-[rgba(241,241,239,0.08)] rounded-[2px]">Kompresi WebP &amp; PNG</span>
-                <span class="px-2.5 py-1 bg-[#141418] border border-[rgba(241,241,239,0.08)] rounded-[2px]">Tanpa Perlu Instalasi</span>
+              <div class="flex flex-wrap gap-x-5 gap-y-2 pt-1 text-xs text-[#cccccc]">
+                <span>✓ Akselerasi GPU/WebGL</span>
+                <span>✓ 100% Client-Side Privacy</span>
+                <span>✓ Kompresi WebP &amp; PNG</span>
+                <span>✓ Tanpa Perlu Instalasi</span>
               </div>
             </div>
 
@@ -561,9 +561,9 @@
     <section class="py-20 sm:py-28 relative overflow-hidden border-t border-[rgba(241,241,239,0.1)]">
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,65,240,0.12)_0%,transparent_70%)] pointer-events-none"></div>
       <div class="reveal-item max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6 relative z-10">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-[2px] bg-primary/10 border border-primary/25 text-primary text-xs font-mono font-semibold tracking-wider">
-          <span>YOUR BRAND DESERVES BETTER THAN "BASIC"</span>
-        </div>
+        <p class="text-xs uppercase tracking-widest text-primary font-semibold">
+          Your brand deserves better than &ldquo;basic&rdquo;
+        </p>
         <h2 class="text-3xl sm:text-5xl font-display font-medium leading-tight tracking-[-1px]">
           Siap Membangun Kehadiran Digital yang Berkesan?
         </h2>

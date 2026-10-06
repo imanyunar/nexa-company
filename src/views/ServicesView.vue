@@ -4,20 +4,15 @@
 
       <!-- Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4">
-        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#141418] border border-[rgba(241,241,239,0.14)] rounded-[2px] text-xs font-mono text-primary font-semibold">
-          <span>LAYANAN NEXA AGENCY</span>
-        </div>
+        <p class="text-xs uppercase tracking-widest text-primary font-semibold">
+          Layanan Nexa Agency
+        </p>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-medium tracking-[-1.5px]">
           Solusi Custom &amp; Berkarakter Kuat
         </h1>
         <p class="text-[#999999] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
           Mulai dari website company profile, personal branding, gamifikasi, hingga pemanfaatan teknologi AI untuk meningkatkan fungsi dan pengalaman pengguna.
         </p>
-        <div class="pt-1">
-          <span class="inline-block text-xs font-mono text-primary font-semibold px-3 py-1 rounded-[2px] bg-primary/10 border border-primary/20">
-            Your brand deserves better than "basic".
-          </span>
-        </div>
       </div>
 
       <!-- 1. Website & Company Profile -->

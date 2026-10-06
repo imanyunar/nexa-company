@@ -35,8 +35,8 @@ export default {
         'text-faint': 'var(--color-text-faint)',
       },
       fontFamily: {
-        display: ['"Graphik"', '"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
-        sans: ['"Graphik"', '"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['"Outfit"', '"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['"Outfit"', '"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
         mono: ['"IBM Plex Mono"', 'monospace'],
       },
       borderRadius: {

@@ -4,27 +4,22 @@
 
       <!-- Header -->
       <div class="contact-header text-center max-w-2xl mx-auto space-y-4">
-        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#141418] border border-[rgba(241,241,239,0.14)] rounded-[2px] text-xs font-mono text-primary font-semibold">
-          <span>KONSULTASI &amp; KOLABORASI</span>
-        </div>
+        <p class="text-xs uppercase tracking-widest text-primary font-semibold">
+          Konsultasi &amp; Kolaborasi
+        </p>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-medium tracking-[-1.9px]">
           Hubungi Nexa Agency
         </h1>
         <p class="text-[#999999] text-base sm:text-lg leading-relaxed">
           Diskusikan ide website, personal branding, gamifikasi, atau integrasi AI bersama kami. Karena brand Anda layak mendapatkan lebih dari sekadar standar.
         </p>
-        <div class="pt-1">
-          <span class="inline-block text-xs font-mono text-primary font-semibold px-3 py-1 rounded-[2px] bg-primary/10 border border-primary/20">
-            Your brand deserves better than "basic".
-          </span>
-        </div>
       </div>
 
       <!-- Direct Contact Channels -->
       <div class="space-y-5">
         <div class="flex items-center justify-between pb-2 border-b border-[rgba(241,241,239,0.1)]">
-          <span class="text-xs font-mono text-primary uppercase font-medium tracking-wider">SALURAN LANGSUNG</span>
-          <span class="text-xs font-mono text-[#666666]">KLIK UNTUK TERHUBUNG</span>
+          <span class="text-xs uppercase font-medium tracking-wider text-primary">Saluran Langsung</span>
+          <span class="text-xs text-[#666666]">Klik untuk terhubung</span>
         </div>
 
         <!-- Channel Cards -->
@@ -44,13 +39,12 @@
                   <path d="M17.472 14.382c-.301-.15-1.781-.879-2.057-.98-.277-.101-.478-.15-.679.15-.2.301-.778.98-.954 1.18-.176.2-.352.226-.653.076-.301-.15-1.272-.469-2.424-1.496-.896-.799-1.501-1.787-1.677-2.088-.176-.301-.019-.464.132-.614.136-.135.301-.352.452-.528.151-.176.201-.301.301-.502.1-.2.05-.376-.025-.527-.075-.15-.679-1.637-.93-2.242-.244-.589-.493-.509-.679-.519l-.578-.01c-.2 0-.527.075-.803.376s-1.054 1.03-1.054 2.511 1.079 2.912 1.23 3.113c.15.201 2.124 3.244 5.146 4.55.719.311 1.28.497 1.718.636.722.23 1.378.197 1.898.12.579-.087 1.781-.728 2.032-1.431.251-.703.251-1.305.176-1.431-.076-.126-.276-.201-.577-.352zm-5.467 7.618a9.92 9.92 0 0 1-5.064-1.385l-.363-.215-3.766.988 1.005-3.67-.236-.375a9.932 9.932 0 0 1-1.523-5.289c0-5.485 4.463-9.948 9.952-9.948 2.658 0 5.158 1.036 7.034 2.914a9.89 9.89 0 0 1 2.912 7.034c0 5.487-4.464 9.949-9.95 9.949zm8.441-18.39A11.905 11.905 0 0 0 12.005 0C5.385 0 0 5.385 0 12.005c0 2.113.552 4.177 1.6 6.002L0 24l6.165-1.617a11.97 11.97 0 0 0 5.84 1.513h.005c6.619 0 12.005-5.385 12.005-12.005 0-3.208-1.25-6.224-3.52-8.496z"/>
                 </svg>
               </div>
-              <span class="text-[9px] font-mono font-semibold px-2 py-0.5 rounded-[2px] bg-emerald-500/15 text-emerald-400">FAST RESPONSE</span>
             </div>
             <div>
               <div class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors duration-300">WhatsApp Official</div>
-              <div class="text-xs font-mono text-[#999999] mt-1">+62 895 8002 86901</div>
+              <div class="text-xs text-[#999999] mt-1">+62 895 8002 86901</div>
             </div>
-            <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs font-mono text-emerald-400">
+            <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs text-emerald-400">
               <span>Buka Chat</span>
               <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
             </div>
@@ -66,13 +60,12 @@
               <div class="w-11 h-11 rounded-[4px] bg-[rgba(0,65,240,0.15)] border border-[rgba(0,65,240,0.3)] text-primary flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
                 <span class="material-symbols-outlined text-xl">call</span>
               </div>
-              <span class="text-[9px] font-mono font-semibold px-2 py-0.5 rounded-[2px] bg-[rgba(0,65,240,0.15)] text-primary">DIRECT CALL</span>
             </div>
             <div>
               <div class="text-sm font-semibold text-white group-hover:text-primary transition-colors duration-300">Panggilan Langsung</div>
-              <div class="text-xs font-mono text-[#999999] mt-1">+62 895 8002 86901</div>
+              <div class="text-xs text-[#999999] mt-1">+62 895 8002 86901</div>
             </div>
-            <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs font-mono text-primary">
+            <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs text-primary">
               <span>Panggil Sekarang</span>
               <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
             </div>
@@ -88,13 +81,12 @@
               <div class="w-11 h-11 rounded-[4px] bg-[rgba(0,65,240,0.15)] border border-[rgba(0,65,240,0.3)] text-primary flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
                 <span class="material-symbols-outlined text-xl">mail</span>
               </div>
-              <span class="text-[9px] font-mono font-semibold px-2 py-0.5 rounded-[2px] bg-[rgba(0,65,240,0.15)] text-primary">EMAIL RESMI</span>
             </div>
             <div>
               <div class="text-sm font-semibold text-white group-hover:text-primary transition-colors duration-300">Email Resmi</div>
-              <div class="text-xs font-mono text-[#999999] mt-1 truncate">nexadigitalagency40@gmail.com</div>
+              <div class="text-xs text-[#999999] mt-1 truncate">nexadigitalagency40@gmail.com</div>
             </div>
-            <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs font-mono text-primary">
+            <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs text-primary">
               <span>Kirim Email</span>
               <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
             </div>
@@ -114,13 +106,12 @@
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.441-1.44z"/>
                 </svg>
               </div>
-              <span class="text-[9px] font-mono font-semibold px-2 py-0.5 rounded-[2px] bg-[rgba(166,0,255,0.15)] text-violet">SOCIAL</span>
             </div>
             <div>
               <div class="text-sm font-semibold text-white group-hover:text-violet transition-colors duration-300">Instagram Official</div>
-              <div class="text-xs font-mono text-[#999999] mt-1">@nexadigitalagency40</div>
+              <div class="text-xs text-[#999999] mt-1">@nexadigitalagency40</div>
             </div>
-            <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs font-mono text-violet">
+            <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs text-violet">
               <span>Kunjungi</span>
               <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
             </div>
@@ -128,7 +119,7 @@
 
           <!-- TikTok -->
           <a 
-            href="https://www.tiktok.com/@nexa.digital.agen1?_r=1&_t=ZS-99LSlCbuCXA" 
+            href="https://www.tiktok.com/@nexa.digital.agency40" 
             target="_blank" 
             rel="noopener noreferrer" 
             class="contact-card card-dark p-5 flex flex-col gap-4 group hover:border-secondary/60 sm:col-span-2 lg:col-span-1"
@@ -140,13 +131,12 @@
                   <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
                 </svg>
               </div>
-              <span class="text-[9px] font-mono font-semibold px-2 py-0.5 rounded-[2px] bg-[rgba(226,6,46,0.15)] text-secondary">CREATIVE</span>
             </div>
             <div>
               <div class="text-sm font-semibold text-white group-hover:text-secondary transition-colors duration-300">TikTok Official</div>
-              <div class="text-xs font-mono text-[#999999] mt-1">@nexa.digital.agen1</div>
+              <div class="text-xs text-[#999999] mt-1">@nexa.digital.agency40</div>
             </div>
-            <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs font-mono text-secondary">
+            <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs text-secondary">
               <span>Buka TikTok</span>
               <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
             </div>

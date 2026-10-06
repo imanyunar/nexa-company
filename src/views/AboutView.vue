@@ -4,9 +4,9 @@
 
       <!-- Header -->
       <div class="text-center max-w-2xl mx-auto space-y-4">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#141418] border border-[rgba(241,241,239,0.14)] rounded-[2px] text-xs font-mono text-primary font-semibold tracking-wider uppercase">
-          <span>ABOUT NEXA AGENCY</span>
-        </div>
+        <p class="text-xs uppercase tracking-widest text-primary font-semibold">
+          About Nexa Agency
+        </p>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-medium tracking-[-1.5px]">
           Mengenal Nexa Agency
         </h1>
@@ -17,7 +17,7 @@
 
       <!-- Tagline Accent Banner -->
       <div class="card-dark about-block p-8 sm:p-10 border-l-4 border-l-primary text-center space-y-2 relative overflow-hidden bg-gradient-to-r from-primary/10 via-transparent to-violet/10">
-        <div class="text-xs font-mono uppercase tracking-[0.2em] text-primary font-semibold">OUR PHILOSOPHY</div>
+        <p class="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Filosofi Kami</p>
         <div class="text-2xl sm:text-3xl font-display font-semibold italic tracking-tight">
           &ldquo;Your brand deserves better than &quot;basic&quot;.&rdquo;
         </div>
@@ -28,8 +28,8 @@
 
       <!-- Core Story Card -->
       <div class="card-dark about-block p-8 sm:p-12 space-y-6">
-        <div class="flex items-center gap-3 border-b border-[rgba(241,241,239,0.1)] pb-4">
-          <span class="px-2.5 py-1 rounded-[2px] bg-[#141418] border border-[rgba(241,241,239,0.12)] text-xs font-mono text-primary font-semibold">IDENTITAS &amp; MISI</span>
+        <div class="space-y-1 border-b border-[rgba(241,241,239,0.1)] pb-4">
+          <p class="text-xs uppercase tracking-wider text-primary font-semibold">Identitas &amp; Misi</p>
           <h2 class="text-2xl sm:text-3xl font-display font-medium">Relevan, Fungsional &amp; Berkarakter Kuat</h2>
         </div>
         <p class="text-[#999999] text-base leading-relaxed">
@@ -43,7 +43,7 @@
       <!-- 3 Core Tenets -->
       <div class="space-y-8">
         <div class="text-center space-y-2">
-          <div class="text-xs font-mono text-primary uppercase tracking-widest font-semibold">NILAI UTAMA KAMI</div>
+          <p class="text-xs uppercase tracking-widest text-primary font-semibold">Nilai Utama Kami</p>
           <h2 class="text-2xl sm:text-3xl font-display font-medium">Mengapa Memilih Nexa Agency?</h2>
         </div>
         

@@ -4,20 +4,15 @@
 
       <!-- Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4">
-        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#141418] border border-[rgba(241,241,239,0.14)] rounded-[2px] text-xs font-mono text-primary font-semibold">
-          <span>KARYA &amp; REKAM JEJAK</span>
-        </div>
+        <p class="text-xs uppercase tracking-widest text-primary font-semibold">
+          Karya &amp; Rekam Jejak
+        </p>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-medium tracking-[-1.5px]">
           Koleksi Portofolio Nexa Agency
         </h1>
         <p class="text-[#999999] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
           Daftar website, aplikasi, dan media interaktif yang telah kami kembangkan secara custom untuk mewujudkan kehadiran digital yang orisinal dan fungsional.
         </p>
-        <div class="pt-1">
-          <span class="inline-block text-xs font-mono text-primary font-semibold px-3 py-1 rounded-[2px] bg-primary/10 border border-primary/20">
-            Your brand deserves better than "basic".
-          </span>
-        </div>
       </div>
 
       <div class="space-y-12 sm:space-y-16">
@@ -36,7 +31,7 @@
           <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
             <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
               <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://pixelcraft-psi-blue.vercel.app/</span>
-              <span class="text-[10px] font-mono font-bold text-violet bg-violet/10 px-2 py-0.5 rounded-[2px] shrink-0">WEBGL &amp; AI</span>
+              <span class="text-[11px] font-mono font-medium text-violet shrink-0">WebGL &amp; AI</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
               <img 
@@ -97,7 +92,7 @@
           <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
             <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
               <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://lentera.indramayukab.go.id/</span>
-              <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-[2px] shrink-0">PWA LIVE</span>
+              <span class="text-[11px] font-mono font-medium text-emerald-400 shrink-0">PWA Live</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
               <img 
@@ -158,7 +153,7 @@
           <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
             <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
               <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://portal-desa-tempursari-six.vercel.app/</span>
-              <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-[2px] shrink-0">PORTAL RESMI</span>
+              <span class="text-[11px] font-mono font-medium text-emerald-400 shrink-0">Portal Resmi</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
               <img 
@@ -219,7 +214,7 @@
           <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
             <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
               <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://visitgumiwang.web.id/</span>
-              <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-[2px] shrink-0">DESA WISATA</span>
+              <span class="text-[11px] font-mono font-medium text-emerald-400 shrink-0">Desa Wisata</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
               <img 
@@ -280,7 +275,7 @@
           <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
             <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
               <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://catatkas-web.vercel.app/</span>
-              <span class="text-[10px] font-mono font-bold text-secondary bg-secondary/10 px-2 py-0.5 rounded-[2px] shrink-0">FLUTTER WEB</span>
+              <span class="text-[11px] font-mono font-medium text-secondary shrink-0">Flutter Web</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
               <img 
