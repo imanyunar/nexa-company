@@ -142,10 +142,11 @@ Berikut beberapa proyek unggulan yang telah live di lingkungan produksi:
 
 ## 📬 Kontak
 
-- 🌐 **Website:** -
-- 📧 **Email:** -
-- 💬 **WhatsApp:** -
-- 📷 **Instagram:** -
+- 🌐 **Website:** [nexaagency.my.id](https://nexaagency.my.id/)
+- 📧 **Email:** [nexadigitalagency40@gmail.com](mailto:nexadigitalagency40@gmail.com)
+- 💬 **WhatsApp:** [+62 895 8002 86901](https://wa.me/62895800286901)
+- 📷 **Instagram:** [@nexalife.id](https://www.instagram.com/nexalife.id/)
+- 🎵 **TikTok:** [@nexalife.id](https://www.tiktok.com/@nexalife.id)
 
 ---
 

@@ -94,7 +94,7 @@
 
           <!-- Instagram -->
           <a 
-            href="https://www.instagram.com/nexadigitalagency40/" 
+            href="https://www.instagram.com/nexalife.id/" 
             target="_blank" 
             rel="noopener noreferrer" 
             class="contact-card card-dark p-5 flex flex-col gap-4 group hover:border-violet/60"
@@ -109,7 +109,7 @@
             </div>
             <div>
               <div class="text-sm font-semibold text-white group-hover:text-violet transition-colors duration-300">Instagram Official</div>
-              <div class="text-xs text-[#999999] mt-1">@nexadigitalagency40</div>
+              <div class="text-xs text-[#999999] mt-1">@nexalife.id</div>
             </div>
             <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs text-violet">
               <span>Kunjungi</span>
@@ -119,7 +119,7 @@
 
           <!-- TikTok -->
           <a 
-            href="https://www.tiktok.com/@nexa.digital.agency40" 
+            href="https://www.tiktok.com/@nexalife.id" 
             target="_blank" 
             rel="noopener noreferrer" 
             class="contact-card card-dark p-5 flex flex-col gap-4 group hover:border-secondary/60 sm:col-span-2 lg:col-span-1"
@@ -134,7 +134,7 @@
             </div>
             <div>
               <div class="text-sm font-semibold text-white group-hover:text-secondary transition-colors duration-300">TikTok Official</div>
-              <div class="text-xs text-[#999999] mt-1">@nexa.digital.agency40</div>
+              <div class="text-xs text-[#999999] mt-1">@nexalife.id</div>
             </div>
             <div class="mt-auto pt-3 border-t border-[rgba(241,241,239,0.08)] flex items-center justify-between text-xs text-secondary">
               <span>Buka TikTok</span>
