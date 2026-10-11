@@ -8,46 +8,66 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Reinvented with Accenture Color Palette
-        'primary': '#0041f0',           // --palette-4 Primary Accent
-        'primary-hover': '#0033c4',
-        'secondary': '#e2062e',         // --palette-5 Secondary Accent (Accenture Red)
-        'secondary-hover': '#c20527',
-        'plum': '#460073',              // --palette-6
-        'violet': '#a600ff',            // --palette-7
-        'dark-btn': '#2b2b2b',          // --palette-8
-        'blue-accent': '#004dff',       // --palette-9
-        'blue-slate': '#3860be',        // --palette-10
+        // Stitch Surface Roles (Adaptive via CSS variables)
+        'surface': 'var(--color-surface)',
+        'surface-dim': 'var(--color-surface-dim)',
+        'surface-bright': 'var(--color-surface-bright)',
+        'surface-container-lowest': 'var(--color-surface-container-lowest)',
+        'surface-container-low': 'var(--color-surface-container-low)',
+        'surface-container': 'var(--color-surface-container)',
+        'surface-container-high': 'var(--color-surface-container-high)',
+        'surface-container-highest': 'var(--color-surface-container-highest)',
+        
+        // Text & Outlines
+        'on-surface': 'var(--color-on-surface)',
+        'on-surface-variant': 'var(--color-on-surface-variant)',
+        'outline': 'var(--color-outline)',
+        'outline-variant': 'var(--color-outline-variant)',
 
-        // Adaptive Surfaces & Backgrounds
-        'canvas': 'var(--color-bg)',
-        'canvas-alt': 'var(--color-bg-alt)',
-        'surface-card': 'var(--color-surface-card)',
-        'surface-elevated': 'var(--color-surface-elevated)',
-        'surface-hover': 'var(--color-surface-hover)',
-        'border-light': '#f1f1ef',
-        'border-subtle': 'var(--color-border)',
-        'border-accent': 'rgba(0, 65, 240, 0.4)',
+        // Stitch Neon & Chromatic Accents (Luminous Techno-Chic)
+        'stitch-magenta': '#C239D8',
+        'stitch-magenta-light': '#faabff',
+        'stitch-magenta-dark': '#4c0059',
+        'stitch-purple': '#7B68EE',
+        'stitch-purple-light': '#cabeff',
+        'stitch-cyan': '#99D4FF',
+        'stitch-cyan-light': '#92cdf8',
+        'stitch-amber': '#f0bd8b',
 
-        // Adaptive Typography
-        'text-primary': 'var(--color-text-primary)',
-        'text-secondary': 'var(--color-text-secondary)',
-        'text-faint': 'var(--color-text-faint)',
+        // Brand Primaries
+        'primary': 'var(--color-primary)',
+        'primary-hover': 'var(--color-primary-hover)',
+        'secondary': 'var(--color-secondary)',
+        'secondary-hover': 'var(--color-secondary-hover)',
+
+        // Backwards compatibility tokens
+        'canvas': 'var(--color-surface)',
+        'text-primary': 'var(--color-on-surface)',
+        'text-secondary': 'var(--color-on-surface-variant)',
+        'card-dark': 'var(--color-surface-container-low)',
       },
       fontFamily: {
-        display: ['"Outfit"', '"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
-        sans: ['"Outfit"', '"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+        headline: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        sans: ['"Inter"', '"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
         mono: ['"IBM Plex Mono"', 'monospace'],
       },
       borderRadius: {
-        'subtle': '2px',
-        'card': '20px',
-        'card-sm': '12px',
-        'pill': '9999px',
+        'sm': '0.125rem',
+        'DEFAULT': '0.25rem',
+        'md': '0.375rem',
+        'lg': '0.5rem',
+        'xl': '0.75rem',
+        '2xl': '1rem',
+        'full': '9999px',
       },
       spacing: {
-        '18': '4.5rem',
-        '22': '5.5rem',
+        'space-xs': '0.25rem',
+        'space-sm': '0.5rem',
+        'space-md': '1rem',
+        'space-lg': '1.5rem',
+        'space-xl': '2.5rem',
+        'space-2xl': '4rem',
       }
     },
   },

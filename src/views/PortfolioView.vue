@@ -1,37 +1,57 @@
 <template>
-  <div class="py-16 sm:py-24 border-b border-[rgba(241,241,239,0.12)] transition-colors duration-300">
+  <div class="py-16 sm:py-24 transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-16 sm:space-y-20">
 
-      <!-- Header -->
+      <!-- Header with Stitch Overline -->
       <div class="text-center max-w-3xl mx-auto space-y-4">
-        <p class="text-xs uppercase tracking-widest text-primary font-semibold">
-          Karya &amp; Rekam Jejak
-        </p>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-medium tracking-[-1.5px]">
-          Koleksi Portofolio Nexa Agency
+        <div 
+          class="inline-flex items-center px-4 py-1.5 rounded-full border text-xs font-semibold uppercase tracking-wider font-mono shadow-sm"
+          :class="isDark ? 'border-[#C239D8]/40 bg-[#191c1f] text-stitch-magenta-light' : 'border-fuchsia-200/90 bg-white/95 text-slate-800 shadow-[0_2px_12px_rgba(192,38,211,0.08)]'"
+        >
+          <span>01 // Portofolio Pilihan</span>
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-headline font-semibold tracking-tight">
+          Karya &amp; Rekam Jejak Rekayasa
         </h1>
-        <p class="text-[#999999] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-          Daftar website, aplikasi, dan media interaktif yang telah kami kembangkan secara custom untuk mewujudkan kehadiran digital yang orisinal dan fungsional.
+        <p class="text-on-surface-variant text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+          Daftar platform web, sistem cloud, dan produk digital yang telah kami bangun secara kustom dengan presisi rekayasa dan standar visual berbobot tinggi.
         </p>
       </div>
 
       <div class="space-y-12 sm:space-y-16">
         
-        <!-- 1. PixelCraft Studio (New Release) -->
-        <div id="pixelcraft" class="card-dark portfolio-item p-6 sm:p-10 space-y-8 border-[rgba(166,0,255,0.3)] hover:border-violet/60 transition-colors">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[rgba(241,241,239,0.1)] pb-4">
+        <!-- 1. PixelCraft Studio (Featured GPU Web App) -->
+        <div 
+          id="pixelcraft" 
+          class="p-6 sm:p-10 rounded-2xl border transition-all space-y-8"
+          :class="isDark 
+            ? 'bg-[#191c1f] border-[#C239D8]/30 hover:border-[#C239D8]/70 hover:shadow-[0_0_35px_rgba(194,57,216,0.18)]' 
+            : 'bg-white/95 border-slate-200/90 hover:border-fuchsia-300 shadow-[0_4px_24px_rgba(15,23,42,0.04)] hover:shadow-[0_20px_40px_rgba(192,38,211,0.09)]'"
+        >
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-outline-variant pb-4">
             <div class="flex items-center gap-2.5 flex-wrap">
-              <span class="w-2.5 h-2.5 rounded-full bg-violet"></span>
-              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-violet">WEB APP &amp; CLIENT-SIDE GPU</span>
+              <span 
+                class="text-xs font-mono font-semibold uppercase tracking-wider"
+                :class="isDark ? 'text-stitch-magenta-light' : 'text-fuchsia-800 font-bold'"
+              >
+                WEB APP &amp; CLIENT-SIDE GPU
+              </span>
             </div>
-            <span class="text-xs font-mono text-[#999999]">WEBGL &amp; IN-BROWSER GPU</span>
+            <span class="text-xs font-mono text-on-surface-variant">WEBGL &amp; IN-BROWSER GPU</span>
           </div>
 
           <!-- Live Preview Window -->
-          <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
-            <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
-              <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://pixelcraft-psi-blue.vercel.app/</span>
-              <span class="text-[11px] font-mono font-medium text-violet shrink-0">WebGL &amp; AI</span>
+          <div 
+            class="rounded-lg overflow-hidden border"
+            :class="isDark ? 'bg-[#0b0e11] border-[#C239D8]/30' : 'bg-slate-50 border-slate-200 shadow-sm'"
+          >
+            <div 
+              class="px-4 py-2.5 flex items-center justify-between border-b text-xs font-mono" 
+              :class="isDark ? 'bg-[#111417] border-outline-variant text-on-surface-variant' : 'bg-slate-100 border-slate-200 text-slate-600'"
+            >
+              <span class="truncate max-w-sm">https://pixelcraft-psi-blue.vercel.app/</span>
+              <span :class="isDark ? 'text-stitch-magenta font-semibold' : 'text-slate-700 font-semibold bg-white px-2 py-0.5 rounded border border-slate-200'">WebGL &amp; AI</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
               <img 
@@ -45,31 +65,41 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div class="lg:col-span-8 space-y-4">
-              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">PixelCraft Studio: Editor Foto &amp; Grafis Berbasis Web</h2>
-              <p class="text-[#999999] text-base leading-relaxed">
+              <h2 class="text-2xl sm:text-3xl font-headline font-semibold">
+                PixelCraft Studio: Editor Foto &amp; Grafis Berbasis WebGL
+              </h2>
+              <p class="text-on-surface-variant text-base leading-relaxed">
                 Aplikasi web photo editor yang memproses gambar langsung di browser pengguna. Menawarkan fitur penajaman gambar, pengurangan noise spasial, kompresi multi-format WebP/PNG, live RGB histogram, dan efek retro pixel art tanpa perlu unggah file ke server eksternal sehingga privasi terjaga 100%.
               </p>
-              <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
+              <div class="space-y-2.5 pt-2 text-sm font-medium">
                 <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-[18px] text-violet shrink-0">check_circle</span>
+                  <span class="material-symbols-outlined text-[18px] text-stitch-magenta shrink-0">check_circle</span>
                   <span>Privasi 100% Terjaga: Seluruh komputasi visual diproses lokal di peramban pengguna menggunakan akselerasi GPU &amp; WebGL.</span>
                 </div>
                 <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-[18px] text-violet shrink-0">check_circle</span>
+                  <span class="material-symbols-outlined text-[18px] text-stitch-magenta shrink-0">check_circle</span>
                   <span>Fitur Lengkap: Penajaman gambar, filter denoise, kompresi ukuran file, split before-after preview, dan color adjustment.</span>
                 </div>
               </div>
             </div>
 
-            <div class="lg:col-span-4 bg-[#141418] p-6 rounded-[4px] border border-[rgba(241,241,239,0.1)] space-y-4">
+            <div 
+              class="lg:col-span-4 p-6 rounded-xl border space-y-4"
+              :class="isDark ? 'bg-[#111417] border-[#2a2d31]' : 'bg-slate-50 border-slate-200'"
+            >
               <div class="space-y-2 text-xs font-mono">
-                <div class="text-[#666666]">TIPE PRODUK:</div>
-                <div class="font-medium text-white text-sm">Web Application</div>
-                <div class="text-[#666666] pt-2">TEKNOLOGI:</div>
-                <div class="font-medium text-white">WebGL, Canvas API, WASM, Tailwind, Vite</div>
+                <div class="text-on-surface-variant">TIPE PRODUK:</div>
+                <div class="font-medium text-sm">Web Application</div>
+                <div class="text-on-surface-variant pt-2">TEKNOLOGI:</div>
+                <div class="font-medium">WebGL, Canvas API, WASM, Tailwind, Vite</div>
               </div>
               <div class="pt-2">
-                <a href="https://pixelcraft-psi-blue.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-primary w-full text-center text-xs uppercase font-medium py-3 flex items-center justify-center gap-2 group bg-violet hover:bg-violet/85 border-violet">
+                <a 
+                  href="https://pixelcraft-psi-blue.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="btn-stitch-primary w-full text-center text-xs uppercase font-bold py-3 px-4 flex items-center justify-center gap-2 group transition-all"
+                >
                   <span>Buka PixelCraft Studio</span>
                   <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </a>
@@ -78,21 +108,125 @@
           </div>
         </div>
 
-        <!-- 2. Lentera Indramayu -->
-        <div class="card-dark portfolio-item p-6 sm:p-10 space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[rgba(241,241,239,0.1)] pb-4">
+        <!-- 2. CatatKas (Real SaaS Project) -->
+        <div 
+          id="catatkas"
+          class="p-6 sm:p-10 rounded-2xl border transition-all space-y-8"
+          :class="isDark 
+            ? 'bg-[#191c1f] border-[#7B68EE]/30 hover:border-[#7B68EE]/70 hover:shadow-[0_0_35px_rgba(123,104,238,0.18)]' 
+            : 'bg-white/95 border-slate-200/90 hover:border-violet-300 shadow-[0_4px_24px_rgba(15,23,42,0.04)] hover:shadow-[0_20px_40px_rgba(124,58,237,0.09)]'"
+        >
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-outline-variant pb-4">
             <div class="flex items-center gap-2.5">
-              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-primary">PLATFORM PEMERINTAHAN &amp; PWA</span>
+              <span 
+                class="text-xs font-mono font-semibold uppercase tracking-wider"
+                :class="isDark ? 'text-stitch-purple-light' : 'text-violet-800 font-bold'"
+              >
+                SAAS FINANSIAL &amp; KAS UMKM
+              </span>
             </div>
-            <span class="text-xs font-mono text-[#999999]">PORTAL LAYANAN PUBLIK</span>
+            <span class="text-xs font-mono text-on-surface-variant">PWA &amp; DISTRIBUTED SYNC</span>
           </div>
 
-          <!-- Live Preview Window -->
-          <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
-            <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
-              <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://lentera.indramayukab.go.id/</span>
-              <span class="text-[11px] font-mono font-medium text-emerald-400 shrink-0">PWA Live</span>
+          <div 
+            class="rounded-lg overflow-hidden border"
+            :class="isDark ? 'bg-[#0b0e11] border-[#7B68EE]/30' : 'bg-slate-50/80 border-slate-200/90 shadow-sm'"
+          >
+            <div 
+              class="px-4 py-2.5 flex items-center justify-between border-b text-xs font-mono" 
+              :class="isDark ? 'bg-[#111417] border-outline-variant text-on-surface-variant' : 'bg-slate-100 border-slate-200 text-slate-600'"
+            >
+              <span class="text-on-surface-variant truncate max-w-sm">catatkas.internal.v2</span>
+              <span :class="isDark ? 'text-stitch-purple font-semibold' : 'text-slate-700 font-semibold bg-white px-2 py-0.5 rounded border border-slate-200'">+38% EFISIENSI ARUS KAS</span>
+            </div>
+            <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
+              <img 
+                src="/assets/projects/catatkas.png" 
+                alt="CatatKas Live Preview" 
+                class="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-8 space-y-4">
+              <h2 class="text-2xl sm:text-3xl font-headline font-semibold">
+                CatatKas: Platform Manajemen Keuangan &amp; Arus Kas
+              </h2>
+              <p class="text-on-surface-variant text-base leading-relaxed">
+                Solusi pencatatan kas cerdas bagi pelaku usaha ritel dan UMKM dengan dukungan multi-outlet, kalkulasi laba bersih otomatis, struk digital WhatsApp, dan rekonsiliasi kas harian yang akurat.
+              </p>
+              <div class="space-y-2.5 pt-2 text-sm font-medium">
+                <div class="flex items-center gap-2.5">
+                  <span 
+                    class="material-symbols-outlined text-[18px] shrink-0"
+                    :class="isDark ? 'text-stitch-purple' : 'text-violet-700'"
+                  >check_circle</span>
+                  <span>Sinkronisasi data multi-perangkat secara otomatis tanpa latency.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <span 
+                    class="material-symbols-outlined text-[18px] shrink-0"
+                    :class="isDark ? 'text-stitch-purple' : 'text-violet-700'"
+                  >check_circle</span>
+                  <span>Export laporan keuangan instan ke format PDF dan Excel.</span>
+                </div>
+              </div>
+            </div>
+
+            <div 
+              class="lg:col-span-4 p-6 rounded-xl border space-y-4"
+              :class="isDark ? 'bg-[#111417] border-[#2a2d31]' : 'bg-slate-50/90 border-slate-200/80'"
+            >
+              <div class="space-y-2 text-xs font-mono">
+                <div class="text-on-surface-variant">KATEGORI:</div>
+                <div class="font-medium text-sm">SaaS Application</div>
+                <div class="text-on-surface-variant pt-2">TEKNOLOGI:</div>
+                <div class="font-medium">Vue 3, Tailwind, IndexedDB, Node.js</div>
+              </div>
+              <div class="pt-2">
+                <router-link 
+                  to="/kontak" 
+                  class="btn-stitch-primary w-full text-center text-xs uppercase font-bold py-3 px-4 flex items-center justify-center gap-2 group transition-all"
+                >
+                  <span>Konsultasi Proyek Serupa</span>
+                  <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </router-link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Lentera Indramayu -->
+        <div 
+          class="p-6 sm:p-10 rounded-2xl border transition-all space-y-8"
+          :class="isDark 
+            ? 'bg-[#191c1f] border-[#99D4FF]/30 hover:border-[#99D4FF]/70 hover:shadow-[0_0_35px_rgba(153,212,255,0.18)]' 
+            : 'bg-white/95 border-slate-200/90 hover:border-sky-300 shadow-[0_4px_24px_rgba(15,23,42,0.04)] hover:shadow-[0_20px_40px_rgba(2,132,199,0.09)]'"
+        >
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-outline-variant pb-4">
+            <div class="flex items-center gap-2.5">
+              <span 
+                class="text-xs font-mono font-semibold uppercase tracking-wider"
+                :class="isDark ? 'text-stitch-cyan-light' : 'text-sky-800 font-bold'"
+              >
+                PLATFORM PEMERINTAHAN &amp; PWA
+              </span>
+            </div>
+            <span class="text-xs font-mono text-on-surface-variant">PORTAL LAYANAN PUBLIK</span>
+          </div>
+
+          <div 
+            class="rounded-lg overflow-hidden border"
+            :class="isDark ? 'bg-[#0b0e11] border-[#99D4FF]/30' : 'bg-slate-50 border-slate-200 shadow-sm'"
+          >
+            <div 
+              class="px-4 py-2.5 flex items-center justify-between border-b text-xs font-mono" 
+              :class="isDark ? 'bg-[#111417] border-outline-variant text-on-surface-variant' : 'bg-slate-100 border-slate-200 text-slate-600'"
+            >
+              <span class="text-on-surface-variant truncate max-w-sm">https://lentera.indramayukab.go.id/</span>
+              <span :class="isDark ? 'text-stitch-cyan font-semibold' : 'text-slate-700 font-semibold bg-white px-2 py-0.5 rounded border border-slate-200'">PWA Live</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
               <img 
@@ -106,31 +240,47 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div class="lg:col-span-8 space-y-4">
-              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">LENTERA — Pemerintah Kabupaten Indramayu</h2>
-              <p class="text-[#999999] text-base leading-relaxed">
+              <h2 class="text-2xl sm:text-3xl font-headline font-semibold">
+                LENTERA — Pemerintah Kabupaten Indramayu
+              </h2>
+              <p class="text-on-surface-variant text-base leading-relaxed">
                 Platform digital sentral Pemkab Indramayu yang mengintegrasikan layanan administrasi publik, keterbukaan informasi pemerintah, dan sektor ekonomi kerakyatan ke dalam satu Progressive Web App (PWA) yang tangguh.
               </p>
-              <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
+              <div class="space-y-2.5 pt-2 text-sm font-medium">
                 <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0">check_circle</span>
+                  <span 
+                    class="material-symbols-outlined text-[18px] shrink-0"
+                    :class="isDark ? 'text-stitch-cyan' : 'text-sky-700'"
+                  >check_circle</span>
                   <span>Aksesibilitas layanan informasi publik terpusat 24/7.</span>
                 </div>
                 <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0">check_circle</span>
+                  <span 
+                    class="material-symbols-outlined text-[18px] shrink-0"
+                    :class="isDark ? 'text-stitch-cyan' : 'text-sky-700'"
+                  >check_circle</span>
                   <span>Dukungan instalasi PWA praktis di perangkat smartphone tanpa perlu app store.</span>
                 </div>
               </div>
             </div>
 
-            <div class="lg:col-span-4 bg-[#141418] p-6 rounded-[4px] border border-[rgba(241,241,239,0.1)] space-y-4">
+            <div 
+              class="lg:col-span-4 p-6 rounded-xl border space-y-4"
+              :class="isDark ? 'bg-[#111417] border-[#2a2d31]' : 'bg-slate-50 border-slate-200'"
+            >
               <div class="space-y-2 text-xs font-mono">
-                <div class="text-[#666666]">INSTANSI:</div>
-                <div class="font-medium text-white text-sm">Pemerintah Kabupaten Indramayu</div>
-                <div class="text-[#666666] pt-2">TEKNOLOGI:</div>
-                <div class="font-medium text-white">Laravel, PWA, REST API, MySQL</div>
+                <div class="text-on-surface-variant">INSTANSI:</div>
+                <div class="font-medium text-sm">Pemerintah Kabupaten Indramayu</div>
+                <div class="text-on-surface-variant pt-2">TEKNOLOGI:</div>
+                <div class="font-medium">Laravel, PWA, REST API, MySQL</div>
               </div>
               <div class="pt-2">
-                <a href="https://lentera.indramayukab.go.id/" target="_blank" rel="noopener noreferrer" class="btn-primary w-full text-center text-xs uppercase font-medium py-3 flex items-center justify-center gap-2 group">
+                <a 
+                  href="https://lentera.indramayukab.go.id/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="btn-stitch-primary w-full text-center text-xs uppercase font-bold py-3 px-4 flex items-center justify-center gap-2 group transition-all"
+                >
                   <span>Kunjungi Website Live</span>
                   <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </a>
@@ -139,21 +289,35 @@
           </div>
         </div>
 
-        <!-- 2. Portal Desa Tempursari -->
-        <div class="card-dark portfolio-item p-6 sm:p-10 space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[rgba(241,241,239,0.1)] pb-4">
+        <!-- 4. Portal Desa Tempursari -->
+        <div 
+          class="p-6 sm:p-10 rounded-2xl border transition-all space-y-8"
+          :class="isDark 
+            ? 'bg-[#191c1f] border-[#2a2d31] hover:border-[#484740]' 
+            : 'bg-white/95 border-slate-200/90 hover:border-amber-300 shadow-[0_4px_24px_rgba(15,23,42,0.04)] hover:shadow-[0_20px_40px_rgba(217,119,6,0.09)]'"
+        >
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-outline-variant pb-4">
             <div class="flex items-center gap-2.5">
-              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-primary">PORTAL PEMERINTAH DESA &amp; PETA</span>
+              <span 
+                class="text-xs font-mono font-semibold uppercase tracking-wider"
+                :class="isDark ? 'text-stitch-amber' : 'text-amber-800 font-bold'"
+              >
+                PORTAL PEMERINTAH DESA &amp; PETA
+              </span>
             </div>
-            <span class="text-xs font-mono text-[#999999]">LIVE PRODUCTION ENVIRONMENT</span>
+            <span class="text-xs font-mono text-on-surface-variant">LIVE PRODUCTION ENVIRONMENT</span>
           </div>
 
-          <!-- Live Preview Window -->
-          <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
-            <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
-              <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://portal-desa-tempursari-six.vercel.app/</span>
-              <span class="text-[11px] font-mono font-medium text-emerald-400 shrink-0">Portal Resmi</span>
+          <div 
+            class="rounded-lg overflow-hidden border"
+            :class="isDark ? 'bg-[#0b0e11] border-outline-variant' : 'bg-slate-50/80 border-slate-200/90 shadow-sm'"
+          >
+            <div 
+              class="px-4 py-2.5 flex items-center justify-between border-b text-xs font-mono" 
+              :class="isDark ? 'bg-[#111417] border-outline-variant text-on-surface-variant' : 'bg-slate-100 border-slate-200 text-slate-600'"
+            >
+              <span class="text-on-surface-variant truncate max-w-sm">https://portal-desa-tempursari-six.vercel.app/</span>
+              <span :class="isDark ? 'text-stitch-amber font-semibold' : 'text-slate-700 font-semibold bg-white px-2 py-0.5 rounded border border-slate-200'">Portal Resmi</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
               <img 
@@ -167,31 +331,31 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div class="lg:col-span-8 space-y-4">
-              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">Portal Desa Tempursari: Tata Kelola &amp; Peta Digital</h2>
-              <p class="text-[#999999] text-base leading-relaxed">
+              <h2 class="text-2xl sm:text-3xl font-headline font-semibold">
+                Portal Desa Tempursari: Tata Kelola &amp; Peta Digital
+              </h2>
+              <p class="text-on-surface-variant text-base leading-relaxed">
                 Website resmi Pemerintah Desa Tempursari yang dirancang untuk mewujudkan transparansi tata kelola wilayah, infografis data kependudukan, serta katalog kebudayaan dan potensi ekonomi desa.
               </p>
-              <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0">check_circle</span>
-                  <span>Infografis visual kependudukan dan luas area administratif interaktif.</span>
-                </div>
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0">check_circle</span>
-                  <span>Peta batas wilayah interaktif dan etalase produk unggulan desa.</span>
-                </div>
-              </div>
             </div>
 
-            <div class="lg:col-span-4 bg-[#141418] p-6 rounded-[4px] border border-[rgba(241,241,239,0.1)] space-y-4">
+            <div 
+              class="lg:col-span-4 p-6 rounded-xl border space-y-4"
+              :class="isDark ? 'bg-[#111417] border-[#2a2d31]' : 'bg-slate-50/90 border-slate-200/80'"
+            >
               <div class="space-y-2 text-xs font-mono">
-                <div class="text-[#666666]">INSTANSI:</div>
-                <div class="font-medium text-white text-sm">Pemerintah Desa Tempursari</div>
-                <div class="text-[#666666] pt-2">TEKNOLOGI:</div>
-                <div class="font-medium text-white">Next.js, TailwindCSS, Interactive Maps</div>
+                <div class="text-on-surface-variant">INSTANSI:</div>
+                <div class="font-medium text-sm">Pemerintah Desa Tempursari</div>
+                <div class="text-on-surface-variant pt-2">TEKNOLOGI:</div>
+                <div class="font-medium">Next.js, TailwindCSS, Interactive Maps</div>
               </div>
               <div class="pt-2">
-                <a href="https://portal-desa-tempursari-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-primary w-full text-center text-xs uppercase font-medium py-3 flex items-center justify-center gap-2 group">
+                <a 
+                  href="https://portal-desa-tempursari-six.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="btn-stitch-primary w-full text-center text-xs uppercase font-bold py-3 px-4 flex items-center justify-center gap-2 group transition-all"
+                >
                   <span>Kunjungi Website Live</span>
                   <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </a>
@@ -200,21 +364,35 @@
           </div>
         </div>
 
-        <!-- 3. Visit Gumiwang -->
-        <div class="card-dark portfolio-item p-6 sm:p-10 space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[rgba(241,241,239,0.1)] pb-4">
+        <!-- 5. Visit Gumiwang -->
+        <div 
+          class="p-6 sm:p-10 rounded-2xl border transition-all space-y-8"
+          :class="isDark 
+            ? 'bg-[#191c1f] border-[#2a2d31] hover:border-[#484740]' 
+            : 'bg-white/95 border-slate-200/90 hover:border-emerald-300 shadow-[0_4px_24px_rgba(15,23,42,0.04)] hover:shadow-[0_20px_40px_rgba(16,185,129,0.09)]'"
+        >
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-outline-variant pb-4">
             <div class="flex items-center gap-2.5">
-              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-primary">DESA WISATA &amp; UMKM</span>
+              <span 
+                class="text-xs font-mono font-semibold uppercase tracking-wider"
+                :class="isDark ? 'text-emerald-400' : 'text-emerald-800 font-bold'"
+              >
+                DESA WISATA &amp; UMKM
+              </span>
             </div>
-            <span class="text-xs font-mono text-[#999999]">PORTAL WISATA &amp; EKONOMI</span>
+            <span class="text-xs font-mono text-on-surface-variant">PORTAL WISATA &amp; EKONOMI</span>
           </div>
 
-          <!-- Live Preview Window -->
-          <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
-            <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
-              <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://visitgumiwang.web.id/</span>
-              <span class="text-[11px] font-mono font-medium text-emerald-400 shrink-0">Desa Wisata</span>
+          <div 
+            class="rounded-lg overflow-hidden border"
+            :class="isDark ? 'bg-[#0b0e11] border-outline-variant' : 'bg-slate-50/80 border-slate-200/90 shadow-sm'"
+          >
+            <div 
+              class="px-4 py-2.5 flex items-center justify-between border-b text-xs font-mono" 
+              :class="isDark ? 'bg-[#111417] border-outline-variant text-on-surface-variant' : 'bg-slate-100 border-slate-200 text-slate-600'"
+            >
+              <span class="text-on-surface-variant truncate max-w-sm">https://visitgumiwang.web.id/</span>
+              <span :class="isDark ? 'text-emerald-400 font-semibold' : 'text-slate-700 font-semibold bg-white px-2 py-0.5 rounded border border-slate-200'">Desa Wisata</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
               <img 
@@ -228,31 +406,31 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div class="lg:col-span-8 space-y-4">
-              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">Visit Gumiwang: Potensi Wisata &amp; Produk UMKM</h2>
-              <p class="text-[#999999] text-base leading-relaxed">
+              <h2 class="text-2xl sm:text-3xl font-headline font-semibold">
+                Visit Gumiwang: Potensi Wisata &amp; Produk UMKM
+              </h2>
+              <p class="text-on-surface-variant text-base leading-relaxed">
                 Website promosi potensi lokal Desa Gumiwang. Menampilkan kekayaan alam, sektor perikanan, agrikultur terpadu, dan etalase digital katalog produk UMKM setempat.
               </p>
-              <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0">check_circle</span>
-                  <span>Katalog produk UMKM terstruktur dengan kontak pemesanan cepat.</span>
-                </div>
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0">check_circle</span>
-                  <span>Desain responsif yang sangat ringan diakses di koneksi internet desa.</span>
-                </div>
-              </div>
             </div>
 
-            <div class="lg:col-span-4 bg-[#141418] p-6 rounded-[4px] border border-[rgba(241,241,239,0.1)] space-y-4">
+            <div 
+              class="lg:col-span-4 p-6 rounded-xl border space-y-4"
+              :class="isDark ? 'bg-[#111417] border-[#2a2d31]' : 'bg-slate-50/90 border-slate-200/80'"
+            >
               <div class="space-y-2 text-xs font-mono">
-                <div class="text-[#666666]">KLIEN:</div>
-                <div class="font-medium text-white text-sm">Pengelola Desa Wisata Gumiwang</div>
-                <div class="text-[#666666] pt-2">TEKNOLOGI:</div>
-                <div class="font-medium text-white">Vite, TailwindCSS, Fast CDN Deployment</div>
+                <div class="text-on-surface-variant">KLIEN:</div>
+                <div class="font-medium text-sm">Pengelola Desa Wisata Gumiwang</div>
+                <div class="text-on-surface-variant pt-2">TEKNOLOGI:</div>
+                <div class="font-medium">Vue.js, Vite, TailwindCSS, SEO Engine</div>
               </div>
               <div class="pt-2">
-                <a href="https://visitgumiwang.web.id/" target="_blank" rel="noopener noreferrer" class="btn-primary w-full text-center text-xs uppercase font-medium py-3 flex items-center justify-center gap-2 group">
+                <a 
+                  href="https://visitgumiwang.web.id/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="btn-stitch-primary w-full text-center text-xs uppercase font-bold py-3 px-4 flex items-center justify-center gap-2 group transition-all"
+                >
                   <span>Kunjungi Website Live</span>
                   <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </a>
@@ -261,92 +439,11 @@
           </div>
         </div>
 
-        <!-- 4. CatatKas -->
-        <div class="card-dark portfolio-item p-6 sm:p-10 space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[rgba(241,241,239,0.1)] pb-4">
-            <div class="flex items-center gap-2.5">
-              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-secondary">APLIKASI KEUANGAN FLUTTER</span>
-            </div>
-            <span class="text-xs font-mono text-[#999999]">CROSS-PLATFORM APP</span>
-          </div>
-
-          <!-- Live Preview Window -->
-          <div class="rounded-[4px] overflow-hidden border border-[rgba(241,241,239,0.14)] bg-black">
-            <div class="px-4 py-2.5 flex items-center justify-between border-b border-[rgba(241,241,239,0.1)] bg-[#0a0a0c]">
-              <span class="text-xs font-mono text-[#999999] truncate max-w-sm">https://catatkas-web.vercel.app/</span>
-              <span class="text-[11px] font-mono font-medium text-secondary shrink-0">Flutter Web</span>
-            </div>
-            <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
-              <img 
-                src="/assets/projects/catatkas.png" 
-                alt="CatatKas UMKM Live Preview" 
-                class="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <div class="lg:col-span-8 space-y-4">
-              <h2 class="text-2xl sm:text-3xl font-display font-medium text-white">CatatKas: Pembukuan Keuangan Digital UMKM</h2>
-              <p class="text-[#999999] text-base leading-relaxed">
-                Aplikasi pencatatan kas harian bagi pelaku usaha mikro yang dibangun secara komprehensif menggunakan Flutter. Membantu pencatatan kas masuk dan keluar secara instan, kalkulasi saldo otomatis, dan pencetakan laporan laba rugi.
-              </p>
-              <div class="space-y-2.5 pt-2 text-sm text-white font-medium">
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-[18px] text-secondary shrink-0">check_circle</span>
-                  <span>Pencatatan mutasi kas dan perhitungan saldo laba rugi instan.</span>
-                </div>
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-[18px] text-secondary shrink-0">check_circle</span>
-                  <span>Antarmuka bersih responsif dengan arsitektur Full Flutter &amp; Dart.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:col-span-4 bg-[#141418] p-6 rounded-[4px] border border-[rgba(241,241,239,0.1)] space-y-4">
-              <div class="space-y-2 text-xs font-mono">
-                <div class="text-[#666666]">TIPE PRODUK:</div>
-                <div class="font-medium text-white text-sm">Aplikasi Mobile &amp; Web</div>
-                <div class="text-[#666666] pt-2">TEKNOLOGI:</div>
-                <div class="font-medium text-white">Full Flutter, Dart, Local Storage</div>
-              </div>
-              <div class="pt-2">
-                <a href="https://catatkas-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-accent w-full text-center text-xs uppercase font-medium py-3 flex items-center justify-center gap-2 group">
-                  <span>Buka Aplikasi Live</span>
-                  <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-
-      <!-- Bottom Card -->
-      <div class="card-dark p-8 sm:p-12 text-center space-y-4">
-        <h3 class="text-2xl sm:text-3xl font-display font-medium text-white">Ingin Mewujudkan Solusi Serupa?</h3>
-        <p class="text-[#999999] text-sm sm:text-base max-w-md mx-auto leading-relaxed">
-          Diskusikan tantangan teknis Anda bersama tim Nexa Digital Agency untuk mendapatkan arsitektur dan estimasi terbaik.
-        </p>
-        <div class="pt-3">
-          <router-link to="/kontak" class="btn-primary text-xs uppercase font-medium py-3.5 px-8 group inline-flex items-center gap-2">
-            <span>Mulai Diskusi Proyek</span>
-            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-          </router-link>
-        </div>
-      </div>
-
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import { observeScrollReveal } from '../utils/animations'
-
-onMounted(() => {
-  observeScrollReveal('.portfolio-item', { stagger: 150, distance: 50 })
-})
+import { isDark } from '../utils/theme'
 </script>

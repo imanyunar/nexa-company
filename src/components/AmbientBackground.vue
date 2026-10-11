@@ -1,5 +1,32 @@
 <template>
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+    <!-- Atmospheric Ambient Mesh Layer for Light Mode & Dark Mode -->
+    <div 
+      class="absolute -top-32 -left-32 w-[650px] h-[650px] rounded-full blur-3xl pointer-events-none transition-opacity duration-700"
+      :class="isDark 
+        ? 'bg-fuchsia-600/10 opacity-60' 
+        : 'bg-gradient-to-br from-fuchsia-300/25 via-pink-200/20 to-transparent opacity-90'"
+    ></div>
+
+    <div 
+      class="absolute top-[20%] -right-40 w-[700px] h-[700px] rounded-full blur-3xl pointer-events-none transition-opacity duration-700"
+      :class="isDark 
+        ? 'bg-sky-500/10 opacity-50' 
+        : 'bg-gradient-to-bl from-sky-300/25 via-cyan-200/20 to-transparent opacity-90'"
+    ></div>
+
+    <div 
+      class="absolute top-[55%] left-[5%] w-[600px] h-[600px] rounded-full blur-3xl pointer-events-none transition-opacity duration-700"
+      :class="isDark 
+        ? 'bg-violet-600/10 opacity-50' 
+        : 'bg-gradient-to-tr from-violet-300/20 via-indigo-200/15 to-transparent opacity-85'"
+    ></div>
+
+    <div 
+      v-if="!isDark" 
+      class="absolute top-0 inset-x-0 h-[480px] bg-gradient-to-b from-[#eef4ff]/70 via-[#f8f9ff]/40 to-transparent pointer-events-none"
+    ></div>
+
     <!-- Continuous Ambient Animated Background Canvas -->
     <canvas ref="canvasRef" class="absolute inset-0 w-full h-full"></canvas>
   </div>
@@ -25,15 +52,15 @@ class Particle {
     this.radius = Math.random() * 1.5 + 0.8
     
     this.resetColor()
-    this.baseAlpha = isDark.value ? (Math.random() * 0.35 + 0.15) : (Math.random() * 0.25 + 0.12)
+    this.baseAlpha = isDark.value ? (Math.random() * 0.35 + 0.15) : (Math.random() * 0.28 + 0.14)
     this.alpha = this.baseAlpha
     this.pulseSpeed = Math.random() * 0.02 + 0.008
     this.pulseAngle = Math.random() * Math.PI * 2
   }
 
   resetColor() {
-    const darkColors = ['#0041f0', '#e2062e', '#a600ff', '#ffffff']
-    const lightColors = ['#0041f0', '#e2062e', '#a600ff', '#0284c7']
+    const darkColors = ['#C239D8', '#99D4FF', '#7B68EE', '#ffffff']
+    const lightColors = ['#c026d3', '#0284c7', '#7c3aed', '#6366f1']
     const palette = isDark.value ? darkColors : lightColors
     this.color = palette[Math.floor(Math.random() * palette.length)]
   }
@@ -64,14 +91,14 @@ class Particle {
 
   draw(ctx) {
     ctx.save()
-    ctx.globalAlpha = Math.max(0.08, this.alpha)
-    ctx.fillStyle = this.color
     if (isDark.value) {
+      ctx.globalAlpha = Math.max(0.08, this.alpha)
+      ctx.fillStyle = this.color
       ctx.shadowBlur = 8
       ctx.shadowColor = this.color
     } else {
-      ctx.shadowBlur = 3
-      ctx.shadowColor = 'rgba(0, 65, 240, 0.25)'
+      ctx.globalAlpha = Math.max(0.12, this.alpha * 0.75)
+      ctx.fillStyle = this.color
     }
     ctx.beginPath()
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
@@ -116,8 +143,8 @@ function initCanvas() {
   function render() {
     ctx.clearRect(0, 0, w, h)
 
-    // Connecting lines with subtle electric blue tint
-    const lineAlphaFactor = isDark.value ? 0.1 : 0.06
+    // Connecting lines with subtle color tint
+    const lineAlphaFactor = isDark.value ? 0.1 : 0.05
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
         const p1 = particles[i]
@@ -128,7 +155,9 @@ function initCanvas() {
 
         if (dist < 110) {
           const alpha = (1 - dist / 110) * lineAlphaFactor
-          ctx.strokeStyle = `rgba(0, 65, 240, ${alpha})`
+          ctx.strokeStyle = isDark.value 
+            ? `rgba(194, 57, 216, ${alpha})` 
+            : `rgba(124, 58, 237, ${alpha})`
           ctx.lineWidth = 0.6
           ctx.beginPath()
           ctx.moveTo(p1.x, p1.y)

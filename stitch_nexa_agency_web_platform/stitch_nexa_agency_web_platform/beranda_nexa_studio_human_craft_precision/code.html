@@ -1,0 +1,272 @@
+<!DOCTYPE html><html class="dark" lang="id" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Nexa — Digital Product &amp; Engineering Studio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "inverse-primary": "#605e5a",
+            "on-background": "#e1e2e6",
+            "on-error": "#690005",
+            "surface-variant": "#323538",
+            "surface": "#111417",
+            "tertiary": "#ffffff",
+            "tertiary-fixed": "#d7e7d1",
+            "tertiary-container": "#d7e7d1",
+            "surface-container-low": "#191c1f",
+            "on-primary": "#111417",
+            "tertiary-fixed-dim": "#bbcbb6",
+            "error": "#ffb4ab",
+            "inverse-surface": "#e1e2e6",
+            "on-secondary-fixed": "#2c1600",
+            "secondary-container": "#272a2d",
+            "on-tertiary-container": "#596856",
+            "surface-container-lowest": "#0b0e11",
+            "primary-container": "#272a2d",
+            "on-secondary-container": "#e1e2e6",
+            "background": "#111417",
+            "primary-fixed-dim": "#c9c6c0",
+            "on-tertiary": "#263425",
+            "on-primary-fixed": "#1c1c18",
+            "on-secondary-fixed-variant": "#623f18",
+            "inverse-on-surface": "#2e3134",
+            "on-surface": "#f4f0ea",
+            "on-tertiary-fixed": "#111f11",
+            "secondary-fixed-dim": "#f0bd8b",
+            "primary": "#ffffff",
+            "surface-bright": "#37393d",
+            "on-secondary": "#111417",
+            "surface-container": "#1d2023",
+            "secondary-fixed": "#ffdcbd",
+            "error-container": "#93000a",
+            "surface-tint": "#c9c6c0",
+            "on-error-container": "#ffdad6",
+            "surface-container-high": "#272a2d",
+            "surface-container-highest": "#323538",
+            "primary-fixed": "#e6e2dc",
+            "outline": "#484740",
+            "surface-dim": "#111417",
+            "on-primary-fixed-variant": "#484743",
+            "on-surface-variant": "#9d9fa6",
+            "outline-variant": "#2a2d31",
+            "secondary": "#f0bd8b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "sans": ["Inter", "sans-serif"],
+            "headline": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    body {
+      background-color: #111417;
+      color: #f4f0ea;
+      font-family: 'Inter', sans-serif;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+<body class="selection:bg-surface-container-highest selection:text-white">
+<!-- NAVIGATION BAR -->
+<header class="sticky top-0 z-50 w-full bg-surface/90 backdrop-blur-md border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-10">
+<a class="inline-flex items-center gap-3 hover:opacity-90 transition-opacity" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKq2IKJqjk5xYm2pk0huL5GTENg--JqSyFBHJzXTluYyo9U6w0CP2nNXO10dSXPZhSRQgZXsq_fmZPxM46yqvbvn_FT4dfYcCLGfuyYIruB_O9bAKLECzO0eapxqgkvyMqkwxJ0QHrxcaXpbxyLQJbk6oU1eYQJawH6WxIs5C7jDhnf6WBEkvrGAbeJD5PS1QI2D3tHMheQHo9_BrqPID9JMFtVJgoG3shIosdM9FL9TfxaiP0Vq0mqfueY6lFQoy-ig" alt="Nexa Logo" class="h-9 w-auto object-contain drop-shadow-[0_0_12px_rgba(194,57,216,0.35)]"><span class="font-headline font-bold text-2xl tracking-tight text-white">nexa<span class="text-on-surface-variant text-xl">.</span></span></a>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-on-surface-variant">
+<a class="hover:text-white transition-colors" href="#karya">Karya</a>
+<a class="hover:text-white transition-colors" href="#layanan">Layanan</a>
+<a class="hover:text-white transition-colors" href="#pendekatan">Proses</a>
+<a class="hover:text-white transition-colors" href="#metrik">Nilai</a>
+<a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs uppercase tracking-wider font-bold text-[#111417] bg-white hover:bg-[#e6e2dc] transition-all rounded-full" href="#kontak">Mulai Diskusi</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs uppercase tracking-wider font-bold text-[#111417] bg-white hover:bg-[#e6e2dc] transition-all rounded-full" href="#kontak">Mulai Diskusi</a>
+</div>
+</div>
+</header>
+<main class="w-full">
+<!-- HERO SECTION -->
+<section class="max-w-7xl mx-auto px-6 pt-20 pb-20 md:pt-28 md:pb-28">
+<div class="max-w-4xl">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 mb-8 rounded border border-[#C239D8]/40 bg-surface-container-low/90 text-xs font-semibold tracking-wide text-white shadow-[0_0_15px_rgba(194,57,216,0.2)]"><span class="w-2 h-2 rounded-full" style="background: linear-gradient(135deg, #C239D8, #99D4FF);"></span><span style="background: linear-gradient(135deg, #ffd6fd, #c8e6ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" class="">Studio Rekayasa &amp; Desain Produk Digital</span></div>
+<h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-white leading-[1.12]">Membangun produk digital <span style="background: linear-gradient(135deg, rgb(194, 57, 216) 0%, rgb(168, 85, 247) 50%, rgb(153, 212, 255) 100%) text; -webkit-text-fill-color: transparent;" class="">berkinerja tinggi</span> untuk brand &amp; <span style="background: linear-gradient(135deg, rgb(153, 212, 255) 0%, rgb(194, 57, 216) 100%) text; -webkit-text-fill-color: transparent;" class="">bisnis visioner</span>.</h1>
+<p class="mt-8 text-lg sm:text-xl text-on-surface-variant leading-relaxed max-w-2xl font-normal">
+          Kami memadukan disiplin rekayasa piranti lunak kelas industri dengan kepekaan desain berstandar global. Membangun platform web, arsitektur cloud, dan sistem mobile berdaya tahan nyata tanpa kompromi performa.
+        </p>
+<!-- CTA ACTIONS -->
+<div class="mt-10 flex flex-wrap items-center gap-4"><a class="inline-flex items-center gap-2 px-6 py-3.5 bg-white text-[#111417] text-sm font-bold hover:bg-[#e6e2dc] transition-all rounded-full" href="https://wa.me/62895800286901" rel="noopener noreferrer" target="_blank"><span class="">Konsultasi Proyek (WhatsApp)</span><span class="material-symbols-outlined text-base">arrow_outward</span></a><a class="inline-flex items-center gap-2 px-6 py-3.5 border border-outline-variant bg-surface-container-low text-sm font-medium text-white hover:border-outline hover:bg-surface-container transition-all rounded-full" href="mailto:halo@nexa.studio"><span class="material-symbols-outlined text-base text-on-surface-variant">mail</span><span class="">halo@nexa.studio</span></a></div>
+</div>
+<!-- EDITORIAL WORK PREVIEW HERO REEL -->
+<div class="mt-16 pt-8 border-t border-outline-variant grid grid-cols-1 md:grid-cols-3 gap-6"><div class="p-6 rounded bg-surface-container-low border border-outline-variant relative overflow-hidden transition-all hover:border-[#C239D8]/50 group"><div class="absolute top-0 left-0 right-0 h-[2px]" style="background: linear-gradient(90deg, #C239D8, transparent);"></div><div class="text-xs uppercase tracking-widest font-semibold" style="color: #C239D8;">Fokus Studio</div><div class="mt-2 text-base font-semibold text-white group-hover:text-[#faabff] transition-colors">Engineering Presisi</div><p class="mt-2 text-sm text-on-surface-variant leading-relaxed">Arsitektur terukur, pemrosesan deterministik, dan standar keamanan data tanpa ketergantungan library fiktif.</p></div><div class="p-6 rounded bg-surface-container-low border border-outline-variant relative overflow-hidden transition-all hover:border-[#7B68EE]/50 group"><div class="absolute top-0 left-0 right-0 h-[2px]" style="background: linear-gradient(90deg, #C239D8, #99D4FF);"></div><div class="text-xs uppercase tracking-widest font-semibold" style="color: #cabeff;">Filosofi Desain</div><div class="mt-2 text-base font-semibold text-white group-hover:text-[#cabeff] transition-colors">Hierarki &amp; Kejelasan</div><p class="mt-2 text-sm text-on-surface-variant leading-relaxed">Desain visual berbobot editorial yang memprioritaskan fungsi, kenyamanan membaca, dan konversi bisnis nyata.</p></div><div class="p-6 rounded bg-surface-container-low border border-outline-variant relative overflow-hidden transition-all hover:border-[#99D4FF]/50 group"><div class="absolute top-0 left-0 right-0 h-[2px]" style="background: linear-gradient(90deg, transparent, #99D4FF);"></div><div class="text-xs uppercase tracking-widest font-semibold" style="color: #99D4FF;">Kemitraan</div><div class="mt-2 text-base font-semibold text-white group-hover:text-[#92cdf8] transition-colors">100% Kepemilikan Klien</div><p class="mt-2 text-sm text-on-surface-variant leading-relaxed">Seluruh repositori, dokumentasi, dan aset adalah aset privat Anda tanpa biaya tersembunyi atau lock-in vendor.</p></div></div>
+</section>
+<!-- TRUST LOGO BAR -->
+<section class="border-y border-outline-variant bg-surface-container-lowest py-8">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-semibold shrink-0">
+            Dipercaya oleh tim &amp; korporasi modern
+          </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center text-on-surface-variant opacity-70 font-headline font-semibold text-sm tracking-wider">
+<span class="hover:text-white transition-colors">FINTEK ASIA</span>
+<span class="hover:text-white transition-colors">KINETIX LABS</span>
+<span class="hover:text-white transition-colors">GLOBAL SORA</span>
+<span class="hover:text-white transition-colors">PULSE HEALTH</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SELECTED WORKS SECTION -->
+<section class="max-w-7xl mx-auto px-6 py-24 md:py-32" id="karya">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-outline-variant gap-4">
+<div>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-semibold">01 // Portofolio Pilihan</span>
+<h2 class="mt-3 font-headline text-3xl sm:text-4xl font-semibold tracking-tight text-white">Studi Kasus &amp; Karya Nyata</h2>
+</div>
+<p class="text-sm text-on-surface-variant max-w-md leading-relaxed">
+          Eksplorasi sistem perangkat lunak yang dirancang dan diproduksi untuk memecahkan tantangan operasional dan skala bisnis.
+        </p>
+</div>
+<div class="space-y-16">
+<!-- Work 01: Kinetix -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-8 md:p-12 rounded bg-surface-container-low border border-[#C239D8]/20 hover:border-[#C239D8]/60 transition-all hover:shadow-[0_0_30px_rgba(194,57,216,0.15)] relative"><div class="lg:col-span-5 space-y-5"><div class="flex items-center gap-3 text-xs tracking-wider uppercase font-semibold"><span class="px-2 py-0.5 rounded border border-[#C239D8]/30 bg-[#C239D8]/10 text-[#faabff]">Data Industri</span><span class="">•</span><span class="text-on-surface-variant">2024</span></div><h3 class="font-headline text-2xl sm:text-3xl font-semibold text-white tracking-tight">Kinetix — Sistem Manajemen Operasional &amp; Data Industri</h3><p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">Platform orkestrasi inventaris dan telemetri perangkat logistik terdistribusi. Menangani sinkronisasi multi-gudang dan pemantauan sensor secara efisien, menghasilkan efisiensi operasional harian hingga 38%.</p><div class="pt-2 flex flex-wrap gap-2 text-xs text-on-surface-variant"><span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant">Distributed SQL</span><span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant">TypeScript</span><span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant">Realtime WebSocket</span></div><div class="pt-4"><a class="inline-flex items-center gap-2 text-sm font-semibold text-[#99D4FF] hover:text-white transition-colors group" href="https://wa.me/62895800286901?text=Halo%20Nexa,%20saya%20tertarik%20dengan%20studi%20kasus%20Kinetix" rel="noopener noreferrer" target="_blank"><span class="group-hover:underline underline-offset-4">Pelajari Studi Kasus</span><span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a></div></div><div class="lg:col-span-7"><div class="rounded overflow-hidden border border-[#C239D8]/30 bg-surface-container-lowest shadow-[0_0_20px_rgba(194,57,216,0.15)]"><img alt="Antarmuka Kinetix Operasional Industri" class="w-full h-72 sm:h-96 object-cover object-top opacity-90 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7bzC3WrsQgwSz8-dR8aDhaDQPu5VSP81Q9ykMCAwTdQ-a1NMhYhOCE6HLCE005sE9Did7ddzzneKBY6Gvn68mjUU0n3P_qvKEPr_KkMs1fUXC74USWw0fqR9Rqme87Y9DFBTxlZZeK5s_5XUcSjZLR8lTnxGni52xLZT1HcBxX782MORPJ2bArew-EyObBVZl_fWbNkvBaxReM5WFcjqLUKnIQiZalUZ1kZmJXk8rg95N6cv1h66s"></div></div></article>
+<!-- Work 02: Sora Commerce -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-8 md:p-12 rounded bg-surface-container-low border border-[#7B68EE]/20 hover:border-[#7B68EE]/60 transition-all hover:shadow-[0_0_30px_rgba(123,104,238,0.15)] relative"><div class="lg:col-span-7 order-2 lg:order-1"><div class="rounded overflow-hidden border border-[#7B68EE]/30 bg-surface-container-lowest shadow-[0_0_20px_rgba(123,104,238,0.15)]"><img alt="Sora Commerce Headless Checkout Platform" class="w-full h-72 sm:h-96 object-cover object-top opacity-90 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9N0GYvgmbi2GngUPCoJyruKOyhDhSUDUXJGeoDM6MpgMfnxyrxYrnlXC4FqAriNwWciHm5-U0mpAjB1egRIi_1k0dBb3__o_lhoZfmiO1XA7P6D-Rx5HdqWBvGKOo0gFruvCL194YuEJMMWOPMEWNCdIhgcB9mmM9borYNwEgEHUQaZ1R9bfT9lyoZWHBbEB-0WehiPJzR9gYyVltigtGqdqBveJkhaMS3fp6LKLZjF9Xb051MM6c"></div></div><div class="lg:col-span-5 order-1 lg:order-2 space-y-5"><div class="flex items-center gap-3 text-xs tracking-wider uppercase font-semibold"><span class="px-2 py-0.5 rounded border border-[#7B68EE]/30 bg-[#7B68EE]/10 text-[#cabeff]">E-Commerce Headless</span><span class="">•</span><span class="text-on-surface-variant">2024</span></div><h3 class="font-headline text-2xl sm:text-3xl font-semibold text-white tracking-tight">Sora Commerce — Platform Headless E-Commerce Global</h3><p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">Infrastruktur e-commerce modular yang memisahkan frontend responsif dan sistem manajemen inventaris. Mempercepat waktu checkout hingga di bawah 1 detik dengan integrasi multi-mata uang dan gateway pembayaran terverifikasi.</p><div class="pt-2 flex flex-wrap gap-2 text-xs text-on-surface-variant"><span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant">Next.js</span><span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant">Edge Middleware</span><span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant">Stripe Integration</span></div><div class="pt-4"><a class="inline-flex items-center gap-2 text-sm font-semibold text-[#faabff] hover:text-white transition-colors group" href="https://wa.me/62895800286901?text=Halo%20Nexa,%20saya%20tertarik%20dengan%20studi%20kasus%20Sora" rel="noopener noreferrer" target="_blank"><span class="group-hover:underline underline-offset-4">Pelajari Studi Kasus</span><span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a></div></div></article>
+<!-- Work 03: Pulse Health -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-8 md:p-12 rounded bg-surface-container-low border border-[#99D4FF]/20 hover:border-[#99D4FF]/60 transition-all hover:shadow-[0_0_30px_rgba(153,212,255,0.15)] relative"><div class="lg:col-span-5 space-y-5"><div class="flex items-center gap-3 text-xs tracking-wider uppercase font-semibold"><span class="px-2 py-0.5 rounded border border-[#99D4FF]/30 bg-[#99D4FF]/10 text-[#92cdf8]">Kesehatan Digital</span><span class="">•</span><span class="text-on-surface-variant">2025</span></div><h3 class="font-headline text-2xl sm:text-3xl font-semibold text-white tracking-tight">Pulse Health — Aplikasi Telemedis &amp; Rekam Medis Terintegrasi</h3><p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">Sistem klinik virtual dengan enkripsi data medis tingkat tinggi, modul konsultasi video interaktif, dan rekam medis pasien yang kompatibel dengan kepatuhan regulasi data kesehatan nasional.</p><div class="pt-2 flex flex-wrap gap-2 text-xs text-on-surface-variant"><span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant">Multiplatform App</span><span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant">E2E Encryption</span><span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant">HIPAA Compliant</span></div><div class="pt-4"><a class="inline-flex items-center gap-2 text-sm font-semibold text-[#99D4FF] hover:text-white transition-colors group" href="https://wa.me/62895800286901?text=Halo%20Nexa,%20saya%20tertarik%20dengan%20studi%20kasus%20Pulse%20Health" rel="noopener noreferrer" target="_blank"><span class="group-hover:underline underline-offset-4">Pelajari Studi Kasus</span><span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a></div></div><div class="lg:col-span-7"><div class="rounded overflow-hidden border border-[#99D4FF]/30 bg-surface-container-lowest shadow-[0_0_20px_rgba(153,212,255,0.15)]"><img alt="Aplikasi Pulse Health Telemedicine" class="w-full h-72 sm:h-96 object-cover object-top opacity-90 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdk-X-KBel6-aawVpsGW5b0tTpvbYcCCIRLsyyQFdq1KAIrpC0U_AaGqKRqIX4iA8F0W2BxRtzR8j_uNu-WMNriyiMjHtoZMzgfSg8kMI7AZrgiX4Bh3FcrmR7j3UgJDR5mhG5QlohajtfDvpf4Fah67q0pc5Q_Q69DzSoHfBM7_YUH2hnFDZCAb929yvxy3DX09fV3gWrqJ3MJ1i5qTDSvPgzV3iK266wuNkzlrBeGUIW6IBRm-BA"></div></div></article>
+</div>
+</section>
+<!-- LAYANAN & KAPABILITAS -->
+<section class="border-t border-outline-variant bg-surface-container-lowest py-24 md:py-32" id="layanan">
+<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-2xl mb-16">
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-semibold">02 // Kapabilitas Studio</span>
+<h2 class="mt-3 font-headline text-3xl sm:text-4xl font-semibold tracking-tight text-white">Layanan Rekayasa &amp; Desain Produk</h2>
+<p class="mt-4 text-on-surface-variant leading-relaxed">
+            Kami tidak menawarkan template sekali pakai. Setiap deliverable dikembangkan berdasarkan riset kebutuhan, struktur data yang solid, dan standar industri terkini.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8"><div class="p-8 rounded bg-surface-container-low border border-outline-variant hover:border-[#C239D8]/50 transition-all flex flex-col justify-between group"><div><div class="w-12 h-12 rounded flex items-center justify-center text-white mb-6 border border-[#C239D8]/40 shadow-[0_0_15px_rgba(194,57,216,0.2)]" style="background: linear-gradient(135deg, rgba(194, 57, 216, 0.2), rgba(153, 212, 255, 0.1));"><span class="material-symbols-outlined text-2xl text-[#faabff]">terminal</span></div><h3 class="font-headline text-xl font-semibold text-white group-hover:text-[#faabff] transition-colors">Web &amp; SaaS Engineering</h3><p class="mt-3 text-sm text-on-surface-variant leading-relaxed">Pengembangan aplikasi web berskala enterprise, portal SaaS, dashboard analitik, dan sistem backend terdistribusi dengan performa render tinggi dan ketersediaan tinggi.</p></div><ul class="mt-8 pt-6 border-t border-outline-variant space-y-2 text-xs text-on-surface-variant"><li class="flex items-center gap-2"><span class="text-[#C239D8]">—</span> Arsitektur Next.js &amp; Micro-frontend</li><li class="flex items-center gap-2"><span class="text-[#C239D8]">—</span> Database Relasional &amp; Caching Edge</li><li class="flex items-center gap-2"><span class="text-[#C239D8]">—</span> API Otentikasi &amp; RBAC Presisi</li></ul></div><div class="p-8 rounded bg-surface-container-low border border-outline-variant hover:border-[#7B68EE]/50 transition-all flex flex-col justify-between group"><div><div class="w-12 h-12 rounded flex items-center justify-center text-white mb-6 border border-[#7B68EE]/40 shadow-[0_0_15px_rgba(123,104,238,0.2)]" style="background: linear-gradient(135deg, rgba(123, 104, 238, 0.2), rgba(153, 212, 255, 0.15));"><span class="material-symbols-outlined text-2xl text-[#cabeff]">devices</span></div><h3 class="font-headline text-xl font-semibold text-white group-hover:text-[#cabeff] transition-colors">Mobile Applications (iOS &amp; Android)</h3><p class="mt-3 text-sm text-on-surface-variant leading-relaxed">Aplikasi mobile multiplatform native-level yang halus dan stabil. Menghadirkan kapabilitas offline-first, sinkronisasi background, dan integrasi perangkat keras tanpa lag.</p></div><ul class="mt-8 pt-6 border-t border-outline-variant space-y-2 text-xs text-on-surface-variant"><li class="flex items-center gap-2"><span class="text-[#7B68EE]">—</span> Basis Kode Flutter &amp; Kotlin</li><li class="flex items-center gap-2"><span class="text-[#7B68EE]">—</span> Sinkronisasi Database Lokal</li><li class="flex items-center gap-2"><span class="text-[#7B68EE]">—</span> Penerbitan App Store &amp; Play Store</li></ul></div><div class="p-8 rounded bg-surface-container-low border border-outline-variant hover:border-[#C239D8]/50 transition-all flex flex-col justify-between group"><div><div class="w-12 h-12 rounded flex items-center justify-center text-white mb-6 border border-[#C239D8]/40 shadow-[0_0_15px_rgba(194,57,216,0.2)]" style="background: linear-gradient(135deg, rgba(194, 57, 216, 0.25), rgba(153, 212, 255, 0.1));"><span class="material-symbols-outlined text-2xl text-[#faabff]">draw</span></div><h3 class="font-headline text-xl font-semibold text-white group-hover:text-[#faabff] transition-colors">Design Systems &amp; Digital Branding</h3><p class="mt-3 text-sm text-on-surface-variant leading-relaxed">Perancangan identitas visual fungsional dan fondasi design token terpadu yang dapat diimplementasikan langsung ke repositori kode tim Anda dengan konsistensi 100%.</p></div><ul class="mt-8 pt-6 border-t border-outline-variant space-y-2 text-xs text-on-surface-variant"><li class="flex items-center gap-2"><span class="text-[#C239D8]">—</span> Dokumentasi Token &amp; Komponen Figma</li><li class="flex items-center gap-2"><span class="text-[#C239D8]">—</span> Standar Aksesibilitas WCAG 2.1 AA</li><li class="flex items-center gap-2"><span class="text-[#C239D8]">—</span> Panduan Interaksi &amp; Tipografi Editorial</li></ul></div><div class="p-8 rounded bg-surface-container-low border border-outline-variant hover:border-[#99D4FF]/50 transition-all flex flex-col justify-between group"><div><div class="w-12 h-12 rounded flex items-center justify-center text-white mb-6 border border-[#99D4FF]/40 shadow-[0_0_15px_rgba(153,212,255,0.2)]" style="background: linear-gradient(135deg, rgba(153, 212, 255, 0.2), rgba(194, 57, 216, 0.15));"><span class="material-symbols-outlined text-2xl text-[#99D4FF]">cloud_sync</span></div><h3 class="font-headline text-xl font-semibold text-white group-hover:text-[#99D4FF] transition-colors">Cloud Infrastructure &amp; Integrasi Sistem</h3><p class="mt-3 text-sm text-on-surface-variant leading-relaxed">Perancangan arsitektur cloud serverless dan containerized. Mengotomatisasi jalur rilis CI/CD, audit beban kerja (load test), dan proteksi redundansi data.</p></div><ul class="mt-8 pt-6 border-t border-outline-variant space-y-2 text-xs text-on-surface-variant"><li class="flex items-center gap-2"><span class="text-[#99D4FF]">—</span> Konfigurasi AWS / GCP / Cloudflare Edge</li><li class="flex items-center gap-2"><span class="text-[#99D4FF]">—</span> Pipeline Deployment Otomatis (CI/CD)</li><li class="flex items-center gap-2"><span class="text-[#99D4FF]">—</span> Audit Keamanan &amp; Redundansi Data</li></ul></div></div>
+</div>
+</section>
+<!-- METRIK & NILAI KERJA NYATA -->
+<section class="border-t border-outline-variant py-24" id="metrik">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"><div class="p-6 rounded border border-outline-variant bg-surface-container-low hover:border-[#C239D8]/40 transition-all"><div class="font-headline text-4xl sm:text-5xl font-bold tracking-tight" style="background: linear-gradient(135deg, #C239D8 0%, #99D4FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">40+</div><div class="mt-3 text-base font-semibold text-white">Produk Sukses Rilis</div><p class="mt-2 text-xs text-on-surface-variant leading-relaxed">Mulai dari startup tahap awal hingga sistem internal korporasi nasional.</p></div><div class="p-6 rounded border border-outline-variant bg-surface-container-low hover:border-[#7B68EE]/40 transition-all"><div class="font-headline text-4xl sm:text-5xl font-bold tracking-tight" style="background: linear-gradient(135deg, #C239D8 20%, #7B68EE 60%, #99D4FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">99.9%</div><div class="mt-3 text-base font-semibold text-white">Kesiapan Sistem</div><p class="mt-2 text-xs text-on-surface-variant leading-relaxed">Standar uptime infrastruktur production dengan manajemen failover otomatis.</p></div><div class="p-6 rounded border border-outline-variant bg-surface-container-low hover:border-[#99D4FF]/40 transition-all"><div class="font-headline text-4xl sm:text-5xl font-bold tracking-tight" style="background: linear-gradient(135deg, #99D4FF 0%, #C239D8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">100%</div><div class="mt-3 text-base font-semibold text-white">Hak Milik Klien</div><p class="mt-2 text-xs text-on-surface-variant leading-relaxed">Semua kode sumber, repository Git, dan aset desain sepenuhnya milik Anda.</p></div><div class="p-6 rounded border border-outline-variant bg-surface-container-low hover:border-[#C239D8]/40 transition-all"><div class="font-headline text-4xl sm:text-5xl font-bold tracking-tight" style="background: linear-gradient(135deg, #C239D8 0%, #99D4FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">0%</div><div class="mt-3 text-base font-semibold text-white">Vendor Lock-In</div><p class="mt-2 text-xs text-on-surface-variant leading-relaxed">Dibangun dengan teknologi open standard tanpa ketergantungan lisensi tertutup.</p></div></div>
+</div>
+</section>
+<!-- PENDEKATAN KERJA / PROSES -->
+<section class="border-t border-outline-variant bg-surface-container-lowest py-24 md:py-32" id="pendekatan">
+<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-2xl mb-16">
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-semibold">03 // Metodologi Kerja</span>
+<h2 class="mt-3 font-headline text-3xl sm:text-4xl font-semibold tracking-tight text-white">Pendekatan Rekayasa Transparan</h2>
+<p class="mt-4 text-on-surface-variant leading-relaxed">
+            Tidak ada lapisan manajemen yang membingungkan. Anda bekerja langsung dengan tim inti rekayasa dan desain melalui tahapan yang terukur jelas.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="p-8 rounded bg-surface-container-low border border-outline-variant hover:border-[#C239D8]/40 transition-all flex flex-col justify-between"><div><div class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold uppercase tracking-wider mb-6 border border-[#C239D8]/30 bg-[#C239D8]/10 text-[#faabff]">Fase 01</div><h3 class="font-headline text-xl font-semibold text-white">Eksplorasi Arsitektur &amp; Strategi</h3><p class="mt-3 text-sm text-on-surface-variant leading-relaxed">Bedah kebutuhan teknis, perancangan skema relasi data, diagram alur sistem, serta penetapan milestone dan SLA yang realistis.</p></div><div class="mt-8 pt-4 border-t border-outline-variant text-xs text-[#faabff] font-medium">Deliverable: Dokumen Spesifikasi Teknis &amp; Wireframe</div></div><div class="p-8 rounded bg-surface-container-low border border-outline-variant hover:border-[#7B68EE]/40 transition-all flex flex-col justify-between"><div><div class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold uppercase tracking-wider mb-6 border border-[#7B68EE]/30 bg-[#7B68EE]/10 text-[#cabeff]">Fase 02</div><h3 class="font-headline text-xl font-semibold text-white">Desain &amp; Rekayasa Terpadu</h3><p class="mt-3 text-sm text-on-surface-variant leading-relaxed">Siklus sprint dua mingguan dengan demo langsung di staging server. Uji fitur secara berkala seiring kode dibangun secara modular.</p></div><div class="mt-8 pt-4 border-t border-outline-variant text-xs text-[#cabeff] font-medium">Deliverable: Akses Staging Server &amp; Demo Sprint</div></div><div class="p-8 rounded bg-surface-container-low border border-outline-variant hover:border-[#99D4FF]/40 transition-all flex flex-col justify-between"><div><div class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold uppercase tracking-wider mb-6 border border-[#99D4FF]/30 bg-[#99D4FF]/10 text-[#92cdf8]">Fase 03</div><h3 class="font-headline text-xl font-semibold text-white">Pengujian &amp; Peluncuran Stabil</h3><p class="mt-3 text-sm text-on-surface-variant leading-relaxed">Uji beban (load testing), audit kerentanan, konfigurasi domain production, serta transfer menyeluruh repositori dan dokumentasi.</p></div><div class="mt-8 pt-4 border-t border-outline-variant text-xs text-[#92cdf8] font-medium">Deliverable: Rilis Production &amp; Handover Kode Penuh</div></div></div>
+</div>
+</section>
+<!-- TESTIMONI KLIEN NYATA -->
+<section class="border-t border-outline-variant py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-2xl mb-12">
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-semibold">04 // Reputasi &amp; Pengalaman</span>
+<h2 class="mt-3 font-headline text-3xl font-semibold tracking-tight text-white">Apa Kata Para Mitra</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-8 rounded bg-surface-container-low border border-outline-variant flex flex-col justify-between">
+<blockquote class="text-base text-on-surface leading-relaxed">
+              “Nexa tidak sekadar mengerjakan tiket fitur. Mereka memberikan rekomendasi arsitektur database yang menghindarkan platform kami dari downtime saat lonjakan trafik 10x lipat di momen peluncuran.”
+            </blockquote>
+<div class="mt-8 pt-6 border-t border-outline-variant flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest border border-outline-variant flex items-center justify-center font-headline font-semibold text-sm text-white">
+                AK
+              </div>
+<div>
+<div class="text-sm font-semibold text-white">Aditya Kurnia</div>
+<div class="text-xs text-on-surface-variant">CTO, Kinetix Supply Solutions</div>
+</div>
+</div>
+</div>
+<div class="p-8 rounded bg-surface-container-low border border-outline-variant flex flex-col justify-between">
+<blockquote class="text-base text-on-surface leading-relaxed">
+              “Eksekusi desain produk mereka memiliki standar estetika dan presisi teknis yang sangat tinggi. Frontend headless yang dibangun Nexa terasa instan bagi seluruh pengguna kami di 4 negara.”
+            </blockquote>
+<div class="mt-8 pt-6 border-t border-outline-variant flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest border border-outline-variant flex items-center justify-center font-headline font-semibold text-sm text-white">
+                MW
+              </div>
+<div>
+<div class="text-sm font-semibold text-white">Maya Wicaksono</div>
+<div class="text-xs text-on-surface-variant">VP of Product, Sora Commerce</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CALL TO ACTION / KONTAK -->
+<section class="border-t border-outline-variant bg-surface-container-lowest py-24 md:py-32" id="kontak">
+<div class="max-w-7xl mx-auto px-6">
+<div class="p-8 sm:p-12 md:p-16 rounded bg-surface-container-low border border-[#C239D8]/30 relative overflow-hidden shadow-[0_0_50px_rgba(194,57,216,0.15)]"><div class="absolute -top-32 -right-32 w-80 h-80 rounded-full blur-[100px] pointer-events-none" style="background: radial-gradient(circle, rgba(194,57,216,0.25) 0%, transparent 70%);"></div><div class="absolute -bottom-32 -left-32 w-80 h-80 rounded-full blur-[100px] pointer-events-none" style="background: radial-gradient(circle, rgba(153,212,255,0.2) 0%, transparent 70%);"></div><div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center"><div class="lg:col-span-7 space-y-4"><div class="inline-flex items-center gap-2 px-3 py-1 rounded border border-[#C239D8]/30 bg-[#C239D8]/10 text-xs font-semibold uppercase tracking-widest text-[#faabff]"><span class="w-1.5 h-1.5 rounded-full bg-[#faabff]"></span>Mulai Kolaborasi</div><h2 class="font-headline text-3xl sm:text-4xl md:text-5xl font-semibold text-white tracking-tight">Punya visi produk yang siap <span style="background: linear-gradient(135deg, #C239D8 0%, #99D4FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" class="">direalisasikan?</span></h2><p class="text-base text-on-surface-variant max-w-xl leading-relaxed">Diskusikan konsep Anda langsung dengan tim lead engineer dan desainer kami. Kami menyediakan telaah spesifikasi awal dan perkiraan waktu rilis dalam 24 jam.</p></div><div class="lg:col-span-5 flex flex-col gap-4"><a class="flex items-center justify-between p-4 bg-white text-[#111417] font-semibold hover:bg-[#e6e2dc] transition-all rounded-full" href="https://wa.me/62895800286901" rel="noopener noreferrer" target="_blank"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-2xl text-[#111417]">chat</span><div class="text-left"><div class="text-xs font-medium uppercase tracking-wider text-[#484743]">WhatsApp Langsung</div><div class="text-sm font-bold text-[#111417]">+62 895 8002 86901</div></div></div><span class="material-symbols-outlined text-xl text-[#111417]">arrow_forward</span></a><a class="flex items-center justify-between p-4 bg-surface-container border border-outline-variant hover:border-outline text-white hover:bg-surface-container-high transition-all rounded-full" href="mailto:halo@nexa.studio"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-xl text-on-surface-variant">mail</span><div class="text-left"><div class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant">Email Studio</div><div class="text-sm font-semibold text-white">halo@nexa.studio</div></div></div><span class="material-symbols-outlined text-xl text-on-surface-variant">arrow_forward</span></a></div></div></div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="border-t border-outline-variant bg-surface-container-lowest py-16">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-16 border-b border-outline-variant">
+<div class="md:col-span-5 space-y-4">
+<a class="inline-flex items-center gap-3 hover:opacity-90 transition-opacity" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKq2IKJqjk5xYm2pk0huL5GTENg--JqSyFBHJzXTluYyo9U6w0CP2nNXO10dSXPZhSRQgZXsq_fmZPxM46yqvbvn_FT4dfYcCLGfuyYIruB_O9bAKLECzO0eapxqgkvyMqkwxJ0QHrxcaXpbxyLQJbk6oU1eYQJawH6WxIs5C7jDhnf6WBEkvrGAbeJD5PS1QI2D3tHMheQHo9_BrqPID9JMFtVJgoG3shIosdM9FL9TfxaiP0Vq0mqfueY6lFQoy-ig" alt="Nexa Logo" class="h-8 w-auto object-contain drop-shadow-[0_0_10px_rgba(194,57,216,0.35)]"><span class="font-headline font-bold text-2xl tracking-tight text-white">nexa<span class="text-on-surface-variant text-xl">.</span></span></a>
+<p class="text-sm text-on-surface-variant max-w-sm leading-relaxed">
+            Studio teknologi dan rekayasa produk digital. Kami merancang arsitektur sistem dan antarmuka web modern dengan standar ketelitian tinggi.
+          </p>
+</div>
+<div class="md:col-span-3 space-y-3">
+<div class="text-xs uppercase tracking-widest text-white font-semibold">Navigasi</div>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class=""><a class="hover:text-white transition-colors" href="#karya">Karya Terpilih</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#layanan">Kapabilitas &amp; Layanan</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#pendekatan">Metodologi Kerja</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#metrik">Standar Kualitas</a></li>
+</ul>
+</div>
+<div class="md:col-span-4 space-y-3">
+<div class="text-xs uppercase tracking-widest text-white font-semibold">Kontak &amp; Kantor</div>
+<div class="space-y-2 text-sm text-on-surface-variant leading-relaxed">
+<div class="">Jakarta &amp; Bali, Indonesia</div>
+<div class="">WhatsApp: +62 895 8002 86901</div>
+<div class="">Email: halo@nexa.studio</div>
+</div>
+</div>
+</div>
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant">
+<div class="">© 2025 Nexa Studio Inc. Seluruh hak cipta dilindungi undang-undang.</div>
+<div class="flex items-center gap-6">
+<span class="">Rekayasa Perangkat Lunak Berkarakter</span>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>

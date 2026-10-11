@@ -172,13 +172,13 @@ const submitted = ref(false)
 
 function handleSubmit() {
   submitted.value = true
-  const text = `Halo Nexa Agency,\n\nNama: ${form.value.name}\nEmail: ${form.value.email}\nLayanan: ${form.value.service}\n\nPesan:\n${form.value.message}`
+  const text = `Halo Nexa Digital Agency,\n\nNama: ${form.value.name}\nEmail: ${form.value.email}\nLayanan: ${form.value.service}\n\nPesan:\n${form.value.message}`
   const encoded = encodeURIComponent(text)
   window.open(`https://wa.me/6281234567890?text=${encoded}`, '_blank')
 }
 
 function sendEmailDirect() {
-  const subject = encodeURIComponent(`Inquiry Proyek Nexa: ${form.value.service} - ${form.value.name}`)
+  const subject = encodeURIComponent(`Inquiry Proyek Nexa Digital Agency: ${form.value.service} - ${form.value.name}`)
   const body = encodeURIComponent(`Nama: ${form.value.name}\nEmail: ${form.value.email}\nLayanan: ${form.value.service}\n\nKebutuhan:\n${form.value.message}`)
   window.location.href = `mailto:hello@nexa.agency?subject=${subject}&body=${body}`
 }

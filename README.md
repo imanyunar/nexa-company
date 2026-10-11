@@ -2,7 +2,7 @@
   <img src="./assets/logo.png" alt="Nexa Logo" width="220">
 </p>
 
-<h1 align="center">Nexa Agency</h1>
+<h1 align="center">Nexa Digital Agency</h1>
 
 <p align="center">
   <b>Your brand deserves better than "basic".</b><br>
@@ -16,9 +16,9 @@
 
 ---
 
-## 📖 Tentang Nexa Agency
+## 📖 Tentang Nexa Digital Agency
 
-**Nexa Agency** adalah digital agency yang berfokus pada pengembangan website dan identitas digital untuk UMKM, bisnis, organisasi, maupun personal branding. Kami membantu mengubah ide dan kebutuhan klien menjadi solusi digital yang relevan, fungsional, dan memiliki karakter yang kuat.
+**Nexa Digital Agency** adalah digital agency yang berfokus pada pengembangan website dan identitas digital untuk UMKM, bisnis, organisasi, maupun personal branding. Kami membantu mengubah ide dan kebutuhan klien menjadi solusi digital yang relevan, fungsional, dan memiliki karakter yang kuat.
 
 Layanan Nexa mencakup:
 - 🌐 **Website & Company Profile** — website resmi, company profile, dan landing page custom untuk bisnis & UMKM.
