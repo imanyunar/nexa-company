@@ -15,9 +15,6 @@
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-headline font-semibold tracking-tight">
           Kalender Kegiatan Nexa
         </h1>
-        <p class="text-on-surface-variant text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-          Ikuti workshop rekayasa piranti lunak, sesi live tech sharing, jadwal rilis sistem, dan slot konsultasi digital terbuka bersama tim Nexa Digital Agency.
-        </p>
       </div>
 
       <!-- Controls & Filter Toolbar -->
