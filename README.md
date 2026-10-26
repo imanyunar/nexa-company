@@ -63,23 +63,40 @@ Kami percaya bahwa setiap brand memiliki cerita dan karakter yang berbeda. Karen
 
 ```text
 nexa-company/
+├── api/                     # Vercel Serverless Functions (Postgres & Auth API)
+│   ├── _utils.js            # Neon DB driver, token validation & crypto
+│   ├── auth.js              # Endpoint login & auth admin
+│   └── events.js            # Endpoint CRUD kegiatan resmi
 ├── assets/                  # Logo dan visual assets
+├── public/                  # Static assets & sitemap
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.vue       # Header & navigasi responsif
-│   │   ├── HeroSection.vue  # Hero dengan Anime.js SVG path drawing
-│   │   ├── ServicesSection.vue # 3 blok layanan dengan visual unik
-│   │   ├── PortfolioSection.vue# Asymmetrical portfolio grid
-│   │   ├── MetricsSection.vue  # Metrik performa IBM Plex Mono
-│   │   ├── ContactSection.vue  # Form konsultasi & WhatsApp direct
-│   │   └── Footer.vue       # Minimal 3-service footer
-│   ├── App.vue              # Main Vue application
+│   │   ├── AmbientBackground.vue # Continuous canvas particle animation
+│   │   ├── Navbar.vue       # Header & navigasi responsif (Dark/Light mode)
+│   │   └── Footer.vue       # Footer navigasi studio & media sosial
+│   ├── views/               # Halaman utama aplikasi (Vue Router)
+│   │   ├── HomeView.vue     # Beranda studio
+│   │   ├── ServicesView.vue # Detail 4 pilar kapabilitas
+│   │   ├── PortfolioView.vue# Showcase 5 studi kasus proyek live
+│   │   ├── EventsView.vue   # Kalender kegiatan publik (+ Google Cal & .ics)
+│   │   ├── AboutView.vue    # Profil agensi & filosofi
+│   │   ├── ContactView.vue  # Form inisiasi proyek & kontak langsung
+│   │   └── AdminEventsView.vue # Portal pengelola internal terproteksi
+│   ├── services/
+│   │   └── calendarService.js # API consumer & export engine .ics
+│   ├── router/
+│   │   └── index.js         # Routing SPA Vue Router
+│   ├── utils/
+│   │   ├── animations.js    # Anime.js utilities
+│   │   └── theme.js         # Pengatur tema Dark/Light adaptif
+│   ├── App.vue              # Root Vue component & transisi rute
 │   ├── main.js              # Vue entrypoint
-│   └── style.css            # Design tokens & base styles
+│   └── style.css            # Custom Nexa design tokens (Atelier Palette)
 ├── design.md                # Dokumentasi Design System Nexa
 ├── index.html
 ├── package.json
 ├── tailwind.config.js
+├── vercel.json
 ├── vite.config.js
 └── README.md
 ```

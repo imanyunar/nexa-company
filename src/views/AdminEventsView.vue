@@ -451,7 +451,6 @@
 import { ref, reactive, onMounted } from 'vue'
 import { isDark } from '../utils/theme'
 import { 
-  adminToken, 
   currentAdmin, 
   loginAdmin, 
   clearAdminSession, 
