@@ -243,3 +243,49 @@ export function downloadIcsFile(event) {
   document.body.removeChild(link)
   URL.revokeObjectURL(url)
 }
+
+/**
+ * Generate and download all events as a single .ics calendar file
+ */
+export function downloadAllEventsIcs(eventsList, filename = 'timeline-kegiatan-nexa.ics') {
+  if (!eventsList || !eventsList.length) return
+
+  const vevents = eventsList.map((event, idx) => {
+    const dateStr = (event.event_date || '').split('T')[0].replace(/-/g, '')
+    const startTimeStr = (event.start_time || '09:00:00').replace(/:/g, '').slice(0, 6)
+    const endTimeStr = (event.end_time || '10:00:00').replace(/:/g, '').slice(0, 6)
+
+    return [
+      'BEGIN:VEVENT',
+      `UID:nexa-${event.id || idx}-${Date.now()}@nexaagency.my.id`,
+      `DTSTAMP:${dateStr}T${startTimeStr}Z`,
+      `DTSTART:${dateStr}T${startTimeStr}`,
+      `DTEND:${dateStr}T${endTimeStr}`,
+      `SUMMARY:${event.title || 'Kegiatan Nexa Digital Agency'}`,
+      `DESCRIPTION:${(event.description || '').replace(/\n/g, '\\n')}`,
+      `LOCATION:${event.location_name || (event.location_type === 'online' ? 'Online / Google Meet' : 'Nexa Digital Studio')}`,
+      'STATUS:CONFIRMED',
+      'END:VEVENT'
+    ].join('\r\n')
+  }).join('\r\n')
+
+  const icsContent = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Nexa Digital Agency//Calendar Event//ID',
+    'CALSCALE:GREGORIAN',
+    vevents,
+    'END:VCALENDAR'
+  ].join('\r\n')
+
+  const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' })
+  const url = URL.createObjectURL(blob)
+  const link = document.createElement('a')
+  link.href = url
+  link.setAttribute('download', filename)
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+  URL.revokeObjectURL(url)
+}
+

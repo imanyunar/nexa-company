@@ -42,31 +42,44 @@
           </button>
         </div>
 
-        <!-- View Switcher (Calendar Grid vs Agenda List) -->
-        <div class="flex items-center gap-1.5 self-end md:self-auto p-1 rounded-xl border text-xs"
-          :class="isDark ? 'bg-[#111417] border-[#2a2d31]' : 'bg-slate-100 border-slate-200'"
-        >
+        <!-- Actions: Download All .ICS & View Switcher -->
+        <div class="flex items-center gap-2 self-end md:self-auto flex-wrap">
           <button
-            @click="viewMode = 'agenda'"
-            class="px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition-all font-medium"
-            :class="viewMode === 'agenda'
-              ? (isDark ? 'bg-[#272a2d] text-white shadow-sm' : 'bg-white text-slate-900 shadow-sm')
-              : (isDark ? 'text-on-surface-variant hover:text-white' : 'text-slate-500 hover:text-slate-900')"
+            @click="downloadAll"
+            class="px-3 py-1.5 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all"
+            :class="isDark ? 'bg-[#272a2d] border-[#484740] text-stitch-magenta-light hover:bg-[#323538]' : 'bg-white border-slate-200 text-fuchsia-700 hover:bg-slate-50 shadow-sm'"
+            title="Unduh seluruh kalender rapat & deadline (.ics)"
           >
-            <span class="material-symbols-outlined text-[16px]">view_agenda</span>
-            <span>Daftar Agenda</span>
+            <span class="material-symbols-outlined text-[16px]">download</span>
+            <span>Unduh Semua (.ICS)</span>
           </button>
 
-          <button
-            @click="viewMode = 'calendar'"
-            class="px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition-all font-medium"
-            :class="viewMode === 'calendar'
-              ? (isDark ? 'bg-[#272a2d] text-white shadow-sm' : 'bg-white text-slate-900 shadow-sm')
-              : (isDark ? 'text-on-surface-variant hover:text-white' : 'text-slate-500 hover:text-slate-900')"
+          <!-- View Switcher (Calendar Grid vs Agenda List) -->
+          <div class="flex items-center gap-1.5 p-1 rounded-xl border text-xs"
+            :class="isDark ? 'bg-[#111417] border-[#2a2d31]' : 'bg-slate-100 border-slate-200'"
           >
-            <span class="material-symbols-outlined text-[16px]">calendar_month</span>
-            <span>Kalender Bulanan</span>
-          </button>
+            <button
+              @click="viewMode = 'agenda'"
+              class="px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition-all font-medium"
+              :class="viewMode === 'agenda'
+                ? (isDark ? 'bg-[#272a2d] text-white shadow-sm' : 'bg-white text-slate-900 shadow-sm')
+                : (isDark ? 'text-on-surface-variant hover:text-white' : 'text-slate-500 hover:text-slate-900')"
+            >
+              <span class="material-symbols-outlined text-[16px]">view_agenda</span>
+              <span>Daftar Agenda</span>
+            </button>
+
+            <button
+              @click="viewMode = 'calendar'"
+              class="px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition-all font-medium"
+              :class="viewMode === 'calendar'
+                ? (isDark ? 'bg-[#272a2d] text-white shadow-sm' : 'bg-white text-slate-900 shadow-sm')
+                : (isDark ? 'text-on-surface-variant hover:text-white' : 'text-slate-500 hover:text-slate-900')"
+            >
+              <span class="material-symbols-outlined text-[16px]">calendar_month</span>
+              <span>Kalender Bulanan</span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -409,7 +422,8 @@ import { isDark } from '../utils/theme'
 import { 
   fetchEvents, 
   getGoogleCalendarUrl, 
-  downloadIcsFile 
+  downloadIcsFile,
+  downloadAllEventsIcs
 } from '../services/calendarService'
 
 const events = ref([])
@@ -421,13 +435,17 @@ const activeModalEvent = ref(null)
 
 const currentDate = ref(new Date())
 
-const categories = [
-  { id: 'all', label: 'Semua Kegiatan' },
-  { id: 'Workshop', label: 'Workshop' },
-  { id: 'Tech Sharing', label: 'Tech Sharing' },
-  { id: 'Konsultasi', label: 'Konsultasi' },
-  { id: 'Rilis Produk', label: 'Rilis Produk' }
-]
+const categories = computed(() => {
+  const uniqueCats = Array.from(new Set(events.value.map(e => e.category).filter(Boolean)))
+  return [
+    { id: 'all', label: 'Semua Kegiatan' },
+    ...uniqueCats.map(cat => ({ id: cat, label: cat }))
+  ]
+})
+
+function downloadAll() {
+  downloadAllEventsIcs(events.value, 'timeline-stack-2026-nexa.ics')
+}
 
 async function loadEvents() {
   loading.value = true
