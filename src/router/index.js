@@ -4,6 +4,8 @@ import ServicesView from '../views/ServicesView.vue'
 import PortfolioView from '../views/PortfolioView.vue'
 import AboutView from '../views/AboutView.vue'
 import ContactView from '../views/ContactView.vue'
+import EventsView from '../views/EventsView.vue'
+import AdminEventsView from '../views/AdminEventsView.vue'
 
 const routes = [
   {
@@ -25,6 +27,13 @@ const routes = [
     meta: { title: 'Portofolio — Nexa Digital Agency' }
   },
   {
+    path: '/kegiatan',
+    alias: '/kalender',
+    name: 'events',
+    component: EventsView,
+    meta: { title: 'Kalender Kegiatan — Nexa Digital Agency' }
+  },
+  {
     path: '/tentang',
     name: 'about',
     component: AboutView,
@@ -35,6 +44,13 @@ const routes = [
     name: 'contact',
     component: ContactView,
     meta: { title: 'Kontak — Nexa Digital Agency' }
+  },
+  {
+    path: '/admin/kalender',
+    alias: '/admin/kegiatan',
+    name: 'admin-events',
+    component: AdminEventsView,
+    meta: { title: 'Pengelola Kalender — Nexa Digital Agency' }
   }
 ]
 

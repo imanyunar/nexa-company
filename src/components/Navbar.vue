@@ -53,6 +53,15 @@
             Layanan
           </router-link>
           <router-link 
+            to="/kegiatan" 
+            class="transition-colors"
+            :class="$route.path.startsWith('/kegiatan') 
+              ? (isDark ? 'text-white font-semibold' : 'text-[#161c24] font-semibold') 
+              : (isDark ? 'text-on-surface-variant hover:text-white' : 'text-[#44474a] hover:text-[#161c24]')"
+          >
+            Kegiatan
+          </router-link>
+          <router-link 
             to="/tentang" 
             class="transition-colors"
             :class="$route.path === '/tentang' 
@@ -167,6 +176,16 @@
             : (isDark ? 'text-on-surface-variant hover:bg-white/5' : 'text-[#44474a] hover:bg-slate-50')"
         >
           Layanan
+        </router-link>
+        <router-link 
+          @click="closeMenu" 
+          to="/kegiatan" 
+          class="block text-base font-medium py-2.5 px-3 rounded-lg transition-colors" 
+          :class="$route.path.startsWith('/kegiatan') 
+            ? (isDark ? 'text-white bg-white/10 font-semibold' : 'text-[#111417] bg-slate-100 font-semibold') 
+            : (isDark ? 'text-on-surface-variant hover:bg-white/5' : 'text-[#44474a] hover:bg-slate-50')"
+        >
+          Kegiatan
         </router-link>
         <router-link 
           @click="closeMenu" 

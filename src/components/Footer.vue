@@ -38,6 +38,7 @@
             <router-link to="/" class="transition-colors" :class="isDark ? 'text-[#9d9fa6] hover:text-white' : 'text-[#44474a] hover:text-[#161c24]'">Beranda</router-link>
             <router-link to="/portofolio" class="transition-colors" :class="isDark ? 'text-[#9d9fa6] hover:text-white' : 'text-[#44474a] hover:text-[#161c24]'">Karya</router-link>
             <router-link to="/layanan" class="transition-colors" :class="isDark ? 'text-[#9d9fa6] hover:text-white' : 'text-[#44474a] hover:text-[#161c24]'">Layanan</router-link>
+            <router-link to="/kegiatan" class="transition-colors" :class="isDark ? 'text-[#9d9fa6] hover:text-white' : 'text-[#44474a] hover:text-[#161c24]'">Kegiatan</router-link>
             <router-link to="/tentang" class="transition-colors" :class="isDark ? 'text-[#9d9fa6] hover:text-white' : 'text-[#44474a] hover:text-[#161c24]'">Proses</router-link>
             <router-link to="/kontak" class="transition-colors" :class="isDark ? 'text-[#9d9fa6] hover:text-white' : 'text-[#44474a] hover:text-[#161c24]'">Kontak</router-link>
           </nav>
