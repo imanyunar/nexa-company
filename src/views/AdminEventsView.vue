@@ -293,11 +293,14 @@
                     class="w-full px-3.5 py-2.5 rounded-xl border text-sm font-sans focus:outline-none focus:ring-2 focus:ring-stitch-magenta"
                     :class="isDark ? 'bg-[#111417] border-[#2a2d31] text-white' : 'bg-slate-50 border-slate-200 text-slate-900'"
                   >
+                    <option value="Rapat Tim">Rapat Tim</option>
+                    <option value="Kompetisi">Kompetisi</option>
                     <option value="Workshop">Workshop</option>
                     <option value="Tech Sharing">Tech Sharing</option>
                     <option value="Konsultasi">Konsultasi</option>
                     <option value="Rilis Produk">Rilis Produk</option>
                     <option value="Event">Event Umum</option>
+                    <option v-if="isCustomCategory(form.category)" :value="form.category">{{ form.category }} (Kustom)</option>
                   </select>
                 </div>
 
@@ -617,8 +620,19 @@ async function handleDelete(item) {
   }
 }
 
+const defaultCategories = ['Rapat Tim', 'Kompetisi', 'Workshop', 'Tech Sharing', 'Konsultasi', 'Rilis Produk', 'Event']
+function isCustomCategory(cat) {
+  return cat && !defaultCategories.includes(cat)
+}
+
 function formatIsoDate(dateStr) {
   if (!dateStr) return '-'
+  const cleanStr = String(dateStr).split('T')[0]
+  const parts = cleanStr.split('-').map(Number)
+  if (parts.length === 3 && !parts.some(isNaN)) {
+    const d = new Date(parts[0], parts[1] - 1, parts[2], 12, 0, 0)
+    return d.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })
+  }
   const d = new Date(dateStr)
   return d.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })
 }

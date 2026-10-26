@@ -512,30 +512,36 @@ function getColorClass(color) {
   }
 }
 
-// Date Format Helpers
-function parseDate(isoString) {
-  if (!isoString) return new Date()
-  const d = new Date(isoString)
+// Date Format Helpers (Timezone-safe)
+function parseSafeDate(dateStr) {
+  if (!dateStr) return new Date()
+  const cleanStr = String(dateStr).split('T')[0]
+  const parts = cleanStr.split('-').map(Number)
+  if (parts.length === 3 && !parts.some(isNaN)) {
+    // Return date at local noon (12:00:00) so no timezone offset (-12 to +14) crosses the day boundary
+    return new Date(parts[0], parts[1] - 1, parts[2], 12, 0, 0)
+  }
+  const d = new Date(dateStr)
   return isNaN(d.getTime()) ? new Date() : d
 }
 
 function formatMonthShort(dateStr) {
-  const d = parseDate(dateStr)
+  const d = parseSafeDate(dateStr)
   return d.toLocaleDateString('id-ID', { month: 'short' })
 }
 
 function formatDayNumber(dateStr) {
-  const d = parseDate(dateStr)
+  const d = parseSafeDate(dateStr)
   return d.getDate()
 }
 
 function formatDayName(dateStr) {
-  const d = parseDate(dateStr)
+  const d = parseSafeDate(dateStr)
   return d.toLocaleDateString('id-ID', { weekday: 'short' })
 }
 
 function formatFullDate(dateStr) {
-  const d = parseDate(dateStr)
+  const d = parseSafeDate(dateStr)
   return d.toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
 }
 
@@ -545,13 +551,13 @@ function formatTime(timeStr) {
 }
 
 function getRelativeDaysText(dateStr) {
-  const target = new Date(dateStr)
+  const target = parseSafeDate(dateStr)
   const now = new Date()
   target.setHours(0, 0, 0, 0)
   now.setHours(0, 0, 0, 0)
 
-  const diffTime = target - now
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+  const diffTime = target.getTime() - now.getTime()
+  const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24))
 
   if (diffDays === 0) return '• Hari Ini'
   if (diffDays === 1) return '• Besok'

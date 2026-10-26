@@ -198,6 +198,7 @@ export function getGoogleCalendarUrl(event) {
     action: 'TEMPLATE',
     text: event.title || 'Kegiatan Nexa Digital Agency',
     dates: `${startIso}/${endIso}`,
+    ctz: 'Asia/Jakarta',
     details: `${event.description || ''}\n\nKategori: ${event.category || 'Event'}\nTautan: ${event.link || 'https://nexaagency.my.id/'}`,
     location: event.location_name || (event.location_type === 'online' ? 'Online / Google Meet' : 'Nexa Digital Studio')
   })
@@ -214,6 +215,7 @@ export function downloadIcsFile(event) {
   const dateStr = event.event_date.split('T')[0].replace(/-/g, '')
   const startTimeStr = (event.start_time || '09:00:00').replace(/:/g, '').slice(0, 6)
   const endTimeStr = (event.end_time || '10:00:00').replace(/:/g, '').slice(0, 6)
+  const nowStamp = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
 
   const icsContent = [
     'BEGIN:VCALENDAR',
@@ -222,12 +224,12 @@ export function downloadIcsFile(event) {
     'CALSCALE:GREGORIAN',
     'BEGIN:VEVENT',
     `UID:nexa-${event.id || Date.now()}@nexaagency.my.id`,
-    `DTSTAMP:${dateStr}T${startTimeStr}Z`,
+    `DTSTAMP:${nowStamp}`,
     `DTSTART:${dateStr}T${startTimeStr}`,
     `DTEND:${dateStr}T${endTimeStr}`,
     `SUMMARY:${event.title || 'Kegiatan Nexa Digital Agency'}`,
     `DESCRIPTION:${(event.description || '').replace(/\n/g, '\\n')}`,
-    `LOCATION:${event.location_name || (event.location_type === 'online' ? 'Online' : 'Nexa Digital Studio')}`,
+    `LOCATION:${event.location_name || (event.location_type === 'online' ? 'Online / Google Meet' : 'Nexa Digital Studio')}`,
     'STATUS:CONFIRMED',
     'END:VEVENT',
     'END:VCALENDAR'
@@ -250,6 +252,8 @@ export function downloadIcsFile(event) {
 export function downloadAllEventsIcs(eventsList, filename = 'timeline-kegiatan-nexa.ics') {
   if (!eventsList || !eventsList.length) return
 
+  const nowStamp = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
+
   const vevents = eventsList.map((event, idx) => {
     const dateStr = (event.event_date || '').split('T')[0].replace(/-/g, '')
     const startTimeStr = (event.start_time || '09:00:00').replace(/:/g, '').slice(0, 6)
@@ -258,7 +262,7 @@ export function downloadAllEventsIcs(eventsList, filename = 'timeline-kegiatan-n
     return [
       'BEGIN:VEVENT',
       `UID:nexa-${event.id || idx}-${Date.now()}@nexaagency.my.id`,
-      `DTSTAMP:${dateStr}T${startTimeStr}Z`,
+      `DTSTAMP:${nowStamp}`,
       `DTSTART:${dateStr}T${startTimeStr}`,
       `DTEND:${dateStr}T${endTimeStr}`,
       `SUMMARY:${event.title || 'Kegiatan Nexa Digital Agency'}`,
