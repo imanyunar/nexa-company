@@ -103,6 +103,32 @@
     outline-offset: 2px !important;
   }
 
+  button,
+  [role="button"] {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  ::selection {
+    background-color: rgba(194, 57, 216, 0.4);
+    color: #ffffff;
+  }
+
+  ::-moz-selection {
+    background-color: rgba(194, 57, 216, 0.4);
+    color: #ffffff;
+  }
+
+  html:not(.dark) ::selection {
+    background-color: rgba(194, 57, 216, 0.22);
+    color: #111417;
+  }
+
+  html:not(.dark) ::-moz-selection {
+    background-color: rgba(194, 57, 216, 0.22);
+    color: #111417;
+  }
+
   .material-symbols-outlined {
     font-family: 'Material Symbols Outlined';
     font-weight: normal;
