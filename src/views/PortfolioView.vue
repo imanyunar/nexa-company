@@ -50,7 +50,7 @@
               class="px-4 py-2.5 flex items-center justify-between border-b text-xs font-mono" 
               :class="isDark ? 'bg-[#111417] border-outline-variant text-on-surface-variant' : 'bg-slate-100 border-slate-200 text-slate-600'"
             >
-              <span class="truncate max-w-sm">https://pixelcraft-psi-blue.vercel.app/</span>
+              <span class="truncate max-w-[160px] sm:max-w-sm">https://pixelcraft-psi-blue.vercel.app/</span>
               <span :class="isDark ? 'text-stitch-magenta font-semibold' : 'text-slate-700 font-semibold bg-white px-2 py-0.5 rounded border border-slate-200'">WebGL &amp; AI</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
@@ -136,7 +136,7 @@
               class="px-4 py-2.5 flex items-center justify-between border-b text-xs font-mono" 
               :class="isDark ? 'bg-[#111417] border-outline-variant text-on-surface-variant' : 'bg-slate-100 border-slate-200 text-slate-600'"
             >
-              <span class="text-on-surface-variant truncate max-w-sm">catatkas.internal.v2</span>
+              <span class="text-on-surface-variant truncate max-w-[160px] sm:max-w-sm">catatkas.internal.v2</span>
               <span :class="isDark ? 'text-stitch-purple font-semibold' : 'text-slate-700 font-semibold bg-white px-2 py-0.5 rounded border border-slate-200'">+38% EFISIENSI ARUS KAS</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
@@ -225,7 +225,7 @@
               class="px-4 py-2.5 flex items-center justify-between border-b text-xs font-mono" 
               :class="isDark ? 'bg-[#111417] border-outline-variant text-on-surface-variant' : 'bg-slate-100 border-slate-200 text-slate-600'"
             >
-              <span class="text-on-surface-variant truncate max-w-sm">https://lentera.indramayukab.go.id/</span>
+              <span class="text-on-surface-variant truncate max-w-[160px] sm:max-w-sm">https://lentera.indramayukab.go.id/</span>
               <span :class="isDark ? 'text-stitch-cyan font-semibold' : 'text-slate-700 font-semibold bg-white px-2 py-0.5 rounded border border-slate-200'">PWA Live</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
@@ -316,7 +316,7 @@
               class="px-4 py-2.5 flex items-center justify-between border-b text-xs font-mono" 
               :class="isDark ? 'bg-[#111417] border-outline-variant text-on-surface-variant' : 'bg-slate-100 border-slate-200 text-slate-600'"
             >
-              <span class="text-on-surface-variant truncate max-w-sm">https://portal-desa-tempursari-six.vercel.app/</span>
+              <span class="text-on-surface-variant truncate max-w-[160px] sm:max-w-sm">https://portal-desa-tempursari-six.vercel.app/</span>
               <span :class="isDark ? 'text-stitch-amber font-semibold' : 'text-slate-700 font-semibold bg-white px-2 py-0.5 rounded border border-slate-200'">Portal Resmi</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">
@@ -391,7 +391,7 @@
               class="px-4 py-2.5 flex items-center justify-between border-b text-xs font-mono" 
               :class="isDark ? 'bg-[#111417] border-outline-variant text-on-surface-variant' : 'bg-slate-100 border-slate-200 text-slate-600'"
             >
-              <span class="text-on-surface-variant truncate max-w-sm">https://visitgumiwang.web.id/</span>
+              <span class="text-on-surface-variant truncate max-w-[160px] sm:max-w-sm">https://visitgumiwang.web.id/</span>
               <span :class="isDark ? 'text-emerald-400 font-semibold' : 'text-slate-700 font-semibold bg-white px-2 py-0.5 rounded border border-slate-200'">Desa Wisata</span>
             </div>
             <div class="relative w-full overflow-hidden h-[240px] sm:h-[420px] bg-black">

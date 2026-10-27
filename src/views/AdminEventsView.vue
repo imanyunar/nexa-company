@@ -62,7 +62,7 @@
             :disabled="loggingIn"
             class="btn-stitch-primary w-full py-3.5 text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2"
           >
-            <span v-if="loggingIn" class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"></span>
+            <span v-if="loggingIn" class="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin"></span>
             <span>{{ loggingIn ? 'Memverifikasi...' : 'Masuk ke Dashboard' }}</span>
           </button>
         </form>
@@ -139,7 +139,11 @@
         >
           <div class="p-5 border-b border-outline-variant flex items-center justify-between">
             <h2 class="font-headline font-semibold text-lg">Daftar Seluruh Kegiatan ({{ events.length }})</h2>
-            <button @click="loadEvents" class="text-xs font-mono text-on-surface-variant hover:text-white flex items-center gap-1">
+            <button 
+              @click="loadEvents" 
+              class="text-xs font-mono flex items-center gap-1 transition-colors"
+              :class="isDark ? 'text-on-surface-variant hover:text-white' : 'text-slate-500 hover:text-slate-900'"
+            >
               <span class="material-symbols-outlined text-sm">refresh</span>
               <span>Segarkan</span>
             </button>
@@ -261,7 +265,9 @@
 
               <button 
                 @click="showModal = false"
-                class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-white"
+                class="w-8 h-8 rounded-full flex items-center justify-center transition-colors"
+                :class="isDark ? 'text-on-surface-variant hover:text-white' : 'text-slate-400 hover:text-slate-900'"
+                aria-label="Tutup Modal"
               >
                 <span class="material-symbols-outlined text-lg">close</span>
               </button>
@@ -435,7 +441,7 @@
                   :disabled="saving"
                   class="btn-stitch-primary px-5 py-2.5 text-xs font-bold uppercase tracking-wider flex items-center gap-2"
                 >
-                  <span v-if="saving" class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"></span>
+                  <span v-if="saving" class="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin"></span>
                   <span>{{ saving ? 'Menyimpan...' : (isEditing ? 'Simpan Perubahan' : 'Terbitkan Kegiatan') }}</span>
                 </button>
               </div>
@@ -542,10 +548,13 @@ function openCreateModal() {
   form.category = 'Workshop'
   form.color = 'magenta'
   
-  // Default to tomorrow
+  // Default to tomorrow (local timezone safe)
   const tomorrow = new Date()
   tomorrow.setDate(tomorrow.getDate() + 1)
-  form.event_date = tomorrow.toISOString().split('T')[0]
+  const yyyy = tomorrow.getFullYear()
+  const mm = String(tomorrow.getMonth() + 1).padStart(2, '0')
+  const dd = String(tomorrow.getDate()).padStart(2, '0')
+  form.event_date = `${yyyy}-${mm}-${dd}`
   
   form.start_time = '19:30'
   form.end_time = '21:00'

@@ -79,7 +79,12 @@ export default async function handler(req, res) {
         is_published = true
       } = body
 
-      if (!title || !event_date || !start_time) {
+      const safeTrim = (val) => (val && typeof val === 'string' ? val.trim() : '')
+      const titleStr = safeTrim(title)
+      const dateStr = typeof event_date === 'string' ? event_date.trim() : event_date
+      const startTimeStr = typeof start_time === 'string' ? start_time.trim() : start_time
+
+      if (!titleStr || !dateStr || !startTimeStr) {
         return sendJson(res, 400, { error: 'Judul, tanggal kegiatan, dan waktu mulai wajib diisi.' })
       }
 
@@ -88,8 +93,8 @@ export default async function handler(req, res) {
           title, description, category, event_date, start_time, end_time,
           location_type, location_name, link, color, is_published, updated_at
         ) VALUES (
-          ${title.trim()}, ${description.trim()}, ${category}, ${event_date}, ${start_time}, ${end_time || null},
-          ${location_type}, ${location_name.trim()}, ${link.trim()}, ${color}, ${is_published}, NOW()
+          ${titleStr}, ${safeTrim(description)}, ${category || 'Event'}, ${dateStr}, ${startTimeStr}, ${end_time ? String(end_time).trim() : null},
+          ${location_type || 'online'}, ${safeTrim(location_name)}, ${safeTrim(link)}, ${color || 'purple'}, ${is_published !== undefined ? Boolean(is_published) : true}, NOW()
         )
         RETURNING *
       `
@@ -119,20 +124,22 @@ export default async function handler(req, res) {
         return sendJson(res, 400, { error: 'ID kegiatan wajib disertakan untuk update.' })
       }
 
+      const safeTrimOrNull = (val) => (val && typeof val === 'string' ? val.trim() : (val === null || val === '' ? '' : null))
+
       const rows = await sql`
         UPDATE events
         SET
-          title = COALESCE(${title ? title.trim() : null}, title),
-          description = COALESCE(${description !== undefined ? description.trim() : null}, description),
-          category = COALESCE(${category || null}, category),
-          event_date = COALESCE(${event_date || null}, event_date),
-          start_time = COALESCE(${start_time || null}, start_time),
-          end_time = ${end_time !== undefined ? (end_time || null) : null},
-          location_type = COALESCE(${location_type || null}, location_type),
-          location_name = COALESCE(${location_name !== undefined ? location_name.trim() : null}, location_name),
-          link = COALESCE(${link !== undefined ? link.trim() : null}, link),
-          color = COALESCE(${color || null}, color),
-          is_published = COALESCE(${is_published !== undefined ? is_published : null}, is_published),
+          title = CASE WHEN ${title !== undefined} THEN ${safeTrimOrNull(title) || title} ELSE title END,
+          description = CASE WHEN ${description !== undefined} THEN ${safeTrimOrNull(description) ?? ''} ELSE description END,
+          category = CASE WHEN ${category !== undefined} THEN ${category || 'Event'} ELSE category END,
+          event_date = CASE WHEN ${event_date !== undefined} THEN ${event_date} ELSE event_date END,
+          start_time = CASE WHEN ${start_time !== undefined} THEN ${start_time} ELSE start_time END,
+          end_time = CASE WHEN ${end_time !== undefined} THEN ${end_time ? String(end_time).trim() : null} ELSE end_time END,
+          location_type = CASE WHEN ${location_type !== undefined} THEN ${location_type || 'online'} ELSE location_type END,
+          location_name = CASE WHEN ${location_name !== undefined} THEN ${safeTrimOrNull(location_name) ?? ''} ELSE location_name END,
+          link = CASE WHEN ${link !== undefined} THEN ${safeTrimOrNull(link) ?? ''} ELSE link END,
+          color = CASE WHEN ${color !== undefined} THEN ${color || 'purple'} ELSE color END,
+          is_published = CASE WHEN ${is_published !== undefined} THEN ${Boolean(is_published)} ELSE is_published END,
           updated_at = NOW()
         WHERE id = ${id}
         RETURNING *

@@ -142,7 +142,7 @@
     <transition name="mobile-menu">
       <div 
         v-if="isOpen" 
-        class="md:hidden border-b px-6 py-5 space-y-2 transition-colors"
+        class="md:hidden border-b px-6 py-5 space-y-2 transition-colors max-h-[calc(100vh-5rem)] overflow-y-auto"
         :class="isDark 
           ? 'bg-[#111417] border-[#2a2d31] text-[#f4f0ea]' 
           : 'bg-white border-slate-200 text-[#161c24] shadow-xl'"

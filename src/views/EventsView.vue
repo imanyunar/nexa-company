@@ -122,7 +122,7 @@
           <div class="flex items-start gap-5">
             <!-- Calendar Date Box -->
             <div 
-              class="w-16 h-18 sm:w-20 sm:h-20 rounded-xl border flex flex-col items-center justify-center shrink-0 text-center select-none"
+              class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl border flex flex-col items-center justify-center shrink-0 text-center select-none"
               :class="isDark ? 'bg-[#111417] border-[#2a2d31]' : 'bg-slate-50 border-slate-200 shadow-sm'"
             >
               <span class="text-[11px] font-mono uppercase font-bold tracking-wider" :class="getColorClass(event.color).text">
@@ -262,7 +262,7 @@
           <div
             v-for="(day, index) in calendarDays"
             :key="index"
-            class="min-h-[90px] sm:min-h-[110px] p-2 rounded-xl border flex flex-col transition-all relative"
+            class="min-h-[80px] sm:min-h-[110px] p-1 sm:p-2 rounded-xl border flex flex-col transition-all relative"
             :class="[
               day.isCurrentMonth
                 ? (isDark ? 'bg-[#111417] border-[#2a2d31]' : 'bg-white border-slate-200')
@@ -278,7 +278,8 @@
               >
                 {{ day.dayNumber }}
               </span>
-              <span v-if="day.isToday" class="text-[9px] uppercase font-mono px-1 rounded bg-stitch-magenta/20 text-stitch-magenta-light font-bold">
+              <span v-if="day.isToday" class="w-1.5 h-1.5 rounded-full bg-stitch-magenta sm:hidden"></span>
+              <span v-if="day.isToday" class="hidden sm:inline text-[9px] uppercase font-mono px-1 rounded bg-stitch-magenta/20 text-stitch-magenta-light font-bold">
                 Hari Ini
               </span>
             </div>
@@ -312,7 +313,9 @@
           <!-- Close Button -->
           <button
             @click="activeModalEvent = null"
-            class="absolute top-5 right-5 text-on-surface-variant hover:text-white w-8 h-8 rounded-full flex items-center justify-center transition-colors"
+            class="absolute top-5 right-5 w-8 h-8 rounded-full flex items-center justify-center transition-colors"
+            :class="isDark ? 'text-on-surface-variant hover:text-white' : 'text-slate-400 hover:text-slate-900'"
+            aria-label="Tutup Detail"
           >
             <span class="material-symbols-outlined text-xl">close</span>
           </button>
@@ -354,7 +357,13 @@
             </div>
             <div v-if="activeModalEvent.link" class="flex items-center gap-2 pt-1 border-t border-outline-variant/60">
               <span class="material-symbols-outlined text-base text-emerald-400">link</span>
-              <a :href="activeModalEvent.link" target="_blank" rel="noopener noreferrer" class="text-stitch-cyan underline truncate hover:text-white">
+              <a 
+                :href="activeModalEvent.link" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="underline truncate transition-colors"
+                :class="isDark ? 'text-stitch-cyan hover:text-white' : 'text-sky-700 hover:text-sky-950 font-medium'"
+              >
                 {{ activeModalEvent.link }}
               </a>
             </div>
@@ -481,31 +490,31 @@ function getColorClass(color) {
   switch (color) {
     case 'magenta':
       return {
-        text: 'text-stitch-magenta',
+        text: isDark.value ? 'text-stitch-magenta' : 'text-fuchsia-700 font-semibold',
         badge: isDark.value ? 'bg-stitch-magenta/15 border-stitch-magenta/30 text-stitch-magenta-light' : 'bg-fuchsia-50 border-fuchsia-200 text-fuchsia-700',
         pill: isDark.value ? 'bg-stitch-magenta/20 border-stitch-magenta/40 text-stitch-magenta-light' : 'bg-fuchsia-100 border-fuchsia-300 text-fuchsia-800'
       }
     case 'cyan':
       return {
-        text: 'text-stitch-cyan',
+        text: isDark.value ? 'text-stitch-cyan' : 'text-sky-700 font-semibold',
         badge: isDark.value ? 'bg-stitch-cyan/15 border-stitch-cyan/30 text-stitch-cyan' : 'bg-sky-50 border-sky-200 text-sky-700',
         pill: isDark.value ? 'bg-stitch-cyan/20 border-stitch-cyan/40 text-stitch-cyan' : 'bg-sky-100 border-sky-300 text-sky-800'
       }
     case 'amber':
       return {
-        text: 'text-stitch-amber',
+        text: isDark.value ? 'text-stitch-amber' : 'text-amber-700 font-semibold',
         badge: isDark.value ? 'bg-stitch-amber/15 border-stitch-amber/30 text-stitch-amber' : 'bg-amber-50 border-amber-200 text-amber-700',
         pill: isDark.value ? 'bg-stitch-amber/20 border-stitch-amber/40 text-stitch-amber' : 'bg-amber-100 border-amber-300 text-amber-800'
       }
     case 'emerald':
       return {
-        text: 'text-emerald-400',
+        text: isDark.value ? 'text-emerald-400' : 'text-emerald-700 font-semibold',
         badge: isDark.value ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-400' : 'bg-emerald-50 border-emerald-200 text-emerald-700',
         pill: isDark.value ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300' : 'bg-emerald-100 border-emerald-300 text-emerald-800'
       }
     default: // purple
       return {
-        text: 'text-stitch-purple',
+        text: isDark.value ? 'text-stitch-purple' : 'text-violet-700 font-semibold',
         badge: isDark.value ? 'bg-stitch-purple/15 border-stitch-purple/30 text-stitch-purple-light' : 'bg-violet-50 border-violet-200 text-violet-700',
         pill: isDark.value ? 'bg-stitch-purple/20 border-stitch-purple/40 text-stitch-purple-light' : 'bg-violet-100 border-violet-300 text-violet-800'
       }

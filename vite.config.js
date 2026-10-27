@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
@@ -11,6 +11,11 @@ function apiDevPlugin() {
       if (process.loadEnvFile) {
         try {
           process.loadEnvFile()
+        } catch {}
+      } else {
+        try {
+          const env = loadEnv('development', process.cwd(), '')
+          Object.assign(process.env, env)
         } catch {}
       }
 

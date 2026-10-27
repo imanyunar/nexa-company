@@ -101,7 +101,7 @@
             class="p-5 rounded-xl border flex flex-col gap-4 group transition-all"
             :class="isDark 
               ? 'bg-[#191c1f] border-[#2a2d31] hover:border-stitch-magenta/60' 
-              : 'bg-white border-slate-200 hover:border-fuchsia-500/60 shadow-sm'"
+              : 'bg-white/95 border-slate-200/90 hover:border-fuchsia-500/60 shadow-[0_4px_20px_rgba(15,23,42,0.03)] hover:shadow-[0_12px_32px_rgba(217,70,239,0.08)]'"
             title="Buka Instagram Resmi"
           >
             <div class="flex items-center justify-between">
@@ -135,7 +135,7 @@
             class="p-5 rounded-xl border flex flex-col gap-4 group transition-all"
             :class="isDark 
               ? 'bg-[#191c1f] border-[#2a2d31] hover:border-stitch-cyan/60' 
-              : 'bg-white border-slate-200 hover:border-sky-500/60 shadow-sm'"
+              : 'bg-white/95 border-slate-200/90 hover:border-sky-500/60 shadow-[0_4px_20px_rgba(15,23,42,0.03)] hover:shadow-[0_12px_32px_rgba(14,165,233,0.08)]'"
             title="Buka TikTok Resmi"
           >
             <div class="flex items-center justify-between">
@@ -167,7 +167,7 @@
             class="p-5 rounded-xl border flex flex-col gap-4 group transition-all"
             :class="isDark 
               ? 'bg-[#191c1f] border-[#2a2d31] hover:border-stitch-amber/60' 
-              : 'bg-white border-slate-200 hover:border-amber-500/60 shadow-sm'"
+              : 'bg-white/95 border-slate-200/90 hover:border-amber-500/60 shadow-[0_4px_20px_rgba(15,23,42,0.03)] hover:shadow-[0_12px_32px_rgba(245,158,11,0.08)]'"
             title="Telepon Langsung"
           >
             <div class="flex items-center justify-between">

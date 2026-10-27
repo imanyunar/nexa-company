@@ -27,7 +27,10 @@ export function verifyPassword(password, stored) {
   if (!stored || !stored.includes(':')) return false
   const [salt, hash] = stored.split(':')
   const verify = crypto.pbkdf2Sync(password, salt, 100000, 64, 'sha512').toString('hex')
-  return crypto.timingSafeEqual(Buffer.from(hash, 'hex'), Buffer.from(verify, 'hex'))
+  const bufA = Buffer.from(hash, 'hex')
+  const bufB = Buffer.from(verify, 'hex')
+  if (bufA.length !== bufB.length) return false
+  return crypto.timingSafeEqual(bufA, bufB)
 }
 
 /**
@@ -90,8 +93,15 @@ export function handleCors(req, res) {
 }
 
 export async function parseJsonBody(req) {
-  if (req.body && typeof req.body === 'object') {
-    return req.body
+  if (req.body) {
+    if (typeof req.body === 'object') return req.body
+    if (typeof req.body === 'string') {
+      try {
+        return JSON.parse(req.body)
+      } catch {
+        return {}
+      }
+    }
   }
   return new Promise((resolve, reject) => {
     let body = ''

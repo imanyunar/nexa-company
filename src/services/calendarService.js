@@ -180,17 +180,45 @@ export async function deleteEvent(id) {
 }
 
 /**
+ * Helper: format time to 6-digit HHMMSS conforming to RFC 5545
+ * If end_time is not provided, default to start_time + 1 hour
+ */
+function formatEventTimeRange(startTime, endTime) {
+  const cleanTime = (t) => (t || '').toString().trim()
+  
+  const rawStart = cleanTime(startTime) || '09:00:00'
+  const startParts = rawStart.split(':').map(Number)
+  const startH = isNaN(startParts[0]) ? 9 : startParts[0]
+  const startM = isNaN(startParts[1]) ? 0 : startParts[1]
+  const startS = isNaN(startParts[2]) ? 0 : startParts[2]
+
+  const startTimeStr = `${String(startH).padStart(2, '0')}${String(startM).padStart(2, '0')}${String(startS).padStart(2, '0')}`
+
+  const rawEnd = cleanTime(endTime)
+  let endTimeStr
+  if (rawEnd) {
+    const endParts = rawEnd.split(':').map(Number)
+    const endH = isNaN(endParts[0]) ? startH + 1 : endParts[0]
+    const endM = isNaN(endParts[1]) ? 0 : endParts[1]
+    const endS = isNaN(endParts[2]) ? 0 : endParts[2]
+    endTimeStr = `${String(endH).padStart(2, '0')}${String(endM).padStart(2, '0')}${String(endS).padStart(2, '0')}`
+  } else {
+    const endH = (startH + 1) % 24
+    endTimeStr = `${String(endH).padStart(2, '0')}${String(startM).padStart(2, '0')}${String(startS).padStart(2, '0')}`
+  }
+
+  return { startTimeStr, endTimeStr }
+}
+
+/**
  * Generate Google Calendar Add URL
  */
 export function getGoogleCalendarUrl(event) {
   if (!event || !event.event_date) return '#'
 
-  // Format YYYYMMDDTHHMMSSZ
-  const dateStr = event.event_date.split('T')[0].replace(/-/g, '')
-  const startTimeStr = (event.start_time || '09:00:00').replace(/:/g, '').slice(0, 6)
-  const endTimeStr = (event.end_time || '10:00:00').replace(/:/g, '').slice(0, 6)
+  const dateStr = String(event.event_date).split('T')[0].replace(/-/g, '')
+  const { startTimeStr, endTimeStr } = formatEventTimeRange(event.start_time, event.end_time)
 
-  // Local dates in Jakarta time (+07:00) -> convert to naive UTC or local ISO
   const startIso = `${dateStr}T${startTimeStr}`
   const endIso = `${dateStr}T${endTimeStr}`
 
@@ -212,9 +240,8 @@ export function getGoogleCalendarUrl(event) {
 export function downloadIcsFile(event) {
   if (!event || !event.event_date) return
 
-  const dateStr = event.event_date.split('T')[0].replace(/-/g, '')
-  const startTimeStr = (event.start_time || '09:00:00').replace(/:/g, '').slice(0, 6)
-  const endTimeStr = (event.end_time || '10:00:00').replace(/:/g, '').slice(0, 6)
+  const dateStr = String(event.event_date).split('T')[0].replace(/-/g, '')
+  const { startTimeStr, endTimeStr } = formatEventTimeRange(event.start_time, event.end_time)
   const nowStamp = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
 
   const icsContent = [
@@ -255,9 +282,8 @@ export function downloadAllEventsIcs(eventsList, filename = 'timeline-kegiatan-n
   const nowStamp = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
 
   const vevents = eventsList.map((event, idx) => {
-    const dateStr = (event.event_date || '').split('T')[0].replace(/-/g, '')
-    const startTimeStr = (event.start_time || '09:00:00').replace(/:/g, '').slice(0, 6)
-    const endTimeStr = (event.end_time || '10:00:00').replace(/:/g, '').slice(0, 6)
+    const dateStr = String(event.event_date || '').split('T')[0].replace(/-/g, '')
+    const { startTimeStr, endTimeStr } = formatEventTimeRange(event.start_time, event.end_time)
 
     return [
       'BEGIN:VEVENT',
